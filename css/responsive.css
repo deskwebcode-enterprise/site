@@ -80,6 +80,10 @@
         height: 822px;
     }
 
+    #section1 {
+        margin-top: 205px;
+    }
+
     .p-column {
         width: 100%;
     }
@@ -180,9 +184,8 @@
         height: 40px;
     }
 
-    #btn-circles div, #btn-circles-services div {
-        width: 10px;
-        height: 10px;
+    #section1 {
+        margin-top: 190px;
     }
 
     .p-column {
@@ -194,6 +197,11 @@
     .p-column p {
         width: 100%;
         margin: 10px 30px;
+    }
+
+    #btn-circles div, #btn-circles-services div {
+        width: 10px;
+        height: 10px;
     }
 }
 
@@ -207,7 +215,7 @@
     #main-nav ul {
         width: 77%;
     }
-    
+
     .main-h3 {
         letter-spacing: 7px;
     }
