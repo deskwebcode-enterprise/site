@@ -5,9 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/main-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>DeskWebCode</title>
 </head>
 <body>
-    
+    <header id="main-header">
+        <nav id="main-nav">
+            <div id="align-logo">
+                <img src="img/main-logo.png" alt="Logo principal">
+                <span id="name-logo">DeskWebCode</span>
+            </div>
+            <div id="btn-hamburger">
+                <input type="checkbox"/>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="main-ul">
+                <li><a id="main-a-activated" class="main-a" href="#">Home</a></li>
+                <li><a class="main-a" href="#">Sobre nós</a></li>
+                <li><a class="main-a" href="#">Vantagens</a></li>
+                <li><a class="main-a" href="#">Como funciona</a></li>
+                <li><a class="main-a" href="#">Planos</a></li>
+                <li><a class="main-a" href="#">Dúvidas</a></li>
+                <li><a class="main-a" href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="slider">
+            <button type="button" id="btn-left-slider">&lsaquo;</button>
+            <div id="box-slider">
+                <div class="square-slider">
+                    <div id="particles-js"></div>
+                    <div class="txt-group txt-group-display-on">
+                        <span class="txt-separate">FORTALEÇA O SEU NEGÓCIO</span>
+                        <span class="txt-larger txt-separate">O SEU SITE PROFISSIONAL</span>
+                        <p>
+                            Um site é a principal forma de estabelecer um bom relacionamento e atrair cada vez mais consumidores para o
+                            fechamento de vendas já que dentro dele vai conter todo o DNA do seu negócio. O que iremos fazer é simplesmente
+                            te ajudar neste processo.
+                        </p>
+                        <button class="btn-action"><span>Entrar em contato</span></button>
+                    </div>
+                    <div class="txt-group txt-group-display-off">
+                        <span class="txt-separate">DESIGN ORIGINAL</span>
+                        <span class="txt-larger">PROJETADO PARA O SEU NEGÓCIO</span>
+                        <p>
+                            Queremos que o seu negócio se diferencie dos demais, por isso, o visual do seu site será baseado
+                            unicamente nas características do seu negócio o que acaba transparecendo como algo exclusivo e diferente para quem o vê-lo.
+                        </p>
+                        <button class="btn-action"><span>Entrar em contato</span></button>
+                    </div>
+                    <div class="txt-group txt-group-display-off">
+                        <span class="txt-separate">ENGAJAMENTO E CONVERSÃO</span>
+                        <span class="txt-larger txt-separate">CUIDAMOS DE TUDO</span>
+                        <p>
+                            Encarregamos de desenvolver praticamente todo o material do seu site como o layout, design,
+                            textos resumidos, imagens ilustrativas, animações e técnicas de vendas, com o objetivo de engajar os
+                            visitantes e convertê-los em futuros clientes.
+                        </p>
+                        <button class="btn-action"><span>Entrar em contato</span></button>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="btn-right-slider">&rsaquo;</button>
+            <div id="btn-circles">
+                <div class="circles circle-activated"></div>
+                <div class="circles circle-disabled"></div>
+                <div class="circles circle-disabled"></div>
+            </div>
+        </div>
+    </header>
+    <script src="script/particles.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
