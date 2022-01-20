@@ -1,0 +1,157 @@
+@media screen and (max-width: 1600px) {
+    #main-nav {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1453px) {
+    #particles-js::before {
+        left: 0;
+    }
+
+    #particles-js::after {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    html {
+        font-size: 0.9rem;
+    }
+
+    #main-nav {
+        height: 80px;
+    }
+
+    #slider {
+        top: 80px;
+    }
+
+    #btn-hamburger {
+        display: flex;
+        transform: scale(0.7);
+    }
+
+    #main-ul {
+        position: absolute;
+        right: -80%;
+        top: 80px;
+        background: #ffffff;
+        width: 70%;
+        box-shadow: -3px 6px 10px #646464;
+    }
+
+    @keyframes navUlright {
+        0% {
+            right: -80%;
+        }
+
+        100% {
+            right: 0;
+        }
+    }
+
+    @keyframes navUlleft {
+        0% {
+            right: 0;
+        }
+
+        100% {
+            right: -80%;
+        }
+    }
+
+    #main-nav ul li {
+        width: 100%;
+        float: none;
+    }
+
+    #main-nav ul li a {
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #main-nav ul li a:hover {
+        border-top: 5px solid #f7f7f7;
+        background: #f7f7f7;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 0.8rem;
+    }
+
+    #align-logo img {
+        width: 50px;
+    }
+
+    #main-nav {
+        height: 70px;
+    }
+
+    #main-ul {
+        top: 70px;
+    }
+
+    #slider {
+        top: 70px;
+        height: 600px;
+    }
+
+    #btn-left-slider, #btn-right-slider {
+        display: none;
+    }
+
+    .txt-separate {
+        font-size: 1rem;
+        letter-spacing: 10px;
+    }
+
+    .txt-larger {
+        font-size: 2.5rem;
+    }
+
+    .txt-group p {
+        width: 100%;
+    }
+
+    #particles-js::before, #particles-js::after {
+        height: 80%;
+    }
+
+    #particles-js::before {
+        top: 5%;
+    }
+
+    #particles-js::after {
+        bottom: 5%;
+    }
+
+    .btn-action {
+        width: 170px;
+        height: 40px;
+    }
+
+    #btn-circles div, #btn-circles-services div {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main-nav ul {
+        width: 77%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .txt-larger {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .txt-larger {
+        font-size: 2rem;
+    }
+}
