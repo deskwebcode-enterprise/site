@@ -188,6 +188,7 @@
     .p-column {
         flex-wrap: wrap;
         margin: 20px auto;
+        text-align: left;
     }
 
     .p-column p {
