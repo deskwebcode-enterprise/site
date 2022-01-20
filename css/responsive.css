@@ -19,17 +19,13 @@
         font-size: 0.9rem;
     }
 
-    #main-nav {
-        height: 80px;
-    }
-
-    #slider {
-        top: 80px;
-    }
-
     #btn-hamburger {
         display: flex;
         transform: scale(0.7);
+    }
+
+    #main-nav {
+        height: 80px;
     }
 
     #main-ul {
@@ -39,6 +35,10 @@
         background: #ffffff;
         width: 70%;
         box-shadow: -3px 6px 10px #646464;
+    }
+
+    #main-ul li a:hover, #main-ul li a#main-a-activated {
+        border-top: none;
     }
 
     @keyframes navUlright {
@@ -73,6 +73,54 @@
     #main-nav ul li a:hover {
         border-top: 5px solid #f7f7f7;
         background: #f7f7f7;
+    }
+
+    #slider {
+        top: 80px;
+        height: 822px;
+    }
+
+    .p-column {
+        width: 100%;
+    }
+
+    .box-result:nth-child(2) {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .box-result {
+        width: 50%;
+    }
+
+    .box-result:nth-child(1) {
+        align-items: flex-start;
+        margin-right: 0;
+    }
+
+    .box-result:nth-child(1) img {
+        width: 120%;
+    }
+
+    #numbers {
+        flex-wrap: wrap;
+    }
+
+    .numbers {
+        width: 100%;
+        justify-content: flex-start;
+        margin: 10px;
+    }
+
+    .number {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #btn-left-service, #btn-right-service {
+        display: none;
     }
 }
 
@@ -136,11 +184,63 @@
         width: 10px;
         height: 10px;
     }
+
+    .p-column {
+        flex-wrap: wrap;
+        margin: 20px auto;
+    }
+
+    .p-column p {
+        width: 100%;
+        margin: 10px 30px;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 710px) {
+    .txt-center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     #main-nav ul {
         width: 77%;
+    }
+
+    #result {
+        flex-wrap: wrap;
+        margin: 0px auto;
+    }
+
+    .box-result {
+        width: 100%;
+        transform: translateX(0);
+        padding: 0;
+    }
+
+    .box-result:nth-child(1) img {
+        width: 100%;
+    }
+
+    .box-result:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .box-result h3 {
+        text-align: center;
+    }
+
+    #result p {
+        margin: 25px 35px;
+    }
+
+    .numbers {
+        justify-content: center;
+    }
+
+    .number {
+        text-align: center;
+        font-size: 2.5rem;
     }
 }
 
