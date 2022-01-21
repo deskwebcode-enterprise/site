@@ -14,6 +14,8 @@ window.onload = () => {
     let circles = document.querySelectorAll(".circles");
     let circlesCount = 0;
 
+    scrollBlackLight();
+
     btnHamburger.onclick = () => {
         if (btnHamburgerCount == 0) {
             mainUl.style.animation = "navUlright 0.3s linear forwards";
@@ -98,6 +100,10 @@ window.onload = () => {
         }
     }
 
+    window.onresize = () => {
+        scrollBlackLight();
+    }
+
     function altarnate(c1, c2, bc1, bc2) {
         mainNav.style.background = c2;
         nameLogo.style.color = c1;
@@ -122,6 +128,43 @@ window.onload = () => {
             }
 
             mainAactivated.style.borderTop = bc1;
+        }
+    }
+
+    function scrollBlackLight() {
+        if (window.innerWidth < 1300) {
+            mainAactivated.style.borderLeft = "5px solid #2d2e2e";
+
+            for (let i = 0; i < mainA.length; i ++) {
+                mainA[i].style.borderTop = "none";
+                mainA[i].style.color = "#2d2e2e";
+    
+                mainA[i].onmouseover = () => {
+                    mainA[i].style.borderLeft = "5px solid #2d2e2e";
+                }
+    
+                mainA[i].onmouseout = () => {
+                    mainA[i].style.borderLeft = "5px solid #ffffff";
+                    mainAactivated.style.borderLeft = "5px solid #2d2e2e";
+                }
+            }
+        }
+
+        else {
+            for (let i = 0; i < mainA.length; i ++) {
+                mainA[i].style.borderLeft = "none";
+                mainA[i].style.borderTop = "5px solid #ffffff";
+                mainAactivated.style.borderTop = "5px solid #ffffff";
+                mainA[i].style.color = "#ffffff";
+            }
+        }
+
+        if (window.scrollY >= 50) {
+            altarnate("#ffffff", "#2d2e2e", "5px solid #ffffff", "5px solid #2d2e2e");
+        }
+
+        else {
+            altarnate("#2d2e2e", "#ffffff", "5px solid #2d2e2e", "5px solid #ffffff");
         }
     }
 };
