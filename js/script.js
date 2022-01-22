@@ -134,12 +134,12 @@ window.onload = () => {
         let imgRight = document.querySelectorAll(".img-right");
         let boxSection3 = document.querySelector("#box-section3");
 
-        if (window.innerWidth < 600) {        
+        if (window.innerWidth <= 600) {        
             boxSection3.removeChild(txtLeft[0]);
             boxSection3.appendChild(txtLeft[0]);
         }
 
-        if (window.innerWidth >= 600) {
+        if (window.innerWidth > 600) {
             boxSection3.removeChild(imgRight[0]);
             boxSection3.appendChild(imgRight[0]);
         }
