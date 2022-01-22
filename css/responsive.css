@@ -120,6 +120,20 @@
     .number {
         text-align: left;
     }
+
+    #box-section3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .txt-left {
+        width: 50%;
+        margin-right: 40px;
+    }
+
+    .img-right {
+        width: 250px;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -261,6 +275,25 @@
         border: 1px solid #f0f0f0;
         border-radius: 20px;
         margin: 0 20px 5px 20px;
+    }
+
+    #box-section3 {
+        flex-wrap: wrap;
+    }
+
+    #box-section3 h3 {
+        text-align: center;
+    }
+
+    .txt-left {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .img-right {
+        width: 50%;
+        margin-bottom: 45px;
+        margin-left: 0;
     }
 }
 
