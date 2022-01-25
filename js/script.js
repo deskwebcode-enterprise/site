@@ -16,6 +16,26 @@ window.onload = () => {
 
     scrollBlackLight();
 
+    let scrollPos = document.querySelectorAll(".scroll-pos");
+
+    // mainA[0].onclick = () => {
+    //     window.scrollBy(0, scrollPos[0].getBoundingClientRect().y);
+
+    //     mainA[0].setAttribute("id", "main-a-activated");
+    // }
+
+    // mainA[1].onclick = () => {
+    //     window.scrollBy(0, scrollPos[1].getBoundingClientRect().y + 75);
+    // }
+
+    // mainA[2].onclick = () => {
+    //     window.scrollBy(0, scrollPos[2].getBoundingClientRect().y - 95);
+    // }
+
+    // mainA[3].onclick = () => {
+    //     window.scrollBy(0, scrollPos[3].getBoundingClientRect().y + 0);
+    // }
+
     btnHamburger.onclick = () => {
         if (btnHamburgerCount == 0) {
             mainUl.style.animation = "navUlright 0.3s linear forwards";
@@ -117,13 +137,14 @@ window.onload = () => {
                 mainA[i].style.color = c1;
                 mainA[i].style.borderTop = bc2;
                 
-                mainA[i].onmouseover = () => {
-                    mainA[i].style.borderTop = bc1;
-                }
+                mainA[i].onclick = (event) => {
+                    for (let a = 0; a < mainA.length; a ++) {
+                        mainA[a].style.borderTop = bc2;
+                        mainAactivated.removeAttribute("id");
+                    }
 
-                mainA[i].onmouseout = () => {
-                    mainA[i].style.borderTop = bc2;
-                    mainAactivated.style.borderTop = bc1;
+                    event.target.setAttribute("id", "main-a-activated");
+                    event.target.style.borderTop = bc1;
                 }
             }
 
