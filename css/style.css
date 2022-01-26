@@ -16,24 +16,12 @@
 
 @font-face {
     font-family: Roboto-Medium;
-    src: url(../font/Roboto/Roboto-Medium.ttf);
+    src: url(../font/Roboto-Medium.ttf);
 }
 
 html {
     font-size: 1rem;
     scroll-behavior: smooth;
-}
-
-#rule {
-    width: 50px;
-    height: 63px;
-    position: absolute;
-    left: 50%;
-    top: 749px;
-    transform: translateX(-50%);
-    background: red;
-    z-index: 1000;
-    display: none;
 }
 
 #main-nav, #align-logo {
