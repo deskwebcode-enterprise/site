@@ -135,6 +135,10 @@
     #services {
         width: 90%;
     }
+
+    footer {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -214,6 +218,11 @@
     #prices {
         width: 100%;
     }
+
+    #form-center {
+        width: calc(100% - 60px);
+        margin: auto;
+    }    
 }
 
 @media screen and (max-width: 885px) {
@@ -419,6 +428,15 @@
 
     #center-doubt {
         width: 85%;
+    }
+
+    footer {
+        justify-content: flex-start;
+    }
+
+    footer div {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
