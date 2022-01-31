@@ -374,6 +374,10 @@
     #main-nav ul {
         width: 70%;
     }
+    
+    #main-ul li .main-a {
+        padding: 30px 20px;
+    }
 
     .main-h3 {
         letter-spacing: 7px;
