@@ -212,7 +212,6 @@ html {
     display: block;
     position: absolute;
     box-shadow: 3px 3px 10px #2c2c2c;
-    opacity: 0;
 }
 
 #particles-js::before {
@@ -240,9 +239,7 @@ html {
     top: 50%;
     transform: translate(-50%, -10%);
     color: #ffffff;
-    opacity: 0;
     animation: txt-group 0.4s linear forwards;
-    pointer-events: none;
 }
 
 .txt-group-display-on {
