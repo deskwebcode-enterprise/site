@@ -362,17 +362,7 @@
 
 @media screen and (max-width: 715px) {
     #particles-js::before, #particles-js::after {
-        width: 60%;
-    }
-    
-    #particles-js::before {
-        left: 5%;
-        top: 3%;
-    }
-    
-    #particles-js::after {
-        right: 5%;
-        bottom: 10%;
+        display: none;
     }
 }
 
