@@ -11,16 +11,6 @@
     }
 }
 
-@media screen and (max-width: 1453px) {
-    /* #particles-js::before {
-        left: 0;
-    }
-
-    #particles-js::after {
-        right: 0;
-    } */
-}
-
 @media screen and (max-width: 1299px) {
     html {
         font-size: 0.9rem;
@@ -208,6 +198,7 @@
 @media screen and (max-width: 1050px) {
     #particles-js::before, #particles-js::after {
         height: 80%;
+        display: none;
     }
     
     #particles-js::before {
@@ -357,12 +348,6 @@
 
     .price {
         height: 540px;
-    }
-}
-
-@media screen and (max-width: 715px) {
-    #particles-js::before, #particles-js::after {
-        display: none;
     }
 }
 
