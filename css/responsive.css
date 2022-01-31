@@ -33,6 +33,7 @@
 
     #main-nav {
         height: 80px;
+        border-bottom: 1px solid #f0f0f0;
     }
 
     #main-ul {
@@ -41,7 +42,6 @@
         top: 80px;
         background: #ffffff;
         width: 400px;
-        border-top: 1px solid #f0f0f0;
     }
 
     @keyframes navUlright {
@@ -374,7 +374,7 @@
     #main-nav ul {
         width: 70%;
     }
-    
+
     #main-ul li .main-a {
         padding: 30px 20px;
     }
