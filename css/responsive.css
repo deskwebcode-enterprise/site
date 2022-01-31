@@ -40,12 +40,8 @@
         right: -80%;
         top: 80px;
         background: #ffffff;
-        width: 70%;
-        box-shadow: -3px 6px 10px #646464;
-    }
-
-    #main-ul li a:hover, #main-ul li a#main-a-activated {
-        border-top: none;
+        width: 400px;
+        border-top: 1px solid #f0f0f0;
     }
 
     @keyframes navUlright {
@@ -77,11 +73,6 @@
         transition: background-color 0.3s ease-in-out;
     }
 
-    #main-nav ul li a:hover {
-        border-top: 5px solid #f7f7f7;
-        background: #f7f7f7;
-    }
-
     #slider {
         top: 80px;
         height: 822px;
@@ -94,11 +85,11 @@
 
     #section2 {
         padding-top: 60px;
-        padding-bottom: 32px;
+        padding-bottom: 33px;
     }
 
     #section3 {
-        padding-top: 55px;
+        padding-top: 60px;
         padding-bottom: 42px;
     }
 
@@ -110,6 +101,21 @@
     #section5 {
         padding-top: 61px;
         padding-bottom: 45px;
+    }
+
+    #section6 {
+        padding-top: 61px;
+        padding-bottom: 53px;
+    }
+
+    #section7 {
+        padding-top: 61px;
+        padding-bottom: 62px;
+    }
+
+    #section8 {
+        padding-top: 61px;
+        padding-bottom: 64px;
     }
 
     .p-column {
@@ -246,6 +252,11 @@
         font-size: 0.8rem;
     }
 
+    #background-occupy {
+        height: calc(100% - 70px);
+        top: 70px;
+    }
+
     #align-logo img {
         width: 50px;
     }
@@ -361,7 +372,7 @@
 
 @media screen and (max-width: 600px) {
     #main-nav ul {
-        width: 77%;
+        width: 70%;
     }
 
     .main-h3 {
