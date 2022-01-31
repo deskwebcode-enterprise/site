@@ -12,13 +12,13 @@
 }
 
 @media screen and (max-width: 1453px) {
-    #particles-js::before {
+    /* #particles-js::before {
         left: 0;
     }
 
     #particles-js::after {
         right: 0;
-    }
+    } */
 }
 
 @media screen and (max-width: 1299px) {
@@ -205,6 +205,22 @@
     }
 }
 
+@media screen and (max-width: 1050px) {
+    #particles-js::before, #particles-js::after {
+        height: 80%;
+    }
+    
+    #particles-js::before {
+        left: 5%;
+        top: 5%;
+    }
+    
+    #particles-js::after {
+        right: 5%;
+        bottom: 5%;
+    }
+}
+
 @media screen and (max-width: 1040px) {
     #how-it-works {
         width: 650px;
@@ -341,6 +357,22 @@
 
     .price {
         height: 540px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    #particles-js::before, #particles-js::after {
+        width: 60%;
+    }
+    
+    #particles-js::before {
+        left: 5%;
+        top: 3%;
+    }
+    
+    #particles-js::after {
+        right: 5%;
+        bottom: 10%;
     }
 }
 
