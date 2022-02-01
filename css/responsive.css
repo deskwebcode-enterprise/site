@@ -195,23 +195,6 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
-    #particles-js::before, #particles-js::after {
-        height: 80%;
-        display: none;
-    }
-    
-    #particles-js::before {
-        left: 5%;
-        top: 5%;
-    }
-    
-    #particles-js::after {
-        right: 5%;
-        bottom: 5%;
-    }
-}
-
 @media screen and (max-width: 1040px) {
     #how-it-works {
         width: 650px;
@@ -295,18 +278,6 @@
 
     .txt-group p {
         width: 100%;
-    }
-
-    #particles-js::before, #particles-js::after {
-        height: 80%;
-    }
-
-    #particles-js::before {
-        top: 5%;
-    }
-
-    #particles-js::after {
-        bottom: 5%;
     }
 
     .btn-action {
