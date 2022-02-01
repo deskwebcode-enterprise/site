@@ -16,7 +16,7 @@ window.onload = () => {
     let scrollPos = document.querySelectorAll(".scroll-pos");
 
     scrollMovePos(0, 0);
-    
+
     if (window.scrollY >= 50) {
         altarnate("#ffffff", "#2d2e2e", "5px solid #ffffff", "5px solid #2d2e2e");
     }
