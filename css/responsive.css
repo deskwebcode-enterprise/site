@@ -67,6 +67,10 @@
         height: 822px;
     }
 
+    #particles-js {
+        background-position: right -100px;
+    }
+
     #section1 {
         padding-top: 220px;
         padding-bottom: 30px;
@@ -319,6 +323,12 @@
 
     .price {
         height: 540px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #particles-js {
+        background-size: 1200px;
     }
 }
 
