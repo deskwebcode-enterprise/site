@@ -14,6 +14,15 @@ window.onload = () => {
     let circlesCount = 0;
 
     let scrollPos = document.querySelectorAll(".scroll-pos");
+    let btnBlocked = document.querySelector("#btn-blocked");
+    let contentBlocked = document.querySelector("#content-blocked");
+
+    let mainUlulCount = 0;
+
+    btnBlocked.onclick = () => {
+        contentBlocked.style.display = "block";
+        btnBlocked.style.display = "none";
+    };
 
     scrollMovePos(0, 0);
 
@@ -80,13 +89,30 @@ window.onload = () => {
     });
 
     mainA[4].addEventListener("click", () => {
-        if (window.innerWidth > 1299) {
-            scrollMovePos(4, -90);
+        let mainUlul1 = document.querySelector("#main-ul li ul");
+        let mainUlulli = document.querySelector("#main-ul li ul li");
+
+        if (mainUlulCount == 0) {
+            mainUlul1.style.display = "block";
+
+            mainUlulCount = 1;
         }
 
-        else if (window.innerWidth > 0) {
-            scrollMovePos(4, -70);
+        else {
+            mainUlul1.style.display = "none";
+            
+            mainUlulCount = 0;
         }
+
+        mainUlulli.onclick = () => {
+            if (window.innerWidth > 1299) {
+                scrollMovePos(4, -90);
+            }
+    
+            else if (window.innerWidth > 0) {
+                scrollMovePos(4, -70);
+            }
+        };
     });
 
     mainA[5].addEventListener("click", () => {
@@ -128,8 +154,6 @@ window.onload = () => {
             mainUl.style.animation = "navUlright 0.3s linear forwards";
             backgroundOccupy.style.animation = "occupyBottom 0.3s linear forwards";
             btnHamburgerCount = 1;
-
-            // document.body.style.overflow = "hidden";
         }
 
         else {
@@ -137,7 +161,7 @@ window.onload = () => {
             backgroundOccupy.style.animation = "occupyTop 0.3s linear forwards";
             btnHamburgerCount = 0;
 
-            document.body.style.overflow = "auto";
+            // document.body.style.overflow = "auto";
         }
     };
 
@@ -222,7 +246,7 @@ window.onload = () => {
                     btnHamburgerPart[a].style.opacity = "1";
                 }
 
-                document.body.style.overflow = "auto";
+                // document.body.style.overflow = "auto";
                 mainUl.style.animation = "navUlleft 0.3s linear forwards";
                 backgroundOccupy.style.animation = "occupyTop 0.3s linear forwards";
                 btnHamburgerCount = 0;
