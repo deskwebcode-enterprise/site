@@ -8,15 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>DeskWebCode</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8N4TNSS38X"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-8N4TNSS38X');
-    </script>
 </head>
 <body>
     <div class="scroll-pos"></div>
@@ -38,8 +29,29 @@
                 <li><a class="main-a">Sobre nós</a></li>
                 <li><a class="main-a">Vantagens</a></li>
                 <li><a class="main-a">Como funciona</a></li>
-                <li><a class="main-a">Serviços</a></li>
-                <li><a class="main-a">Preços</a></li>
+                <li>
+                    <a class="main-a main-sub-menu">
+                        Serviços
+                        <span class="arrow-sub-menu">&lsaquo;</span>
+                    </a>
+                    <ul>
+                        <li><a>Criação de site</a></li>
+                        <li><a href="">Manutenção de site</a></li>
+                        <li><a href="">Hospedagem e domínio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="main-a main-sub-menu">
+                        Planos
+                        <span class="arrow-sub-menu">&lsaquo;</span>
+                    </a>
+                    <ul>
+                        <li><a href="">Basic</a></li>
+                        <li><a href="">Standard</a></li>
+                        <li><a href="">Premium</a></li>
+                        <li><a href="">Ultimate</a></li>
+                    </ul>
+                </li>
                 <li><a class="main-a">Dúvidas</a></li>
                 <li><a class="main-a">Contato</a></li>
             </ul>
@@ -90,8 +102,8 @@
     </header>
     <div class="scroll-pos"></div>
     <section id="section1">
-        <div id="wrapper-txt">
-            <h2 class="main-h2">SOBRE NÓS</h2>
+    <div id="wrapper-txt">
+        <h2 class="main-h2">SOBRE NÓS</h2>
             <div class="intro-bar"></div>
             <h3 class="main-h3">QUEM SOMOS E O QUE FAZEMOS?</h3>
             <div class="main-p p-column">
@@ -146,12 +158,6 @@
         </div>
         <div id="dife">
             <div class="box-dife">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="box-dife-img">
                     <img src="img/tachometer.svg" alt="Tacômetro">
                 </div>
@@ -163,12 +169,6 @@
                 </div>
             </div>
             <div class="box-dife">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="box-dife-img">
                     <img src="img/link.svg" alt="Link">
                 </div>
@@ -180,12 +180,6 @@
                 </div>
             </div>
             <div class="box-dife">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="box-dife-img">
                     <img src="img/laptop-code.svg" alt="Notebook código">
                 </div>
@@ -197,12 +191,6 @@
                 </div>
             </div>
             <div class="box-dife">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="box-dife-img">
                     <img src="img/comments.svg" alt="Comentário">
                 </div>
@@ -214,12 +202,6 @@
                 </div>
             </div>
             <div class="box-dife">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="box-dife-img">
                     <img src="img/robot.svg" alt="Robô">
                 </div>
@@ -231,12 +213,6 @@
                 </div>
             </div>
             <div class="box-dife">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="box-dife-img">
                     <img src="img/phone.svg" alt="Telefone">
                 </div>
@@ -261,8 +237,27 @@
                 <p>
                     E justamente o site vai ter o objetivo de converter essas pessoas em clientes já que se as informações a
                     respeito do negócio não estiverem disponibilizadas online, simplesmente o negócio vai perder uma grande parte
-                    dos 152 milhões de usuários de internet no Brasil que poderiam ser possíveis clientes.
+                    das 152 milhões de pessoas conectadas na internet pelo Brasil, no qual poderiam ser possíveis clientes.
                 </p>
+                <div id="content-blocked">
+                    <p>
+                        Um site não necessariamente precisa vender algo, mas também pode comunicar, divulgar e entregar algo
+                        e o mesmo possui inúmeras vantagens algumas delas são:
+                    </p>
+                    <ul>
+                        <li><strong>Personalização:</strong> é possível modificar qualquer conteúdo do site.</li>
+                        <li><strong>Compatíbilidade:</strong> site em sintonia com tamanhos diferentes de telas como smartphone, computador, tablet, tv, multimídia de carro e etc.</li>
+                        <li><strong>Endereço Digital:</strong> você pode ter uma URL como "www.suaempresa.com".</li>
+                        <li><strong>Acessibilidade:</strong> páginas acessíveis que beneficiam todas as pessoas seja com algum tipo de deficiência ou não.</li>
+                        <li><strong>Facilidade na busca:</strong> o usuário pode encontrar o seu site mais fácil e rápido quando buscar no Google.</li>
+                        <li><strong>Crescimento a longo prazo:</strong> os usuários fazem milhões de buscas no Google e em uma dessas eles podem se esbarrar com o seu site.</li>
+                        <li><strong>Coleta de dados:</strong> você pode capturar dados dos usuários como idade, gênero, localização e etc. E desenvolver estratégias para vender mais no seu negócio.</li>
+                        <li><strong>Presença 24h:</strong> em uma loja física você tem horário para fechar já em um site não.</li>
+                        <li><strong>Nível mundial:</strong> qualquer pessoa do mundo pode acessar o seu site e isso abre novos mercado para você.</li>
+                        <li><strong>Independente:</strong> os usuários não serão incomodados com os conteúdos das redes sociais apenas pelo seu.</li>
+                    </ul>
+                </div>
+                <button id="btn-blocked" class="btn-action"><span>Continue lendo</span></button>
             </div>
             <div class="img-right">
                 <img src="img/business.png" alt="">
@@ -338,12 +333,6 @@
         </div>
         <div id="services">
             <div class="box-services box-services-dark">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/file-regular.svg" alt="">
                     <h4>ONE PAGE</h4>
@@ -353,12 +342,6 @@
                 </div>
             </div>
             <div class="box-services box-services-light">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/search-dollar-solid.svg" alt="">
                     <h4>LANDING PAGE</h4>
@@ -368,12 +351,6 @@
                 </div>
             </div>
             <div class="box-services box-services-dark">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/clock-regular.svg" alt="">
                     <h4>HOTSITE</h4>
@@ -383,12 +360,6 @@
                 </div>
             </div>
             <div class="box-services box-services-light">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/copy-regular.svg" alt="">
                     <h4>MULTIPLE PAGE</h4>
@@ -398,12 +369,6 @@
                 </div>
             </div>
             <div class="box-services box-services-dark">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/chart-line-solid.svg" alt="">
                     <h4>ONLINE BUSINESS</h4>
@@ -413,12 +378,6 @@
                 </div>
             </div>
             <div class="box-services box-services-light">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/icons-solid.svg" alt="">
                     <h4>MINIMALIST</h4>
@@ -428,12 +387,6 @@
                 </div>
             </div>
             <div class="box-services box-services-dark">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/user-regular.svg" alt="">
                     <h4>FREELANCER</h4>
@@ -443,12 +396,6 @@
                 </div>
             </div>
             <div class="box-services box-services-light">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/user-regular.svg" alt="">
                     <h4>BLOG</h4>
@@ -458,12 +405,6 @@
                 </div>
             </div>
             <div class="box-services box-services-dark">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <div class="services-group">
                     <img src="img/edit-solid.svg" alt="">
                     <h4>CUSTOM</h4>
@@ -477,7 +418,7 @@
     <div class="scroll-pos"></div>
     <section id="section6">
         <div class="txt-center">
-            <h2 class="main-h2">PREÇOS</h2>
+            <h2 class="main-h2">PLANOS</h2>
             <div class="intro-bar intro-bar-c2"></div>
             <h3 class="main-h3">ESCOLHA UM PLANO PARA O SEU SITE</h3>
             <p>
@@ -486,12 +427,6 @@
         </div>
         <div id="prices">
             <div class="price">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <h4>Basic</h4>
                 <div class="price-line"></div>
                 <div class="price-total">
@@ -507,17 +442,12 @@
                     <p><img class="check" src="img/check-solid.svg">Textos resumidos</p>
                     <p><img class="check" src="img/check-solid.svg">UI e UX Design</p>
                     <p><img class="check" src="img/check-solid.svg">Integrado com redes sociais e Analytics</p>
+                    <p><img class="check" src="img/check-solid.svg">Suporte online 24/h</p>
                 </div>
-                <p class="btn-know-more">Saiba mais</p>
+                <p class="btn-know-more"><a href="servicos/planos.html">Saiba mais</a></p>
                 <button class="btn-action"><span>Contratar</span></button>
             </div>
             <div class="price">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <h4>Standard</h4>
                 <div class="price-line"></div>
                 <div class="price-total">
@@ -533,23 +463,18 @@
                     <p><img class="check" src="img/check-solid.svg">Técnicas de vendas</p>
                     <p><img class="check" src="img/check-solid.svg">Sistema de horário de funcionamento</p>
                     <p><img class="check" src="img/check-solid.svg">Sistema de chat de ajuda</p>
+                    <p><img class="check" src="img/check-solid.svg">Hospedagem e domínio grátis por 3 meses</p>
                 </div>
                 <p class="btn-know-more">Saiba mais</p>
                 <button class="btn-action"><span>Contratar</span></button>
             </div>
             <div class="price">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <h4>Premium</h4>
                 <div class="price-line"></div>
                 <div class="price-total">
                     <div class="portion">12x</div>
                     <div class="real">R$</div>
-                    <div class="price-current">127,90</div>
+                    <div class="price-current">167,90</div>
                     <div class="month">/Mês</div>
                 </div>
                 <div class="price-desc">
@@ -559,23 +484,18 @@
                     <p><img class="check" src="img/check-solid.svg">Sistema de agendamento via WhatsApp</p>
                     <p><img class="check" src="img/check-solid.svg">Cadastro de até 50 produtos</p>
                     <p><img class="check" src="img/check-solid.svg">Páginas próprias para os produtos</p>
+                    <p><img class="check" src="img/check-solid.svg">Hospedagem e domínio grátis por 6 meses</p>
                 </div>
                 <p class="btn-know-more">Saiba mais</p>
                 <button class="btn-action"><span>Contratar</span></button>
             </div>
             <div class="price">
-                <div class="snakes">
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                    <div class="snake"></div>
-                </div>
                 <h4>Ultimate</h4>
                 <div class="price-line"></div>
                 <div class="price-total">
                     <div class="portion">12x</div>
                     <div class="real">R$</div>
-                    <div class="price-current">269,90</div>
+                    <div class="price-current">289,90</div>
                     <div class="month">/Mês</div>
                 </div>
                 <div class="price-desc">
@@ -585,6 +505,7 @@
                     <p><img class="check" src="img/check-solid.svg">Sistema de busca por produtos</p>
                     <p><img class="check" src="img/check-solid.svg">Sistema de recomendação de produtos</p>
                     <p><img class="check" src="img/check-solid.svg">Cadastro ilimitados de produtos</p>
+                    <p><img class="check" src="img/check-solid.svg">Hospedagem e domínio grátis por 1 ano</p>
                 </div>
                 <p class="btn-know-more">Saiba mais</p>
                 <button class="btn-action"><span>Contratar</span></button>
@@ -875,8 +796,8 @@
             DeskWebCode 2018 - 2022 ©. Todos os direitos reservados.
         </div>
     </footer>
-    <!-- <script src="js/particles.js"></script> -->
-    <!-- <script src="js/app.js"></script> -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
