@@ -1,6 +1,5 @@
 @media screen and (max-width: 1650px) {
     #prices {
-        width: 800px;
         margin: auto;
     }
 }
@@ -64,21 +63,6 @@
 
     #main-nav ul li a {
         transition: background-color 0.3s ease-in-out;
-    }
-
-    #main-ul li ul {
-        width: 100%;
-        visibility: visible;
-        opacity: 1;
-        position: relative;
-        left: 30px;
-        top: 0;
-        display: none;
-    }
-
-    .arrow-sub-menu {
-        right: 50px;
-        top: 14px;
     }
 
     #slider {
@@ -339,10 +323,6 @@
         font-size: 1.4rem;
         margin-right: 20px;
     }
-
-    .price {
-        height: 540px;
-    }
 }
 
 @media screen and (max-height: 800px) {
@@ -373,6 +353,11 @@
 
     .txt-list {
         width: 300px;
+    }
+
+    .window-modal {
+        width: 85%;
+        margin: auto;
     }
 }
 
@@ -419,7 +404,6 @@
     .number {
         text-align: center;
         font-size: 2.5rem;
-        border: 1px solid #f0f0f0;
         border-radius: 20px;
         margin: 0 20px 5px 20px;
     }
@@ -488,6 +472,10 @@
 @media screen and (max-width: 400px) {
     .txt-larger {
         font-size: 2.5rem;
+    }
+
+    .align-btn-action {
+        width: 90%;
     }
 }
 
