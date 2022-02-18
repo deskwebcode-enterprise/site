@@ -17,14 +17,73 @@ window.onload = () => {
     let btnBlocked = document.querySelector("#btn-blocked");
     let contentBlocked = document.querySelector("#content-blocked");
 
-    let mainUlulCount = 0;
+    let btnKnowMore = document.querySelectorAll(".btn-know-more");
+    let btnCloseModal = document.querySelectorAll(".btn-close-modal");
+    let windowModal = document.querySelectorAll(".window-modal");
+    let backgroundWindowModal = document.querySelector("#background-window-modal");
+
+    let formName = document.querySelector("#form-name");
+    let formEmail = document.querySelector("#form-email");
+    let formMessage = document.querySelector("#form-message");
+    let btnMail = document.querySelector("#btn-mail");
+
+    btnMail.onclick = () => {
+        if (formName.value == "" || formEmail.value == "" || formMessage.value == "") {
+            alert("Preencha todos os campos")
+        }
+
+        else {
+            window.open(`mailto:contato@deskwebcode.com?subject=Criação%20de%20site&amp;body=${formName.value} aqui! ${formMessage.value}`)
+        }
+    }
+
+    btnKnowMore[0].onclick = () => {
+        windowModal[0].style.opacity = "1";
+        windowModal[0].style.visibility = "visible";
+
+        backgroundWindowModal.style.opacity = "1";
+        backgroundWindowModal.style.visibility = "visible";
+        
+        document.body.style.overflow = "hidden";
+    };
+
+    btnCloseModal[0].onclick = () => {
+        windowModal[0].style.opacity = "0";
+        windowModal[0].style.visibility = "hidden";
+
+        backgroundWindowModal.style.opacity = "0";
+        backgroundWindowModal.style.visibility = "hidden";
+        
+        document.body.style.overflow = "auto";
+    };
+
+    btnKnowMore[1].onclick = () => {
+        windowModal[1].style.opacity = "1";
+        windowModal[1].style.visibility = "visible";
+
+        backgroundWindowModal.style.opacity = "1";
+        backgroundWindowModal.style.visibility = "visible";
+        
+        document.body.style.overflow = "hidden";
+    };
+
+    btnCloseModal[1].onclick = () => {
+        windowModal[1].style.opacity = "0";
+        windowModal[1].style.visibility = "hidden";
+
+        backgroundWindowModal.style.opacity = "0";
+        backgroundWindowModal.style.visibility = "hidden";
+        
+        document.body.style.overflow = "auto";
+    };
 
     btnBlocked.onclick = () => {
         contentBlocked.style.display = "block";
         btnBlocked.style.display = "none";
     };
 
-    scrollMovePos(0, 0);
+    // scrollMovePos(0, 0);
+    changeMenuOnScroll();
 
     if (window.scrollY >= 50) {
         altarnate("#ffffff", "#2d2e2e", "5px solid #ffffff", "5px solid #2d2e2e");
@@ -89,30 +148,13 @@ window.onload = () => {
     });
 
     mainA[4].addEventListener("click", () => {
-        let mainUlul1 = document.querySelector("#main-ul li ul");
-        let mainUlulli = document.querySelector("#main-ul li ul li");
-
-        if (mainUlulCount == 0) {
-            mainUlul1.style.display = "block";
-
-            mainUlulCount = 1;
+        if (window.innerWidth > 1299) {
+            scrollMovePos(4, -90);
         }
 
-        else {
-            mainUlul1.style.display = "none";
-            
-            mainUlulCount = 0;
+        else if (window.innerWidth > 0) {
+            scrollMovePos(4, -70);
         }
-
-        mainUlulli.onclick = () => {
-            if (window.innerWidth > 1299) {
-                scrollMovePos(4, -90);
-            }
-    
-            else if (window.innerWidth > 0) {
-                scrollMovePos(4, -70);
-            }
-        };
     });
 
     mainA[5].addEventListener("click", () => {
@@ -204,6 +246,74 @@ window.onload = () => {
         
         else {
             altarnate("#2d2e2e", "#ffffff", "5px solid #2d2e2e", "5px solid #ffffff");
+        }
+
+        changeMenuOnScroll();
+    }
+
+    function changeMenuOnScroll() {
+        if (scrollPos[0].getBoundingClientRect().top + 80 <= 0 && scrollPos[0].getBoundingClientRect().bottom <= 0) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[0].setAttribute("id", "main-a-activated");
+        }
+
+        if (scrollPos[1].getBoundingClientRect().top + 80 <= 0 && scrollPos[1].getBoundingClientRect().bottom <= 0) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[1].setAttribute("id", "main-a-activated");
+        }
+
+        if (scrollPos[2].getBoundingClientRect().top <= 85 && scrollPos[2].getBoundingClientRect().bottom <= 85) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[2].setAttribute("id", "main-a-activated");
+        }
+
+        if (scrollPos[3].getBoundingClientRect().top <= 85 && scrollPos[3].getBoundingClientRect().bottom <= 85) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[3].setAttribute("id", "main-a-activated");
+        }
+
+        if (scrollPos[4].getBoundingClientRect().top <= 85 && scrollPos[4].getBoundingClientRect().bottom <= 85) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[4].setAttribute("id", "main-a-activated");
+        }
+
+        if (scrollPos[5].getBoundingClientRect().top <= 85 && scrollPos[5].getBoundingClientRect().bottom <= 85) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[5].setAttribute("id", "main-a-activated");
+        }
+
+        if (scrollPos[6].getBoundingClientRect().top <= 85 && scrollPos[6].getBoundingClientRect().bottom <= 85) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[6].setAttribute("id", "main-a-activated");
+        }
+
+        if (scrollPos[7].getBoundingClientRect().top <= 85 && scrollPos[7].getBoundingClientRect().bottom <= 85) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[7].setAttribute("id", "main-a-activated");
         }
     }
 
