@@ -70,10 +70,6 @@
         height: 822px;
     }
 
-    #particles-js {
-        background-position: right -100px;
-    }
-
     #section1 {
         padding-top: 220px;
         padding-bottom: 30px;
@@ -172,17 +168,17 @@
     }
 
     #box-section3 {
-        width: 100%;
+        /* width: 100%; */
         margin: 0;
     }
 
     .txt-left {
-        width: 50%;
+        /* width: 50%; */
         margin-right: 40px;
     }
 
     .img-right {
-        width: 250px;
+        /* width: 250px; */
     }
 
     #section1 {
@@ -217,6 +213,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    #slider {
+        height: 650px;
+    }
+
     #prices {
         width: 100%;
     }
@@ -224,7 +224,32 @@
     #form-center {
         width: calc(100% - 60px);
         margin: auto;
-    }    
+    }
+
+    #particles-js {
+        display: none;
+    }
+
+    .txt-separate, .txt-larger {
+        margin: auto;
+        text-align: center;
+    }
+
+    .txt-group p {
+        margin: 30px auto;
+    }
+
+    #slider .align-btn-action {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .txt-group {
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media screen and (max-width: 885px) {
@@ -466,6 +491,20 @@
 @media screen and (max-width: 430px) {
     .square-how-it-works:nth-child(1)::after {
         height: 455px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #slider .align-btn-action {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #slider .align-btn-action button {
+        margin: 10px;
+        width: 100%;
     }
 }
 
