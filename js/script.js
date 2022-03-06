@@ -7,6 +7,8 @@ window.onload = () => {
     let mainA = document.querySelectorAll(".main-a");
     let nameLogo = document.querySelector("#name-logo");
 
+    let particlesJs = document.querySelector("#particles-js");
+
     let btnLeftSlider = document.querySelector("#btn-left-slider");
     let btnRightSlider = document.querySelector("#btn-right-slider");
     let txtGroup = document.querySelectorAll(".txt-group");
@@ -14,8 +16,6 @@ window.onload = () => {
     let circlesCount = 0;
 
     let scrollPos = document.querySelectorAll(".scroll-pos");
-    let btnBlocked = document.querySelector("#btn-blocked");
-    let contentBlocked = document.querySelector("#content-blocked");
 
     let btnKnowMore = document.querySelectorAll(".btn-know-more");
     let btnCloseModal = document.querySelectorAll(".btn-close-modal");
@@ -23,12 +23,11 @@ window.onload = () => {
     let backgroundWindowModal = document.querySelector("#background-window-modal");
 
     let formName = document.querySelector("#form-name");
-    let formEmail = document.querySelector("#form-email");
     let formMessage = document.querySelector("#form-message");
     let btnMail = document.querySelector("#btn-mail");
 
     btnMail.onclick = () => {
-        if (formName.value == "" || formEmail.value == "" || formMessage.value == "") {
+        if (formName.value == "" || formMessage.value == "") {
             alert("Preencha todos os campos")
         }
 
@@ -77,12 +76,46 @@ window.onload = () => {
         document.body.style.overflow = "auto";
     };
 
-    btnBlocked.onclick = () => {
-        contentBlocked.style.display = "block";
-        btnBlocked.style.display = "none";
+    btnKnowMore[2].onclick = () => {
+        windowModal[2].style.opacity = "1";
+        windowModal[2].style.visibility = "visible";
+
+        backgroundWindowModal.style.opacity = "1";
+        backgroundWindowModal.style.visibility = "visible";
+        
+        document.body.style.overflow = "hidden";
     };
 
-    // scrollMovePos(0, 0);
+    btnCloseModal[2].onclick = () => {
+        windowModal[2].style.opacity = "0";
+        windowModal[2].style.visibility = "hidden";
+
+        backgroundWindowModal.style.opacity = "0";
+        backgroundWindowModal.style.visibility = "hidden";
+        
+        document.body.style.overflow = "auto";
+    };
+
+    btnKnowMore[3].onclick = () => {
+        windowModal[3].style.opacity = "1";
+        windowModal[3].style.visibility = "visible";
+
+        backgroundWindowModal.style.opacity = "1";
+        backgroundWindowModal.style.visibility = "visible";
+        
+        document.body.style.overflow = "hidden";
+    };
+
+    btnCloseModal[3].onclick = () => {
+        windowModal[3].style.opacity = "0";
+        windowModal[3].style.visibility = "hidden";
+
+        backgroundWindowModal.style.opacity = "0";
+        backgroundWindowModal.style.visibility = "hidden";
+        
+        document.body.style.overflow = "auto";
+    };
+
     changeMenuOnScroll();
 
     if (window.scrollY >= 50) {
@@ -229,14 +262,20 @@ window.onload = () => {
 
     circles[0].onclick = () => {
         circleSlider(0);
+
+        particlesJs.style.backgroundImage = "url(img/background-01.png)";
     }
 
     circles[1].onclick = () => {
         circleSlider(1);
+
+        particlesJs.style.backgroundImage = "url(img/background-02.png)";
     }
 
     circles[2].onclick = () => {
         circleSlider(2);
+
+        particlesJs.style.backgroundImage = "url(img/background-03.png)";
     }
 
     window.onscroll = () => {
@@ -394,6 +433,18 @@ window.onload = () => {
         txtGroup[circlesCount].classList.add("txt-group-display-on");
 
         circles[circlesCount].classList.add("circle-activated");
+
+        if (circlesCount == 0) {
+            particlesJs.style.backgroundImage = "url(img/background-01.png)";
+        }
+
+        if (circlesCount == 1) {
+            particlesJs.style.backgroundImage = "url(img/background-02.png)";
+        }
+
+        if (circlesCount == 2) {
+            particlesJs.style.backgroundImage = "url(img/background-03.png)";
+        }
     }
 
     function circleSlider(cvar) {
