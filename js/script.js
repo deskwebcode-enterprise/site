@@ -22,20 +22,6 @@ window.onload = () => {
     let windowModal = document.querySelectorAll(".window-modal");
     let backgroundWindowModal = document.querySelector("#background-window-modal");
 
-    let formName = document.querySelector("#form-name");
-    let formMessage = document.querySelector("#form-message");
-    let btnMail = document.querySelector("#btn-mail");
-
-    btnMail.onclick = () => {
-        if (formName.value == "" || formMessage.value == "") {
-            alert("Preencha todos os campos")
-        }
-
-        else {
-            window.open(`mailto:contato@deskwebcode.com?subject=Criação%20de%20site&amp;body=${formName.value} aqui! ${formMessage.value}`)
-        }
-    }
-
     btnKnowMore[0].onclick = () => {
         windowModal[0].style.opacity = "1";
         windowModal[0].style.visibility = "visible";
