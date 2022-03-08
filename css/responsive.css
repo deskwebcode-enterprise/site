@@ -11,10 +11,6 @@
 }
 
 @media screen and (max-width: 1299px) {
-    html {
-        font-size: 0.9rem;
-    }
-
     #btn-hamburger {
         display: flex;
         transform: scale(0.7);
@@ -168,17 +164,11 @@
     }
 
     #box-section3 {
-        /* width: 100%; */
         margin: 0;
     }
 
     .txt-left {
-        /* width: 50%; */
         margin-right: 40px;
-    }
-
-    .img-right {
-        /* width: 250px; */
     }
 
     #section1 {
@@ -219,11 +209,6 @@
 
     #prices {
         width: 100%;
-    }
-
-    #form-center {
-        width: calc(100% - 60px);
-        margin: auto;
     }
 
     #particles-js {
@@ -269,10 +254,6 @@
 }
 
 @media screen and (max-width: 800px) {
-    html {
-        font-size: 0.8rem;
-    }
-
     #background-occupy {
         height: calc(100% - 70px);
         top: 70px;
