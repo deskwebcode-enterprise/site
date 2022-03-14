@@ -433,7 +433,7 @@
 
 @media screen and (max-width: 783px) {
     iframe {
-        height: 950px !important;
+        height: 850px !important;
         margin-top: 204px;
     }
 }
@@ -563,7 +563,6 @@
 
 @media screen and (max-width: 584px) {
     iframe {
-        height: 1000px !important;
         margin-top: 240px !important;
     }
 }
