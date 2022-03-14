@@ -215,6 +215,8 @@ window.onload = () => {
             mainUl.style.animation = "navUlright 0.3s linear forwards";
             backgroundOccupy.style.animation = "occupyBottom 0.3s linear forwards";
             btnHamburgerCount = 1;
+            
+            console.log("clicou");
         }
 
         else {
@@ -396,12 +398,12 @@ window.onload = () => {
             }
         }
 
-        if (window.innerWidth <= 600) {        
+        if (window.innerWidth <= 1300) {        
             boxSection3.removeChild(txtLeft[0]);
             boxSection3.appendChild(txtLeft[0]);
         }
 
-        if (window.innerWidth > 600) {
+        if (window.innerWidth > 1300) {
             boxSection3.removeChild(imgRight[0]);
             boxSection3.appendChild(imgRight[0]);
         }
