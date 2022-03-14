@@ -275,7 +275,7 @@ html {
     margin: 30px 0;
     line-height: 2;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: Montserrat-Light;
     color: #333333;
 }
@@ -430,7 +430,7 @@ html {
 
 #section1 {
     padding-top: 250px;
-    padding-bottom: 62px;
+    padding-bottom: 75px;
 }
 
 #wrapper-txt {
@@ -444,7 +444,7 @@ html {
     font-family: Montserrat-Light;
     line-height: 2;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .p-column, #result, .box-result:nth-child(1), #numbers, .numbers {
@@ -534,7 +534,7 @@ html {
 }
 
 .box-result:nth-child(1) img {
-    height: 350px;
+    width: 110%;
 }
 
 .box-result:nth-child(2) {
@@ -545,7 +545,7 @@ html {
     margin: 25px 15px;
     font-family: Montserrat-Light;
     line-height: 2;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: left;
     color: #333333;
 }
@@ -570,13 +570,13 @@ html {
 .number-desc {
     font-family: Montserrat-Light;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #333333;
 }
 
 #section2 {
     text-align: center;
-    padding: 80px 20px 51px 22px;
+    padding: 80px 20px 51px 20px;
     background: #fafafa;
 }
 
@@ -586,7 +586,7 @@ html {
     font-family: Montserrat-Light;
     line-height: 2;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #333333;
 }
 
@@ -647,9 +647,13 @@ html {
     height: 25px;
 }
 
+.box-dife-txt h4 {
+    margin: 0 20px;
+}
+
 #section3 {
     text-align: left;
-    padding: 80px 20px 60px 20px;
+    padding: 65px 20px 65px 20px;
 }
 
 #section3 h3 {
@@ -661,65 +665,57 @@ html {
     display: none;
 }
 
-#section3 p, #section3 ul {
+#section3 p {
     margin: 15px;
     font-family: Montserrat-Light;
     line-height: 2;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #333333;
-}
-
-#section3 ul {
-    list-style: none;
-    line-height: 1.5;
-}
-
-#section3 ul li {
-    margin: 20px 0;
-    border-left: 3px solid #252525;
-    padding: 20px;
-    background: #fafafa;
-}
-
-#btn-blocked {
-    margin-left: 15px;
 }
 
 #box-section3 {
     width: 80%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
 .txt-left {
-    width: 45%;
+    width: 50%;
+    height: fit-content;
     margin-right: 60px;
+    margin-left: 40px;
     padding-top: 10px;
 }
 
 .img-right {
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-right img {
     width: 100%;
-    position: sticky;
-    left: 0;
-    top: 60px;
 }
 
 #section4 {
-    padding: 80px 0 32px 0;
+    padding: 80px 20px 32px 20px;
     background: #fafafa;
 }
 
 #section4 p {
+    padding: 0 25px;
     font-family: Montserrat-Light;
     line-height: 2;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #333333;
+}
+
+#section4 .txt-center p {
+    margin: 15px auto;
 }
 
 .txt-center {
@@ -743,7 +739,7 @@ html {
 .square-how-it-works:nth-child(1)::after {
     content: "";
     width: 8px;
-    height: 420px;
+    height: 400px !important;
     display: block;
     position: absolute;
     border-radius: 15px;
@@ -782,14 +778,19 @@ html {
 }
 
 #section5 {
-    padding: 80px 0 63px 0;
+    padding: 80px 20px 63px 20px;
 }
 
 #section5 p {
     font-family: Montserrat-Light;
     line-height: 2;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #333333;
+}
+
+#section5 .txt-center p {
+    margin: 15px auto !important;
+    padding: 0 25px;
 }
 
 #services {
@@ -841,17 +842,21 @@ html {
 }
 
 #section6 {
-    padding: 80px 0 72px 0;
+    padding: 80px 20px 72px 20px;
     background: #fafafa;
 }
 
 #section6 p {
-    margin: 15px;
     font-family: Montserrat-Light;
     line-height: 2;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #333333;
+}
+
+#section6 .txt-center p {
+    margin: 15px;
+    padding: 0 25px;
 }
 
 #prices {
@@ -1100,29 +1105,19 @@ html {
 #section7 p {
     font-family: Montserrat-Light;
     line-height: 2;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #333333;
+}
+
+#section7 .txt-center p {
+    margin: 15px auto !important;
+    padding: 0 25px;
 }
 
 #section8 {
     padding: 80px 0 83px 0;
     background: #202020;
     position: relative;
-}
-
-#section8::before {
-    content: "Entenderemos a sua necessidade e apresentaremos a melhor solução";
-    width: 100%;
-    height: 55px;
-    background: #202020;
-    color: #ffffff;
-    position: absolute;
-    left: 0;
-    top: 180px;
-    font-family: Montserrat-Light;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
 }
 
 #section8::after {
@@ -1137,6 +1132,21 @@ html {
 
 #section8 h2, #section8 h3 {
     color: #ffffff;
+}
+
+#section8 .txt-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#section8 .txt-center p {
+    margin: 15px auto !important;
+    padding: 0 25px;
+}
+
+iframe {
+    margin-top: 100px;
 }
 
 #section8 p {
@@ -1175,7 +1185,7 @@ html {
 
 details {
     width: 500px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background: #ffffff;
     position: relative;
 }
