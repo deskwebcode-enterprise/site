@@ -76,6 +76,7 @@ html {
     transition: background-color 0.3s ease-in-out;
     font-family: Montserrat-Light;
     background: #ffffff;
+    border-bottom: 1px solid #f3f3f3;
 }
 
 #name-logo {
@@ -368,6 +369,10 @@ html {
 
 .btn-action:hover span:after {
     width: 100%;
+}
+
+#btn-circles {
+    border-bottom: 1px solid #f3f3f3;
 }
 
 #btn-circles, #btn-circles-services {
