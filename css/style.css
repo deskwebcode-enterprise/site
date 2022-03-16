@@ -370,10 +370,6 @@ html {
     width: 100%;
 }
 
-#btn-circles {
-    border-bottom: 1px solid #e2e2e2;
-}
-
 #btn-circles, #btn-circles-services {
     height: 80px;
     display: flex;
