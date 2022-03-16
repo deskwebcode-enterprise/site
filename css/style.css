@@ -76,7 +76,7 @@ html {
     transition: background-color 0.3s ease-in-out;
     font-family: Montserrat-Light;
     background: #ffffff;
-    border-bottom: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 #name-logo {
@@ -372,7 +372,7 @@ html {
 }
 
 #btn-circles {
-    border-bottom: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 #btn-circles, #btn-circles-services {
@@ -474,6 +474,7 @@ html {
     margin-top: 10px;
     border-radius: 3px;
     position: relative;
+    left: -3px;
     overflow: hidden;
 }
 
@@ -814,6 +815,11 @@ html {
     background: #2d2e2e;
     color: #dddddd;
     box-shadow: -3px 3px 10px #646464;
+    transition: background-color 0.2s linear;
+}
+
+.box-services:hover {
+    background: #3a3a3a;
 }
 
 .services-group {
@@ -890,8 +896,8 @@ html {
 
 .price-line {
     width: 70%;
-    height: 3px;
-    background: #404040;
+    height: 1px;
+    background: #2d2e2e;
     margin: auto;
 }
 
@@ -1200,7 +1206,17 @@ summary {
     height: 80px;
     display: flex;
     align-items: center;
-    border: 1px solid #f2f2f2;
+    border: 1px solid #ebebeb;
+    border-bottom: none;
+    border-right: none;
+}
+
+.center-details details:last-child {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.center-details:nth-child(2) {
+    border-right: 1px solid #ebebeb;
 }
 
 .summary-title {
