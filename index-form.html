@@ -1,0 +1,1378 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tenha um site profissional projetado inteiramente para o seu negócio, escolha um dos nossos planos e venha estar online.">
+    <link rel="shortcut icon" href="img/main-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>DeskWebCode</title>
+    <style>
+        #section8 .txt-center {
+            position: relative;
+            left: 0;
+            transform: none;
+        }
+
+        form {
+            width: 700px;
+            height: 400px;
+            background: #ffffff;
+            margin: 40px auto;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        form p {
+            color: #202020 !important;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        #form-content {
+            width: 170px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px auto 0 auto;
+        }
+
+        #form-message {
+            width: fit-content;
+            border: 40px solid #e0f1fa;
+            border-radius: 50%;
+            padding: 20px;
+            background: #42b5f8;
+        }
+
+        #form-text {
+            font-size: 1.4rem !important;
+            text-transform: uppercase;
+        }
+
+        #form-desc {
+            color: #5a5a5a !important;
+        }
+
+        #form-desc strong {
+            color: #000000 !important;
+        }
+
+        #form-message img {
+            width: 70px;
+        }
+
+        @media screen and (max-width: 1299px) {
+            form {
+                height: 445px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            form {
+                width: calc(100% - 40px);
+                margin: 40px 20px;
+            }
+        }
+
+        @media screen and (max-width: 706px) {
+            form {
+                height: 470px;
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            #form-text {
+                font-size: 20px !important;
+            }
+        }
+
+        @media screen and (max-width: 478px) {
+            form {
+                height: 495px;
+            }
+        }
+
+        @media screen and (max-width: 402px) {
+            form {
+                height: 535px;
+            }
+        }
+
+        @media screen and (max-width: 340px) {
+            form {
+                height: 555px;
+            }
+
+            #form-content {
+                /* width: 200px; */
+                transform: scale(0.8);
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-pos"></div>
+    <header id="main-header">
+        <div id="background-occupy"></div>
+        <nav id="main-nav">
+            <div id="align-logo">
+                <img src="img/main-logo.png" alt="Logo principal">
+                <span id="name-logo">DeskWebCode</span>
+            </div>
+            <div id="btn-hamburger">
+                <input type="checkbox"/>
+                <div class="as"></div>
+                <div class="as"></div>
+                <div class="as"></div>
+            </div>
+            <ul id="main-ul">
+                <li><a id="main-a-activated" class="main-a">Home</a></li>
+                <li><a class="main-a">Sobre nós</a></li>
+                <li><a class="main-a">Vantagens</a></li>
+                <li><a class="main-a">Como funciona</a></li>
+                <li><a class="main-a">Serviços</a></li>
+                <li><a class="main-a">Preços</a></li>
+                <li><a class="main-a">Dúvidas</a></li>
+                <li><a class="main-a">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="slider">
+            <button type="button" id="btn-left-slider">&lsaquo;</button>
+            <div id="box-slider">
+                <div class="square-slider">
+                    <div id="particles-js"></div>
+                    <div class="txt-group txt-group-display-on">
+                        <span class="txt-separate">FORTALEÇA O SEU NEGÓCIO</span>
+                        <span class="txt-larger txt-separate">O SEU SITE PROFISSIONAL</span>
+                        <p>
+                            Um site é a principal forma de estabelecer um bom relacionamento e atrair cada vez mais consumidores para o
+                            fechamento de vendas, pois dentro dele vai conter todo o DNA do seu negócio. O que iremos fazer é simplesmente
+                            te ajudar neste processo.
+                        </p>
+                        <div class="align-btn-action">
+                            <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                            <button class="btn-action"><span>Escolher um plano</span></button>
+                        </div>
+                    </div>
+                    <div class="txt-group txt-group-display-off">
+                        <span class="txt-separate">DESIGN ORIGINAL</span>
+                        <span class="txt-larger">FEITO PARA O SEU NEGÓCIO</span>
+                        <p>
+                            Queremos que o seu negócio se diferencie dos demais, por isso, o visual do seu site será baseado
+                            unicamente nas características do seu negócio o que acaba transparecendo como algo exclusivo e diferente para quem o vê-lo.
+                        </p>
+                        <div class="align-btn-action">
+                            <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                            <button class="btn-action"><span>Escolher um plano</span></button>
+                        </div>
+                    </div>
+                    <div class="txt-group txt-group-display-off">
+                        <span class="txt-separate">ENGAJAMENTO E CONVERSÃO</span>
+                        <span class="txt-larger txt-separate">CUIDAMOS DE TUDO</span>
+                        <p>
+                            Encarregamos de desenvolver praticamente todo o material do seu site com o objetivo de engajar os
+                            visitantes e convertê-los em futuros clientes com as principais técnicas de marketing e design que vão ser implementadas no seu conteúdo.
+                        </p>
+                        <div class="align-btn-action">
+                            <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                            <button class="btn-action"><span>Escolher um plano</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="btn-right-slider">&rsaquo;</button>
+            <div id="btn-circles">
+                <div class="circles circle-activated"></div>
+                <div class="circles circle-disabled"></div>
+                <div class="circles circle-disabled"></div>
+            </div>
+        </div>
+    </header>
+    <div class="scroll-pos"></div>
+    <section id="section1">
+        <div id="wrapper-txt">
+            <h2 class="main-h2">SOBRE NÓS</h2>
+                <div class="intro-bar"></div>
+                <h3 class="main-h3">QUEM SOMOS E O QUE FAZEMOS?</h3>
+                <div class="main-p p-column">
+                    <p>
+                        Nós da <strong>DeskWebCode</strong> somos uma equipe especializada desde 2018 em projetos, desenvolvimento e manutenções de sites online voltados
+                        especialmente para negócios que querem gerar mais profissionalismo e credibilidade na transmisão de suas informações, ideias, valores
+                        e diferencias dentro da internet.
+                    </p>
+                    <p>
+                        Nascemos justamente com o propósito claro de agregar mais valor na comunicação direta e indireta entre pequenos, médios, grandes negócios e seus
+                        respectivos públicos, assim não só criando mais facilidades para ambos os lados, mas também gerando novas oportunidades
+                        de negócios a curto ou longo prazo.
+                    </p>
+                </div>
+        </div>
+        <div id="result">
+                <div class="box-result">
+                    <img src="img/devices.png" alt="Dispositivos">
+                </div>
+                <div class="box-result">
+                    <h3 class="main-h3">FOCAMOS SEMPRE EM RESULTADOS</h3>
+                    <p class="main-p">
+                        Em pouco tempo conseguimos mudar a maneira dos negócios físicos negociarem pela internet. Nós não abrimos
+                        apenas mais novos canais de comunicação, mas também novos canais de vendas.
+                    </p>
+                    <div id="numbers">
+                        <div class="numbers">
+                            <span class="number">2.500+</span>
+                            <span class="number-desc">Sites desenvolvidos</span>
+                        </div>
+                        <div class="numbers">
+                            <span class="number">73.000+</span>
+                            <span class="number-desc">Manutenções realizadas</span>
+                        </div>
+                        <div class="numbers">
+                            <span class="number">2.500+</span>
+                            <span class="number-desc">Clientes satisfeitos</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <div class="scroll-pos"></div>
+    <section id="section2">
+        <div class="txt-center">
+            <h2 class="main-h2">VANTAGENS</h2>
+            <div class="intro-bar intro-bar-c2"></div>
+            <h3 class="main-h3">NOSSOS DIFERENCIAIS</h3>
+            <p>
+                <em>"Nós não fazemos apenas sites, nós impulsionamos negócios para a frente"</em>
+            </p>
+        </div>
+        <div id="dife">
+            <div class="box-dife">
+                <div class="box-dife-img">
+                    <img src="img/person-lines-fill.svg" alt="Link">
+                </div>
+                <div class="box-dife-txt">
+                    <h4>PLANEJADO</h4>
+                    <p>
+                        Iniciamos o desenvolvimento final do site apenas quando for aprovado pelo proprietário do site o projeto proposto.
+                    </p>
+                </div>
+            </div>
+            <div class="box-dife">
+                <div class="box-dife-img">
+                    <img src="img/tachometer.svg" alt="Tacômetro">
+                </div>
+                <div class="box-dife-txt">
+                    <h4>PERFORMANCE</h4>
+                    <p>
+                        Entregamos sites que possuem mais rapidez e eficiência no carregamento de todos os arquivos e por toda a navegação.
+                    </p>
+                </div>
+            </div>
+            <div class="box-dife">
+                <div class="box-dife-img">
+                    <img src="img/grid.svg" alt="Link">
+                </div>
+                <div class="box-dife-txt">
+                    <h4>MODERNO</h4>
+                    <p>
+                        Criamos sites com aspectos visuais totalmente modernos para que o mesmo possa se destacar dos demais sites dentro da internet.
+                    </p>
+                </div>
+            </div>
+            <div class="box-dife">
+                <div class="box-dife-img">
+                    <img src="img/briefcase.svg" alt="Link">
+                </div>
+                <div class="box-dife-txt">
+                    <h4>ORIGINAL</h4>
+                    <p>
+                        Desenvolvemos sites se beseando diretamente nas características do negócio para que não haja nenhum outro site igual.
+                    </p>
+                </div>
+            </div>
+            <div class="box-dife">
+                <div class="box-dife-img">
+                    <img src="img/shield-fill-check.svg" alt="Link">
+                </div>
+                <div class="box-dife-txt">
+                    <h4>SEGURANÇA E GARANTIA</h4>
+                    <p>
+                        Projetamos sites para a maior segurança dentro da internet contra ataques cibernéticos e estendemos a garantia dos sites por até 2 anos.
+                    </p>
+                </div>
+            </div>
+            <div class="box-dife">
+                <div class="box-dife-img">
+                    <img src="img/phone.svg" alt="Link">
+                </div>
+                <div class="box-dife-txt">
+                    <h4>SUPORTE ONLINE</h4>
+                    <p>
+                        Qualquer problema ou dúvida pode contar com a nossa equipe de suporte gratuito que está disponível online e 24/h por semana.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div id="box-section3">
+            <div class="txt-left">
+                <h3 class="main-h3">PORQUE O SEU NEGÓCIO PRECISA DE UM SITE?</h3>
+                <p>
+                    Produtos ou serviços? Independentemente do que você oferece a grande parte das pessoas que compravam em
+                    estabelecimentos físicos, estão se acostumando cada vez mais a comprar e buscar informações sobre os
+                    negócios no ambiente digital, por conta, da facilidade e praticidade que a internet possui.
+                </p>
+                <p>
+                    E justamente o site vai ter o objetivo de converter essas pessoas em clientes já que se as informações a
+                    respeito do seu negócio não estiverem disponibilizadas online, simplesmente o seu negócio vai perder mercado e
+                    também um site não precisa necessariamente vender, mas pode comunicar, divulgar e entregar algo sem a interferência
+                    de outros conteúdos das redes sociais. Tornando um verdadeiro canal profissional para o seu negócio.
+                </p>
+            </div>
+            <div class="img-right">
+                <img src="img/background-04.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="scroll-pos"></div>
+    <section id="section4">
+        <div class="txt-center">
+            <h2 class="main-h2">COMO FUNCIONA</h2>
+            <div class="intro-bar intro-bar-c2"></div>
+            <h3 class="main-h3">VEJA COMO É SIMPLES TER UM SITE</h3>
+            <p>
+                Apenas em <strong>4 passos</strong> e você já vai ter um site para chamar de seu
+            </p>
+        </div>
+        <div id="how-it-works">
+            <div class="square-how-it-works">
+                <div class="square-correct">
+                    <span class="square-pos">1</span>
+                </div>
+                <div class="txt-list">
+                    <p>
+                        Um dos nossos profissionais da nossa equipe entrará em contato com você e guiará em todo o processo do <strong>início</strong> ao <strong>fim</strong>
+                        no desenvolvimento, dúvidas e negociações do seu site.
+                    </p>
+                </div>
+            </div>
+            <div class="square-how-it-works">
+                <div class="square-correct sq2">
+                    <span class="square-pos">2</span>
+                </div>
+                <div class="txt-list">
+                    <p>
+                        Vamos enviar <strong>2 briefings</strong> para você poder preencher, assim vamos entender melhor e mais a fundo o seu negócio e a sua necessidade
+                        para que nós podermos planejar um site perfeito para atendê-lo.
+                    </p>
+                </div>
+            </div>
+            <div class="square-how-it-works">
+                <div class="square-correct sq3">
+                    <span class="square-pos">3</span>
+                </div>
+                <div class="txt-list">
+                    <p>
+                        Com base nas informações enviadas nos briefings, nós vamos montar o <strong>rascunho do seu site</strong> e enviar para você, neste mesmo
+                        processo você pode alterar algo e ter uma perspectiva de como vai ser o seu site.
+                    </p>
+                </div>
+            </div>
+            <div class="square-how-it-works">
+                <div class="square-correct sq4">
+                    <span class="square-pos">4</span>
+                </div>
+                <div class="txt-list">
+                    <p>
+                        Depois de você ter <strong>aprovado</strong> o rascunho do seu site é só contratar um dos nossos planos para nós iniciarmos o <strong>desenvolvimento final</strong> do seu
+                        site.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-pos"></div>
+    <section id="section5">
+        <div class="txt-center">
+            <h2 class="main-h2">SERVIÇOS</h2>
+            <div class="intro-bar intro-bar-c3"></div>
+            <h3 class="main-h3">TIPOS DE SITES QUE DESENVOLVEMOS</h3>
+            <p>
+                Conheça o melhor tipo de site que mais se encaixa ao seu negócio
+            </p>
+        </div>
+        <div id="services">
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/file-regular.svg" alt="">
+                    <h4>ONE PAGE</h4>
+                    <p>
+                        Todas as informações do seu negócio direcionadas e organizadas para estar em uma única página.
+                    </p>
+                </div>
+            </div>
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/search-dollar-solid.svg" alt="">
+                    <h4>LANDING PAGE</h4>
+                    <p>
+                        Página para conversões como mídias sociais, campanhas, marketing e geração de leads.
+                    </p>
+                </div>
+            </div>
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/clock-regular.svg" alt="">
+                    <h4>HOTSITE</h4>
+                    <p>
+                        Página para promoções, divulgações e lançamentos que possuem período determinado.
+                    </p>
+                </div>
+            </div>
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/copy-regular.svg" alt="">
+                    <h4>MULTIPLE PAGE</h4>
+                    <p>
+                        Todas as informações extensas sobre o seu negócio serão projetadas em várias páginas.
+                    </p>
+                </div>
+            </div>
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/chart-line-solid.svg" alt="">
+                    <h4>LOJA ONLINE</h4>
+                    <p>
+                        O seu negócio online com sistemas auxiliares voltados para vendas dentro do próprio site.
+                    </p>
+                </div>
+            </div>
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/icons-solid.svg" alt="">
+                    <h4>MINIMALIST</h4>
+                    <p>
+                        Página com muita criativadade e animações para compor no site um design dinâmico.
+                    </p>
+                </div>
+            </div>
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/user-regular.svg" alt="">
+                    <h4>FREELANCER</h4>
+                    <p>
+                        Página exclusiva projetada para você e seus serviços prestados independentes no mercado.
+                    </p>
+                </div>
+            </div>
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/rss-solid.svg" alt="">
+                    <h4>BLOG</h4>
+                    <p>
+                        Páginas para conteúdos atualizados com frequência como artigo, postagem e publicação.
+                    </p>
+                </div>
+            </div>
+            <div class="box-services">
+                <div class="services-group">
+                    <img src="img/edit-solid.svg" alt="">
+                    <h4>CUSTOM</h4>
+                    <p>
+                        Personalizamos o seu site para o seu negócio de acordo com a maneira que você desejar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-pos"></div>
+    <section id="section6">
+        <div class="txt-center">
+            <h2 class="main-h2">PREÇOS</h2>
+            <div class="intro-bar intro-bar-c2"></div>
+            <h3 class="main-h3">ESCOLHA UM PLANO PARA O SEU SITE</h3>
+            <p>
+                Temos tudo o que o seu site e negócio precisam para crescer online.
+            </p>
+        </div>
+        <div id="prices">
+            <div class="price">
+                <h4>Basic</h4>
+                <div class="price-line"></div>
+                <div class="price-total">
+                    <div class="portion">12x</div>
+                    <div class="real">R$</div>
+                    <div class="price-current">47<span class="price-sub">,49</span></div>
+                    <div class="month">/Mês</div>
+                </div>
+                <div class="price-desc">
+                    <p><img class="check" src="img/check-solid.svg">1 página</p>
+                    <p><img class="check" src="img/check-solid.svg">Página semântica e responsiva</p>
+                    <p><img class="check" src="img/check-solid.svg">Cabeçalho, Seções, Modais e Rodapé</p>
+                    <p><img class="check" src="img/check-solid.svg">1 formulário para contato</p>
+                    <p><img class="check" src="img/check-solid.svg">Imagens ilustrativas, Ícones e Fontes</p>
+                    <p><img class="check" src="img/check-solid.svg">Slider, Cards, Accordions e Botões</p>
+                    <p><img class="check" src="img/check-solid.svg">Títulos e Descrições resumidas</p>
+                    <p><img class="check" src="img/check-solid.svg">Anexado com Redes sociais</p>
+                    <p><img class="check" src="img/check-solid.svg">Google Analytics e Maps integrados</p>
+                    <p><img class="check" src="img/check-solid.svg">Adequado para as leis da LGPD</p>
+                    <p><img class="check" src="img/check-solid.svg">Hospedagem e Certificado SSL grátis</p>
+                    <p><img class="check" src="img/check-solid.svg">Domínio grátis por 1 ano</p>
+                </div>
+                <div class="content-know-more">
+                    <button class="btn-know-more" type="button">Saiba mais</button>
+                </div>
+                <div class="align-btn-action">
+                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                    <button class="btn-action"><span>Contratar</span></button>
+                </div>
+            </div>
+            <div class="price">
+                <h4>Standard</h4>
+                <div class="price-line"></div>
+                <div class="price-total">
+                    <div class="portion">12x</div>
+                    <div class="real">R$</div>
+                    <div class="price-current">79<span class="price-sub">,90</span></div>
+                    <div class="month">/Mês</div>
+                </div>
+                <div class="price-desc">
+                    <p><img class="check" src="img/check-solid.svg">Plano <strong>Basic</strong> incluso</p>
+                    <p><img class="check" src="img/check-solid.svg">6 páginas</p>
+                    <p><img class="check" src="img/check-solid.svg">Página com acessibilidade</p>
+                    <p><img class="check" src="img/check-solid.svg">Página de erro 404 personalizada</p>
+                    <p><img class="check" src="img/check-solid.svg">Página de load</p>
+                    <p><img class="check" src="img/check-solid.svg">UI e UX Design</p>
+                    <p><img class="check" src="img/check-solid.svg">Galeria de imagens</p>
+                    <p><img class="check" src="img/check-solid.svg">Transições e Animações 2D</p>
+                    <p><img class="check" src="img/check-solid.svg">Técnicas de vendas e Copywriting</p>
+                    <p><img class="check" src="img/check-solid.svg">Técnicas de otimização de SEO</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de ligação por telefone</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de horário de funcionamento</p>
+                </div>
+                <div class="content-know-more">
+                    <button class="btn-know-more" type="button">Saiba mais</button>
+                </div>
+                <div class="align-btn-action">
+                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                    <button class="btn-action"><span>Contratar</span></button>
+                </div>
+            </div>
+            <div class="price">
+                <h4>Premium</h4>
+                <div class="price-line"></div>
+                <div class="price-total">
+                    <div class="portion">12x</div>
+                    <div class="real">R$</div>
+                    <div class="price-current">169<span class="price-sub">,29</span></div>
+                    <div class="month">/Mês</div>
+                </div>
+                <div class="price-desc">
+                    <p><img class="check" src="img/check-solid.svg">Plano <strong>Basic</strong> e <strong>Standard</strong> inclusos</p>
+                    <p><img class="check" src="img/check-solid.svg">Páginas ilimitadas</p>
+                    <p><img class="check" src="img/check-solid.svg">Cadastro de até 160 produtos</p>
+                    <p><img class="check" src="img/check-solid.svg">Páginas próprias para os produtos</p>
+                    <p><img class="check" src="img/check-solid.svg">Submenu, Paginação e Widgets</p>
+                    <p><img class="check" src="img/check-solid.svg">Cross-Browser</p>
+                    <p><img class="check" src="img/check-solid.svg">Configurado no Google Workspace</p>
+                    <p><img class="check" src="img/check-solid.svg">Links personalizados</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de pedido (WhatsApp)</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de agenda (WhatsApp)</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de busca</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de chat ao vivo</p>
+                </div>
+                <div class="content-know-more">
+                    <button class="btn-know-more" type="button">Saiba mais</button>
+                </div>
+                <div class="align-btn-action">
+                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                    <button class="btn-action"><span>Contratar</span></button>
+                </div>
+            </div>
+            <div class="price">
+                <h4>Ultimate</h4>
+                <div class="price-line"></div>
+                <div class="price-total">
+                    <div class="portion">12x</div>
+                    <div class="real">R$</div>
+                    <div class="price-current">287<span class="price-sub">,89</span></div>
+                    <div class="month">/Mês</div>
+                </div>
+                <div class="price-desc">
+                    <p><img class="check" src="img/check-solid.svg"><strong>Todos</strong> os planos inclusos</p>
+                    <p><img class="check" src="img/check-solid.svg">Página de destaque e promoções</p>
+                    <p><img class="check" src="img/check-solid.svg">Painel de controle + Configurações</p>
+                    <p><img class="check" src="img/check-solid.svg">Cadastro ilimitados de produtos</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de gateway de pagamento</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de cálculo de frete</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de recomendação</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de comentários</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de carrinho</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de rastreamento</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de login</p>
+                    <p><img class="check" src="img/check-solid.svg">Sistema de filtragem</p>
+                </div>
+                <div class="content-know-more">
+                    <button class="btn-know-more" type="button">Saiba mais</button>
+                </div>
+                <div class="align-btn-action">
+                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                    <button class="btn-action"><span>Contratar</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="window-modal">
+        <div class="window-modal-header">
+            Plano Basic
+            <button type="button" class="btn-close-modal"></button>
+        </div>
+        <div class="window-modal-content">
+            <p class="small-txt"><strong>Até 1 página</strong></p>
+            <p>
+                Todo o conteúdo do seu negócio será adaptado para caber em uma única página, assim as informações
+                ficam mais fáceis de serem encontradas e a interação entre os usuários com o seu site acaba sendo mais simples e
+                compreensível.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Página semântica</strong></p>
+            <p>
+                O seu site já vai vir com o uso adequado do melhor código para a construção do seu site o que permite futuras manutenções
+                mais rápidas e eficazes. Também iremos usar as melhores palavras-chave baseadas nas técnicas de SEO (Search Engine Optimization) que vão permitir uma posição melhor nos
+                resultados do Google e nos demais mecânismos de pesquisa fazendo com que o seu site cresça naturalmente dentro da internet.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Página responsiva</strong></p>
+            <p>
+                Vamos tornar o seu site compatível com diferentes tipos de telas fazendo com que qualquer pessoa tenha acesso
+                ao seu site independentemente de qual dispositivo ela esteja utilizando como, por exemplo, smartphone, tablet, computador, tv, multimídia de carro
+                e etc.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Cabeçalho, Seções, Rodapé e Formulário</strong></p>
+            <p>
+                Criaremos uma estrutura de conteúdo lógico dentro do seu site para que os usuários possam entender com exatidão o que o seu negócio quer
+                transmitir. Vamos iniciar com o cabeçalho como introdução sobre o seu negócio, após isso, vamos criar seções com
+                mais detalhes sobre o seu negócio e por fim, iremos criar o rodapé com informações específicas sobre o seu negócio.
+                Já o formulário é para os usuários poderem entrar em contato com você (negócio) por e-mail.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Imagens ilustrativas, ícones e Fontes</strong></p>
+            <p>
+                Vamos se responsabilizar pelas imagens para a representação visual do conteúdo sobre o seu negócio, ícones para uma identificação melhor da interface do seu site e
+                fontes que se assemelham ao que o seu negócio oferece ao mercado, assim a experiência dos usuários   com o seu site será muito mais agradável.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Slider, Cards, Botões, Accordions e Modais</strong></p>
+            <p>
+                O seu site terá um slider que é justamente um carrosel de imagens ou textos com conteúdos rápidos sobre o seu negócio, cards para
+                a representação de algo ou chamadas para ação (Call-to-Action), botões clicáveis que direcionam os usuários para algum lugar,
+                accordions para perguntas/respostas dos usuários e modais para conteúdos informativos e organizados. Dessa maneira os usuários
+                vão se sentir muito mais confortáveis em navegar pelo seu site que possui o conteúdo bem estruturado.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Títulos e Descrições resumidas</strong></p>
+            <p>
+                Para você não perder tanto tempo desenvolvendo textos para o seu site, iremos criar títulos e descrições resumidas de até 218 caracteres por parágrafo.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Anexado com Redes sociais, Analytics e Maps</strong></p>
+            <p>
+                Vamos integrar o seu site com as suas redes sociais para que os usuários possam ver os seus vídeos, imagens, posts, curtir e compartilhar
+                no seu site, sem a necessidade de entrar direto na sua própria rede social. Vamos também anexar o seu site ao Analytics para que você capture dados do seu site e usuários
+                para visualizar métricas importantes e criar estratégias certeiras para o seu negócio. Também vamos conectar o seu site ao Maps para que os usuários consigam visualizar a localidade
+                do seu negócio dentro do seu próprio site, assim os usuários terão uma navegação bem intuitiva com os mapas do Google.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Hospedagem grátis</strong></p>
+            <p>
+                Você não vai precisar pagar pela hospedagem do seu site que é justamente um servidor que vai servir como local seguro para manter
+                os seus arquivos guardados, pois vamos configurar o seu site em servidores Open Source de forma gratuita.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Certificado SSL grátis</strong></p>
+            <p>
+                Você também não vai precisar pagar pelo protocolo SSL (Secure Sockets Layer) que é um
+                certificado digital que autentica a identidade do seu site e possibilita uma conexão criptografada entre o navegador e servidor tornando
+                o seu site seguro.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Domínio grátis por 1 ano</strong></p>
+            <p>
+                O seu site vai ter um endereço digital personalizado relacionado ao seu próprio negócio como, por exemplo, "www.minhaempresa.com", assim
+                vai transmitir mais profissionalismo quando alguém acessar o seu site ou quando for compartilhá-lo.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Suporte online 24/h</strong></p>
+            <p>
+                Você vai ter prioridade em ser atendido pela nossa equipe em qualquer problema e dúvida a respeito do seu site ou da nossa empresa, assim você pode contar
+                com a nossa ajuda em qualquer dia ou horário que precisar.
+            </p>
+            <div class="resume">
+                <p><strong>Plano:</strong> Basic</p>
+                <p><strong>Garantia:</strong> 1 ano</p>
+                <p><strong>Prazo de entrega:</strong> entre 4 dias há 1 semana</p>
+                <p><strong>Valor à vista:</strong> R$569,88</p>
+                <p><strong>Valor até 12x (sem juros):</strong> R$47,49</p>
+                <div class="align-modal-btn">
+                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                    <button class="btn-action"><span>Contratar</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="window-modal">
+        <div class="window-modal-header">
+            Plano Standard
+            <button type="button" class="btn-close-modal"></button>
+        </div>
+        <div class="window-modal-content">
+            <p class="small-txt"><strong>Plano Basic incluso</strong></p>
+            <p>
+                Todos os recursos acrescentados no plano Basic virá junto com este plano (Standard).
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Até 6 páginas</strong></p>
+            <p>
+                Criaremos até 6 páginas individuais para dividir o conteúdo do seu site, assim aumentará as chances dos usuários serem convertidos
+                em clientes com conteúdos longos e detalhistas.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Página com acessibilidade</strong></p>
+            <p>
+                Vamos tornar o seu site acessível para diferentes tipos de pessoas com deficiência ou não, assim independentemente de quem
+                acessá-lo vai conseguir compreender, navegar e interagir com o seu site.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Página de erro 404 personalizada</strong></p>
+            <p>
+                Iremos construir uma página personalizada para que quando a URL do seu site não estiver disponível, não existir ou não for
+                encontrada ela seja retornada para os usuários específicando links alternativos e corretos que levam até o seu site.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Página de load</strong></p>
+            <p>
+                Iremos construir uma página para que quando os usuários acessarem o seu site apareça uma animação
+                de carregamento enquanto os arquivos do seu site terminam de ser renderizados.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Galeria de imagens</strong></p>
+            <p>
+                O seu site vai ter uma página para demonstrar imagens originais dos seus serviços, dessa maneira os usuários vão
+                ter uma experiência melhor de como é o seu trabalho antes mesmo  de contratar os seus serviços ou comprar os seus produtos.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Transições e Animações 2D</strong></p>
+            <p>
+                Para que os usuários tenham uma navegação espontânea com o seu site, vamos aplicar transições e animações 2D em determinados
+                elementos pelo seu site como, botões, textos, imagens, layout e etc.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>UI e UX Design</strong></p>
+            <p>
+                Vamos basear o seu site nas técnicas de UI (User Interface) para criar interfaces mais fáceis e amigáveis para os usuários. Também
+                vamos usar técnicas de UX (User Experience) para que os usuários tenham uma satisfação melhor com o seu produto ou serviço nas interações
+                com o seu site.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Técnicas de vendas</strong></p>
+            <p>
+                O seu site vai vir com técnicas de vendas importantes aplicadas nas cores, layout, preço e botões com o objetivo de engajar os usuários
+                e convertê-los em clientes.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Técnicas de Copywriting</strong></p>
+            <p>
+                Vamos focar no desenvolvimento de textos persuasivos para convercer os usuários na tomada de uma ação específica com o objetivo de gerar
+                conversões e vendas.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de horário de funcionamento</strong></p>
+            <p>
+                O seu site vai ter um sistema de horário, no qual vai funcionar especificando para os usuários se o seu negócio está
+                aberto ou fechado e até que horas vai continuar atendendo.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de chat de ajuda</strong></p>
+            <p>
+                Vamos implementar no seu site um sistema de chat online para ajudar na solução das dúvidas dos usuários, sem que eles entrem em contato direto
+                com você (negócio).
+            </p>
+            <div class="resume">
+                <p><strong>Plano:</strong> Standard</p>
+                <p><strong>Garantia:</strong> 1 ano</p>
+                <p><strong>Prazo de entrega:</strong> entre 2 há 3 semanas</p>
+                <p><strong>Valor à vista:</strong> R$958,80</p>
+                <p><strong>Valor até 12x sem juros:</strong> R$79,90</p>
+                <div class="align-modal-btn">
+                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                    <button class="btn-action"><span>Contratar</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="window-modal">
+        <div class="window-modal-header">
+            Plano Premium
+            <button type="button" class="btn-close-modal"></button>
+        </div>
+        <div class="window-modal-content">
+            <p class="small-txt"><strong>Plano Basic e Standard inclusos</strong></p>
+            <p>
+                Todos os recursos acrescentados nos planos Basic e Standard virá junto com este plano (Premium).
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Páginas ilimitadas</strong></p>
+            <p>
+                O seu site vai ter quantas páginas forem necessárias para o conteúdo do seu negócio, dessa maneira as chances
+                de gerar mais tráfego e converter aumenta ainda mais já que vão existir mais termos para serem indexado pelo Google e mais
+                conteúdos para converter os usuários.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Páginas próprias (produtos/serviços)</strong></p>
+            <p>
+                Os seus produtos ou serviços vão possuir páginas individuais para não ter interferência de conteúdo e conseguir
+                engajar ainda mais os usuários com conteúdos focados apenas em único produto ou serviço.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Cadastro de até 160 (produtos/serviços)</strong></p>
+            <p>
+                Vamos cadastrar até 160 produtos ou serviços para cada página individual, assim você pode ter o que mais vende
+                no seu negócio anunciado no seu site.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Submenu, Paginação e Widgets</strong></p>
+            <p>
+                Iremos criar submenus para o menu do seu site, assim os usuários vão poder navegar com mais facilidade.
+                Criaremos paginações para que os usuários visualizem outros conteúdos a mais do seu site. E também vamos
+                criar Widgets para simplificar o acesso ao seu site por parte dos usuários.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Cross-Browser</strong></p>
+            <p>
+                Existem muitos usuários de internet que não atualizam os seus navegadores e para resolver isso, vamos tornar o seu site
+                compatível com diferentes versões de navegadores desatualizados e atualizados.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Configurado no Google Meu Negócio</strong></p>
+            <p>
+                Vamos configurar o seu negócio e site no Google Meu Negócio para que ambos sejam encontrados quando os usuários
+                pesquisarem no Google ou Google Maps, no qual vão aparecer informações importantes como localização, horário
+                de funcionamento, produtos/serviços, fotos e etc.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Configurado no Google Workspace</strong></p>
+            <p>
+                Iremos configurar o seu site no Google Workspace para ter um e-mail personalizado como "contato@minhaempresa.com"
+                e também ter acesso a outras ferramentas de colaboraçõa como Agenda, Meet, Chat, Drive, Documentos, Planilhas, Formulários e muito mais.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Links de compartilhamento personalizado</strong></p>
+            <p>
+                Vamos usar metadados específicos no código fonte do seu site para facilitar a transmissão dos dados do conteúdo do seu site para
+                as redes sociais, assim será indicado características do conteúdo no momento em que o link do seu site for
+                compartilhado, assim as informações estarão claras e objetivas.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de pedido via WhatsApp</strong></p>
+            <p>
+                O seu site terá um sistema integrado para que os usuários possam fazer solicitações de produtos ou serviços
+                no seu próprio site e enviar direto para o WhatsApp para que você possa processar essas vendas ou contratações.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de agendamento via WhatsApp</strong></p>
+            <p>
+                O seu site terá um sistema integrado para que os usuários possam fazer agendamentos de horário no seu próprio
+                site e enviar direto para o WhatsApp para que você possa confirmar o horário.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de busca</strong></p>
+            <p>
+                Vamos implementar no seu site uma barra de pesquisa para que os usuários encontrem com mais facilidade e precisão o que eles
+                estão procurando dentro do seu site.
+            </p>
+            <div class="resume">
+                <p><strong>Plano:</strong> Premium</p>
+                <p><strong>Garantia:</strong> 1 ano</p>
+                <p><strong>Prazo de entrega:</strong> entre 3 há 4 semanas</p>
+                <p><strong>Valor à vista:</strong> R$2.031,48</p>
+                <p><strong>Valor até 12x sem juros:</strong> R$169,29</p>
+                <div class="align-modal-btn">
+                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                    <button class="btn-action"><span>Contratar</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="window-modal">
+        <div class="window-modal-header">
+            Plano Ultimate
+            <button type="button" class="btn-close-modal"></button>
+        </div>
+        <div class="window-modal-content">
+            <p class="small-txt"><strong>Plano Basic, Standard e Premium inclusos</strong></p>
+            <p>
+                Todos os recursos acrescentados nos planos Basic, Standard e Premium virá junto com este plano (Ultimate).
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Página de destaque e promoções</strong></p>
+            <p>
+                Criaremos na página principal (home) da sua loja produtos destacados e produtos em promoções com o objetivo de atrair os usuários
+                para conhecerem os seus produtos e possivelmente comprá-los.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Painel de controle + Configurações gerais</strong></p>
+            <p>
+                Você vai poder administrar os seus produtos, estoques, pedidos, preços, métricas, site, apps, faturamento
+                e muito mais diretamente do painel de controle da Shopify. Também vamos deixar tudo configurado na sua loja para que
+                você possa apenas vender.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Cadastro ilimitados de produtos</strong></p>
+            <p>
+                A sua loja vai poder ter o número de produtos cadastrados que você quiser. Tornando a sua loja em um verdadeiro shopping online.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Plugins ilimitados</strong></p>
+            <p>
+                Vamos configurar o plugin que você quiser para dar mais funcionalidades para a sua loja ou para os usuários.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de gateway de pagamento</strong></p>
+            <p>
+                Adicionaremos diversas formas de pagamento (à vista, parcelado, boleto, PayPal e muito mais) na sua loja para que os usuários
+                possam comprar com segurança e com os melhores checkouts transparente do mercado.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de cálculo automático de frete</strong></p>
+            <p>
+                Iremos implementar na sua a loja o sistema de cálculo automático de frete para que os usuaŕios possa ver a taxa de frete a ser paga e escolher a melhor maneira
+                que quer receber o produto por SEDEX, PAC, e-SEDEX, SEDEX 10, SEDEX Hoje e entre outros.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de recomendação de produtos</strong></p>
+            <p>
+                Para que os usuários possam ter a melhor experiência na sua loja, vamos configurar o sistema de recomendação de produtos
+                que utiliza um algoritmo para adivinhar qual o produto os usuários possivelmente se interessam com base nas interações com a página,
+                histórico e carrinho, assim o algoritmo recomenda esses produtos para os usuários e aumenta as chances de você vendê-lo.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de comentários</strong></p>
+            <p>
+                Para dar mais credibilidade e confiança no seu produto, vamos adicionar na página do seu produto a opção dos usuários comentarem
+                algo a respeito do seu produto ou também podemos importar comentários de outros usuários que compraram o mesmo produto que você
+                vende, porém em outras lojas online.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de carrinho</strong></p>
+            <p>
+                Os usuários poderão adicionar quantos produtos eles quiserem no carrinho, assim os produtos vão permancer salvos e eles vão poder comprar
+                todos os produtos de uma vez.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de rastreamento</strong></p>
+            <p>
+                Iremos configurar o sistema de rastreamento na sua loja para que os usuários possam
+                saber onde os seus pacotes estão em tempo real o que acaba gerando mais confiança e transparência na sua loja.
+            </p>
+            <div class="window-modal-line"></div>
+            <p class="small-txt"><strong>Sistema de login</strong></p>
+            <p>
+                Os usuários poderão fazer login na sua loja com as suas contas do Facebook, Twitter, Google, Amazon e muito mais, assim na próxima vez
+                que eles forem comprar algo da sua loja eles não vão precisar preencher os campos manualmente o que significa mais agilidade e vendas
+                para você. 
+            </p>
+            <div class="resume">
+                <p><strong>Plano:</strong> Ultimate</p>
+                <p><strong>Garantia:</strong> 1 ano</p>
+                <p><strong>Prazo de entrega:</strong> entre 4 há 5 semanas</p>
+                <p><strong>Valor à vista:</strong> R$3.454,68</p>
+                <p><strong>Valor até 12x sem juros:</strong> R$287,89</p>
+                <div class="align-modal-btn">
+                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
+                    <button class="btn-action"><span>Contratar</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="background-window-modal"></div>
+    <div class="scroll-pos"></div>
+    <section id="section7">
+        <div class="txt-center">
+            <h2 class="main-h2">DÚVIDAS</h2>
+            <div class="intro-bar intro-bar-c1"></div>
+            <h3 class="main-h3">PERGUNTAS FREQUENTES</h3>
+            <p>
+                Veja o que os nossos clientes mais perguntam
+            </p>
+        </div>
+        <div id="center-doubt">
+            <div class="center-details">
+                <details>
+                    <summary>
+                        <span class="summary-title">Como eu vou receber o meu site?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Enviaremos um link por e-mail para você ter acesso total ao seu site 100% online e após 7 dias um segundo link para que você possa baixar todos os arquivos e código fonte que compõe o seu site para mantê-lo guardado
+                            como backup.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Quem vai fazer o conteúdo do meu site?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Depende, em todos os nossos 4 planos já entregamos o seu site com o conteúdo praticamente pronto ou seja todos os textos resumidos, imagens ilustrativas, ícones e fontes.
+                            Porém, se você tiver a habilidade em design e redação, você também pode nos enviar e vamos adaptar no layout do seu site.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Eu vou ter relatórios de acessos do meu site?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Sim, vincularemos o seu site com o Analytics e através dele você consegue ver em tempo real quantas pessoas estão online, quais páginas estão sendo vistas,
+                            fontes do tráfego, localização geográfica dos visitantes, número de sessões, usuários, visualizações de página, quantidade de páginas visualizadas por sessão, tempo médio de
+                            permanência, taxa de rejeição e muito mais.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Quais informações enviar sobre o meu negócio para o desenvolvimento do meu site?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            As informações que precisamos para desenvolver o seu site são as mesmas que você demonstra para os seus clientes ou usuários
+                            como, por exemplo, endereço, telefone, e-mail, redes sociais, quantidade de estoque, tipos de produtos e etc.
+                        </p>
+                        <p>
+                            A criação do seu site é realizada somente após entendermos detalhadamente o seu negócio, objetivos e o recolhimento de todo material necessário
+                            para a criação, todas as informações que precisamos estarão em 2 Briefings que vamos enviar no seu e-mail, porém informações
+                            adicionais para a criação do seu site pode ser solicitadas por nossa equipe.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Eu preciso ter produto para vender no meu site?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Não, nós da DeskWebCode desenvolvemos também lojas online no modelo de Dropshipping que é uma maneira de vender
+                            produtos sem se preocupar com todo o processo de compra e venda como, por exemplo, embalar e etiquetar,
+                            transportadoras, armazéns, funcionários, investimentos, preceitos e etc.
+                        </p>
+                        <p>
+                            Isso porque, você vai estar atuando no mercado como intermediador entre o cliente e fornecedor, no qual
+                            para o cliente realizar a compra de um produto é necessário passar primeiro pelo intermediador, após isso
+                            o intermediador vai processar o pedido do cliente e enviar para o fornecedor e por fim o fornecedor vai
+                            processar o pedido e enviar o produto direto para o cliente.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">O meu site vai ter painel de controle?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Nos planos <strong>Basic</strong>, <strong>Standard</strong> e <strong>Premium</strong> não fornecemos painel de controle, porém
+                            providenciamos um material gratuito ensinando como você pode mudar no seu site as imagens, textos, links ou vídeos.
+                        </p>
+                        <p>
+                            Já no plano <strong>Ultimate</strong> você vai ter o painel de controle da Shopify e vai poder administrar 100% o seu site mudando
+                            o layout, arquivos, quantidade de estoque, produtos, preços, precessar os pedidos, alterar os Plugins e muito mais. Porém, neste caso não
+                            oferecemos material já que no próprio site da Shopify entrega tudo para você.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">O meu site vai ter garantia?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Sim, todos os nossos sites que são desenvolvidos por nós da <strong>DeskWebCode</strong> possuem garantia de 2 anos.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">O meu site vai ser seguro?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Sim, todos os seus arquivos e dados do seu site estarão seguros e protegidos com o certificado SSL (Secure Sockets Layer) que é um protocolo de segurança que cria um link criptografado entre o servidor e navegador.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+            </div>
+            <div class="center-details">
+                <details>
+                    <summary>
+                        <span class="summary-title">O meu site vai ter hospedagem e domínio?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Sim, configuraremos o seu site com hospedagem e certificado SSL grátis por tempo ilimitado e domínio grátis até 1 ano em todos os nossos planos ou seja o
+                            seu site vai estar hospedado em um servidor totalmente seguro com um endereço profissional
+                            "www.suaempresa.com".
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Eu preciso construir algum conteúdo?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Sim, caso você queira ter um portal de notícias, blog ou loja online, você precisa construir os seus próprios textos ou
+                            tirar fotos dos seus próprios produtos seguindo os nossos padrões e nos enviar para adaptarmos no layout do seu site.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Porque é importante a renovação de domínio?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Todos os domínios têm um tempo de validade, assim ninguém pode usar o mesmo domínio que você dentro do prazo de validade, porém se o seu domínio expirar,
+                            ainda vai existir um prazo para a renovação e caso não seja feito a renovação o seu domínio poderá ser registrado por outra pessoa, por tanto,
+                            é importante sempre se preocupar com a renovação do seu domínio.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Quais custos o meu site vai ter depois de pronto?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>Qualquer tipo de site que está na internet possui 3 custos principais e importantes que são:</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong>Hospedagem e SSL:</strong> é um serviço pago mensalmente para que todos os arquivos do seu site fiquem
+                                    guardados em um servidor seguro e criptografado (porém você não vai precisa pagar, pois vamos configurar o seu site em servidores Open Source).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Domínio:</strong> é um nome pago anualmente para que o endereço do seu site tenha o nome do seu negócio "www.suaempresa.com"
+                                    (também você não precisa pagar, pois você vai receber 1 ano grátis de domínio).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Manutenção:</strong> é um serviço pago mensalmente que é opcional para ser atualizado os arquivos do seu site
+                                    como artigos, notícias, textos, fotos, vídeos, banners, backups e tudo aquilo que compõe o seu site.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Por quanto tempo eu vou ter acesso ao meu site?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            A partir do momento que nós da <strong>DeskWebCode</strong> entregarmos o seu site por e-mail ele vai ser seu para sempre.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">E se eu não gostar do visual do meu site?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Antes de você contratar um dos nossos planos, nós vamos colher informações a respeito do seu negócio e com essas
+                            informações montar cuidadosamente o rascunho do seu site e apresentar à você para a sua aprovação.
+                        </p>
+                        <p>
+                            Neste rascunho você vai ter uma perspectiva de como vai ser o seu site e é nele que nós vamos se basear para
+                            desenvolver o seu site final.
+                        </p>
+                        <p>
+                            Por isso, neste rascunho vai ser o espelho do seu site e nele você vai poder alterar o que quiser para só depois
+                            iniciarmos o desenvolvimento final do seu site que vai estar online na internet.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Quais são as formas de pagamento possíveis?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Nós oferecemos pagamentos no cartão de crédito, boleto, boleto parcelado, Pix, cartão de débito virtual da caixa, carteira digital do Mercado Pago, PayPal e
+                            pagamento na lotérica.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Eu posso ter devolução do meu site?</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        <p>
+                            Sim, o seu site é primeiro projetado para o seu negócio mediante ao seu acompanhamento e autorização, porém se mesmo
+                            assim em 7 dias, você queira ter a devolução do valor pago do seu site, nós da DeskWebCode entregamos o valor no mesmo dia
+                            sem questionamentos, caso ultrapasse os 7 dias o seu site terá 2 anos de garantia.
+                        </p>
+                    </div>
+                    <div class="summary-chevron-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </details>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-pos"></div>
+    <section id="section8">
+        <div class="txt-center">
+            <h2 class="main-h2">CONTATO</h2>
+            <div class="intro-bar intro-bar-c3"></div>
+            <h3 class="main-h3">CONVERSE CONOSCO SOBRE O SEU SITE</h3>
+            <p>
+                Entenderemos a sua necessidade e apresentaremos a melhor solução
+            </p>
+        </div>
+        <form>
+            <div id="form-content">
+                <div id="form-message">
+                    <img src="img/check-solid-white.svg">
+                </div>
+            </div>
+            <p id="form-text">FORMULÁRIO ENVIADO!</p>
+            <p id="form-desc"><strong>OBS:</strong> responderemos em breve, mandaremos uma mensagem no seu e-mail.</p>
+        </form>
+        <div id="address-and-contact">
+            <img src="img/envelope-regular.svg" alt="">
+            <img src="img/instagram-brands.svg" alt="">
+            <img src="img/facebook-brands.svg" alt="">
+            <img src="img/whatsapp-brands.svg" alt="">
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p><strong>Produtos</strong></p>
+            <p>Basic</p>
+            <p>Standard</p>
+            <p>Premium</p>
+            <p>Ultimate</p>
+        </div>
+        <div>
+            <p><strong>Serviços</strong></p>
+            <p>Desenvolvimento de sites</p>
+            <p>Manutenções de sites</p>
+        </div>
+        <div>
+            <p><strong>Empresa</strong></p>
+            <p>Sobre nós</p>
+            <p>Termos de Uso</p>
+            <p>Privacidade</p>
+            <p>Carreira</p>
+        </div>
+        <div>
+            <p><strong>Atividade</strong></p>
+            <p>Prazo de entrega</p>
+            <p>Garantia</p>
+            <p>Devolução</p>
+            <p>Suporte</p>
+        </div>
+        <div id="d">
+            DeskWebCode 2018 - 2022 ©. Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
