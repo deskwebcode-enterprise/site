@@ -76,7 +76,6 @@ html {
     transition: background-color 0.3s ease-in-out;
     font-family: Montserrat-Light;
     background: #ffffff;
-    border-bottom: 1px solid #f0f0f0;
 }
 
 #name-logo {
@@ -780,7 +779,7 @@ html {
 }
 
 #section5 {
-    padding: 80px 0 63px 0;
+    padding: 80px 0 60px 0;
 }
 
 #section5 p {
@@ -1147,13 +1146,13 @@ html {
     transform: translate(-50%, 0);
 }
 
-#section8 .txt-center p {
+#section8 .txt-center {
     margin: 15px auto !important;
-    padding: 0 25px;
+    padding: 0 50px;
 }
 
 iframe {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 #section8 p {
@@ -1206,16 +1205,22 @@ summary {
     height: 80px;
     display: flex;
     align-items: center;
+    /* border: 1px solid #ebebeb;
+    border-bottom: none;
+    border-right: none; */
+}
+
+.center-details details {
     border: 1px solid #ebebeb;
     border-bottom: none;
     border-right: none;
 }
 
-.center-details details:last-child {
+.center-details:nth-child(1) details:last-child, .center-details:nth-child(2) details:last-child {
     border-bottom: 1px solid #ebebeb;
 }
 
-.center-details:nth-child(2) {
+.center-details:nth-child(2) details {
     border-right: 1px solid #ebebeb;
 }
 
