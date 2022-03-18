@@ -231,6 +231,14 @@
     .center-details, details {
         width: 100%;
     }
+
+    .center-details:nth-child(1) details {
+        border-right: 1px solid #ebebeb;
+    }
+
+    .center-details:nth-child(1) details:last-child {
+        border-bottom: none;
+    }
 }
 
 @media screen and (max-width: 1040px) {
@@ -294,6 +302,13 @@
 @media screen and (max-width: 860px) {
     #btn-left-service, #btn-right-service {
         display: none;
+    }
+}
+
+@media screen and (max-width: 803px) {
+    iframe {
+        height: 880px !important;
+        margin-top: 185px;
     }
 }
 
@@ -427,14 +442,14 @@
     }
 
     iframe {
-        margin-top: 140px;
+        margin-top: 220px;
     }
 }
 
 @media screen and (max-width: 783px) {
     iframe {
-        height: 850px !important;
-        margin-top: 204px;
+        height: 880px !important;
+        margin-top: 220px;
     }
 }
 
@@ -454,7 +469,7 @@
     }
 
     .txt-larger {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 
     .main-h2 {
@@ -478,6 +493,10 @@
     #main-nav {
         top: 0;
     }
+
+    iframe {
+        margin-top: 210px;
+    }
 }
 
 @media screen and (max-width: 670px) {
@@ -497,6 +516,12 @@
         height: auto;
         margin: 10px 0;
         padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 613px) {
+    iframe {
+        margin-top: 240px;
     }
 }
 
@@ -651,6 +676,12 @@
     }
 }
 
+@media screen and (max-width: 464px) {
+    iframe {
+        margin-top: 270px !important;
+    }
+}
+
 @media screen and (max-width: 430px) {
     .square-how-it-works:nth-child(1)::after {
         height: 455px;
@@ -669,6 +700,12 @@
     }
 }
 
+@media screen and (max-width: 399px) {
+    iframe {
+        margin-top: 300px !important;
+    }
+}
+
 @media screen and (max-width: 390px) {
     #slider {
         height: 600px !important;
@@ -682,8 +719,22 @@
     }
 }
 
-@media screen and (max-width: 337px) {
+@media screen and (max-width: 366px) {
     iframe {
-        margin-top: 280px !important;
+        margin-top: 330px !important;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    iframe {
+        margin-top: 360px !important;
+    }
+
+    #address-and-contact {
+        width: 200px;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        transform: translateX(-50%) translateY(30px);
     }
 }
