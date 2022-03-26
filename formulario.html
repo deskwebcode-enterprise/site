@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/responsive.css">
     <title>DeskWebCode</title>
     <style>
+        #section8 {
+            padding-bottom: 170px;
+        }
+
         #section8 .txt-center {
             position: relative;
             left: 0;
@@ -31,7 +35,7 @@
             font-weight: bold;
         }
 
-        #form-content {
+        #enviado {
             width: 170px;
             display: flex;
             flex-wrap: wrap;
@@ -64,9 +68,21 @@
             width: 70px;
         }
 
+        #address-and-contact {
+            bottom: 45px;
+        }
+
         @media screen and (max-width: 1299px) {
             form {
                 height: 445px;
+            }
+
+            #section8 {
+                padding-bottom: 130px;
+            }
+
+            #address-and-contact {
+                bottom: 20px;
             }
         }
 
@@ -106,8 +122,7 @@
                 height: 555px;
             }
 
-            #form-content {
-                /* width: 200px; */
+            #enviado {
                 transform: scale(0.8);
                 margin: 0;
             }
@@ -155,7 +170,7 @@
                         </p>
                         <div class="align-btn-action">
                             <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                            <button class="btn-action"><span>Escolher um plano</span></button>
+                            <button class="btn-action btn-option-plans"><span>Escolher um plano</span></button>
                         </div>
                     </div>
                     <div class="txt-group txt-group-display-off">
@@ -167,7 +182,7 @@
                         </p>
                         <div class="align-btn-action">
                             <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                            <button class="btn-action"><span>Escolher um plano</span></button>
+                            <button class="btn-action btn-option-plans"><span>Escolher um plano</span></button>
                         </div>
                     </div>
                     <div class="txt-group txt-group-display-off">
@@ -179,7 +194,7 @@
                         </p>
                         <div class="align-btn-action">
                             <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                            <button class="btn-action"><span>Escolher um plano</span></button>
+                            <button class="btn-action btn-option-plans"><span>Escolher um plano</span></button>
                         </div>
                     </div>
                 </div>
@@ -524,11 +539,11 @@
                     <p><img class="check" src="img/check-solid.svg">Domínio grátis por 1 ano</p>
                 </div>
                 <div class="content-know-more">
-                    <button class="btn-know-more" type="button">Saiba mais</button>
+                    <a class="btn-know-more" href="empresa/produtos.html#basic">Saiba mais</a>
                 </div>
                 <div class="align-btn-action">
                     <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                    <button class="btn-action"><span>Contratar</span></button>
+                    <button class="btn-action"><span><a class="pagament" href="https://mpago.la/1mDEkJB" target="_blank">Contratar</a></span></button>
                 </div>
             </div>
             <div class="price">
@@ -555,11 +570,11 @@
                     <p><img class="check" src="img/check-solid.svg">Sistema de horário de funcionamento</p>
                 </div>
                 <div class="content-know-more">
-                    <button class="btn-know-more" type="button">Saiba mais</button>
+                    <a class="btn-know-more" href="empresa/produtos.html#standard">Saiba mais</a>
                 </div>
                 <div class="align-btn-action">
                     <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                    <button class="btn-action"><span>Contratar</span></button>
+                    <button class="btn-action"><span><a class="pagament" href="https://mpago.la/1qCSNho" target="_blank">Contratar</a></span></button>
                 </div>
             </div>
             <div class="price">
@@ -586,11 +601,11 @@
                     <p><img class="check" src="img/check-solid.svg">Sistema de chat ao vivo</p>
                 </div>
                 <div class="content-know-more">
-                    <button class="btn-know-more" type="button">Saiba mais</button>
+                    <a class="btn-know-more" href="empresa/produtos.html#premium">Saiba mais</a>
                 </div>
                 <div class="align-btn-action">
                     <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                    <button class="btn-action"><span>Contratar</span></button>
+                    <button class="btn-action"><span><a class="pagament" href="https://mpago.la/1xvhSEg" target="_blank">Contratar</a></span></button>
                 </div>
             </div>
             <div class="price">
@@ -617,389 +632,15 @@
                     <p><img class="check" src="img/check-solid.svg">Sistema de filtragem</p>
                 </div>
                 <div class="content-know-more">
-                    <button class="btn-know-more" type="button">Saiba mais</button>
+                    <a class="btn-know-more" href="empresa/produtos.html#ultimate">Saiba mais</a>
                 </div>
                 <div class="align-btn-action">
                     <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                    <button class="btn-action"><span>Contratar</span></button>
+                    <button class="btn-action"><span><a class="pagament" href="https://mpago.la/1n4vYo4" target="_blank">Contratar</a></span></button>
                 </div>
             </div>
         </div>
     </section>
-    <div class="window-modal">
-        <div class="window-modal-header">
-            Plano Basic
-            <button type="button" class="btn-close-modal"></button>
-        </div>
-        <div class="window-modal-content">
-            <p class="small-txt"><strong>Até 1 página</strong></p>
-            <p>
-                Todo o conteúdo do seu negócio será adaptado para caber em uma única página, assim as informações
-                ficam mais fáceis de serem encontradas e a interação entre os usuários com o seu site acaba sendo mais simples e
-                compreensível.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Página semântica</strong></p>
-            <p>
-                O seu site já vai vir com o uso adequado do melhor código para a construção do seu site o que permite futuras manutenções
-                mais rápidas e eficazes. Também iremos usar as melhores palavras-chave baseadas nas técnicas de SEO (Search Engine Optimization) que vão permitir uma posição melhor nos
-                resultados do Google e nos demais mecânismos de pesquisa fazendo com que o seu site cresça naturalmente dentro da internet.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Página responsiva</strong></p>
-            <p>
-                Vamos tornar o seu site compatível com diferentes tipos de telas fazendo com que qualquer pessoa tenha acesso
-                ao seu site independentemente de qual dispositivo ela esteja utilizando como, por exemplo, smartphone, tablet, computador, tv, multimídia de carro
-                e etc.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Cabeçalho, Seções, Rodapé e Formulário</strong></p>
-            <p>
-                Criaremos uma estrutura de conteúdo lógico dentro do seu site para que os usuários possam entender com exatidão o que o seu negócio quer
-                transmitir. Vamos iniciar com o cabeçalho como introdução sobre o seu negócio, após isso, vamos criar seções com
-                mais detalhes sobre o seu negócio e por fim, iremos criar o rodapé com informações específicas sobre o seu negócio.
-                Já o formulário é para os usuários poderem entrar em contato com você (negócio) por e-mail.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Imagens ilustrativas, ícones e Fontes</strong></p>
-            <p>
-                Vamos se responsabilizar pelas imagens para a representação visual do conteúdo sobre o seu negócio, ícones para uma identificação melhor da interface do seu site e
-                fontes que se assemelham ao que o seu negócio oferece ao mercado, assim a experiência dos usuários   com o seu site será muito mais agradável.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Slider, Cards, Botões, Accordions e Modais</strong></p>
-            <p>
-                O seu site terá um slider que é justamente um carrosel de imagens ou textos com conteúdos rápidos sobre o seu negócio, cards para
-                a representação de algo ou chamadas para ação (Call-to-Action), botões clicáveis que direcionam os usuários para algum lugar,
-                accordions para perguntas/respostas dos usuários e modais para conteúdos informativos e organizados. Dessa maneira os usuários
-                vão se sentir muito mais confortáveis em navegar pelo seu site que possui o conteúdo bem estruturado.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Títulos e Descrições resumidas</strong></p>
-            <p>
-                Para você não perder tanto tempo desenvolvendo textos para o seu site, iremos criar títulos e descrições resumidas de até 218 caracteres por parágrafo.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Anexado com Redes sociais, Analytics e Maps</strong></p>
-            <p>
-                Vamos integrar o seu site com as suas redes sociais para que os usuários possam ver os seus vídeos, imagens, posts, curtir e compartilhar
-                no seu site, sem a necessidade de entrar direto na sua própria rede social. Vamos também anexar o seu site ao Analytics para que você capture dados do seu site e usuários
-                para visualizar métricas importantes e criar estratégias certeiras para o seu negócio. Também vamos conectar o seu site ao Maps para que os usuários consigam visualizar a localidade
-                do seu negócio dentro do seu próprio site, assim os usuários terão uma navegação bem intuitiva com os mapas do Google.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Hospedagem grátis</strong></p>
-            <p>
-                Você não vai precisar pagar pela hospedagem do seu site que é justamente um servidor que vai servir como local seguro para manter
-                os seus arquivos guardados, pois vamos configurar o seu site em servidores Open Source de forma gratuita.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Certificado SSL grátis</strong></p>
-            <p>
-                Você também não vai precisar pagar pelo protocolo SSL (Secure Sockets Layer) que é um
-                certificado digital que autentica a identidade do seu site e possibilita uma conexão criptografada entre o navegador e servidor tornando
-                o seu site seguro.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Domínio grátis por 1 ano</strong></p>
-            <p>
-                O seu site vai ter um endereço digital personalizado relacionado ao seu próprio negócio como, por exemplo, "www.minhaempresa.com", assim
-                vai transmitir mais profissionalismo quando alguém acessar o seu site ou quando for compartilhá-lo.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Suporte online 24/h</strong></p>
-            <p>
-                Você vai ter prioridade em ser atendido pela nossa equipe em qualquer problema e dúvida a respeito do seu site ou da nossa empresa, assim você pode contar
-                com a nossa ajuda em qualquer dia ou horário que precisar.
-            </p>
-            <div class="resume">
-                <p><strong>Plano:</strong> Basic</p>
-                <p><strong>Garantia:</strong> 1 ano</p>
-                <p><strong>Prazo de entrega:</strong> entre 4 dias há 1 semana</p>
-                <p><strong>Valor à vista:</strong> R$569,88</p>
-                <p><strong>Valor até 12x (sem juros):</strong> R$47,49</p>
-                <div class="align-modal-btn">
-                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                    <button class="btn-action"><span>Contratar</span></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="window-modal">
-        <div class="window-modal-header">
-            Plano Standard
-            <button type="button" class="btn-close-modal"></button>
-        </div>
-        <div class="window-modal-content">
-            <p class="small-txt"><strong>Plano Basic incluso</strong></p>
-            <p>
-                Todos os recursos acrescentados no plano Basic virá junto com este plano (Standard).
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Até 6 páginas</strong></p>
-            <p>
-                Criaremos até 6 páginas individuais para dividir o conteúdo do seu site, assim aumentará as chances dos usuários serem convertidos
-                em clientes com conteúdos longos e detalhistas.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Página com acessibilidade</strong></p>
-            <p>
-                Vamos tornar o seu site acessível para diferentes tipos de pessoas com deficiência ou não, assim independentemente de quem
-                acessá-lo vai conseguir compreender, navegar e interagir com o seu site.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Página de erro 404 personalizada</strong></p>
-            <p>
-                Iremos construir uma página personalizada para que quando a URL do seu site não estiver disponível, não existir ou não for
-                encontrada ela seja retornada para os usuários específicando links alternativos e corretos que levam até o seu site.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Página de load</strong></p>
-            <p>
-                Iremos construir uma página para que quando os usuários acessarem o seu site apareça uma animação
-                de carregamento enquanto os arquivos do seu site terminam de ser renderizados.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Galeria de imagens</strong></p>
-            <p>
-                O seu site vai ter uma página para demonstrar imagens originais dos seus serviços, dessa maneira os usuários vão
-                ter uma experiência melhor de como é o seu trabalho antes mesmo  de contratar os seus serviços ou comprar os seus produtos.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Transições e Animações 2D</strong></p>
-            <p>
-                Para que os usuários tenham uma navegação espontânea com o seu site, vamos aplicar transições e animações 2D em determinados
-                elementos pelo seu site como, botões, textos, imagens, layout e etc.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>UI e UX Design</strong></p>
-            <p>
-                Vamos basear o seu site nas técnicas de UI (User Interface) para criar interfaces mais fáceis e amigáveis para os usuários. Também
-                vamos usar técnicas de UX (User Experience) para que os usuários tenham uma satisfação melhor com o seu produto ou serviço nas interações
-                com o seu site.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Técnicas de vendas</strong></p>
-            <p>
-                O seu site vai vir com técnicas de vendas importantes aplicadas nas cores, layout, preço e botões com o objetivo de engajar os usuários
-                e convertê-los em clientes.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Técnicas de Copywriting</strong></p>
-            <p>
-                Vamos focar no desenvolvimento de textos persuasivos para convercer os usuários na tomada de uma ação específica com o objetivo de gerar
-                conversões e vendas.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de horário de funcionamento</strong></p>
-            <p>
-                O seu site vai ter um sistema de horário, no qual vai funcionar especificando para os usuários se o seu negócio está
-                aberto ou fechado e até que horas vai continuar atendendo.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de chat de ajuda</strong></p>
-            <p>
-                Vamos implementar no seu site um sistema de chat online para ajudar na solução das dúvidas dos usuários, sem que eles entrem em contato direto
-                com você (negócio).
-            </p>
-            <div class="resume">
-                <p><strong>Plano:</strong> Standard</p>
-                <p><strong>Garantia:</strong> 1 ano</p>
-                <p><strong>Prazo de entrega:</strong> entre 2 há 3 semanas</p>
-                <p><strong>Valor à vista:</strong> R$958,80</p>
-                <p><strong>Valor até 12x sem juros:</strong> R$79,90</p>
-                <div class="align-modal-btn">
-                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                    <button class="btn-action"><span>Contratar</span></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="window-modal">
-        <div class="window-modal-header">
-            Plano Premium
-            <button type="button" class="btn-close-modal"></button>
-        </div>
-        <div class="window-modal-content">
-            <p class="small-txt"><strong>Plano Basic e Standard inclusos</strong></p>
-            <p>
-                Todos os recursos acrescentados nos planos Basic e Standard virá junto com este plano (Premium).
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Páginas ilimitadas</strong></p>
-            <p>
-                O seu site vai ter quantas páginas forem necessárias para o conteúdo do seu negócio, dessa maneira as chances
-                de gerar mais tráfego e converter aumenta ainda mais já que vão existir mais termos para serem indexado pelo Google e mais
-                conteúdos para converter os usuários.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Páginas próprias (produtos/serviços)</strong></p>
-            <p>
-                Os seus produtos ou serviços vão possuir páginas individuais para não ter interferência de conteúdo e conseguir
-                engajar ainda mais os usuários com conteúdos focados apenas em único produto ou serviço.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Cadastro de até 160 (produtos/serviços)</strong></p>
-            <p>
-                Vamos cadastrar até 160 produtos ou serviços para cada página individual, assim você pode ter o que mais vende
-                no seu negócio anunciado no seu site.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Submenu, Paginação e Widgets</strong></p>
-            <p>
-                Iremos criar submenus para o menu do seu site, assim os usuários vão poder navegar com mais facilidade.
-                Criaremos paginações para que os usuários visualizem outros conteúdos a mais do seu site. E também vamos
-                criar Widgets para simplificar o acesso ao seu site por parte dos usuários.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Cross-Browser</strong></p>
-            <p>
-                Existem muitos usuários de internet que não atualizam os seus navegadores e para resolver isso, vamos tornar o seu site
-                compatível com diferentes versões de navegadores desatualizados e atualizados.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Configurado no Google Meu Negócio</strong></p>
-            <p>
-                Vamos configurar o seu negócio e site no Google Meu Negócio para que ambos sejam encontrados quando os usuários
-                pesquisarem no Google ou Google Maps, no qual vão aparecer informações importantes como localização, horário
-                de funcionamento, produtos/serviços, fotos e etc.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Configurado no Google Workspace</strong></p>
-            <p>
-                Iremos configurar o seu site no Google Workspace para ter um e-mail personalizado como "contato@minhaempresa.com"
-                e também ter acesso a outras ferramentas de colaboraçõa como Agenda, Meet, Chat, Drive, Documentos, Planilhas, Formulários e muito mais.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Links de compartilhamento personalizado</strong></p>
-            <p>
-                Vamos usar metadados específicos no código fonte do seu site para facilitar a transmissão dos dados do conteúdo do seu site para
-                as redes sociais, assim será indicado características do conteúdo no momento em que o link do seu site for
-                compartilhado, assim as informações estarão claras e objetivas.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de pedido via WhatsApp</strong></p>
-            <p>
-                O seu site terá um sistema integrado para que os usuários possam fazer solicitações de produtos ou serviços
-                no seu próprio site e enviar direto para o WhatsApp para que você possa processar essas vendas ou contratações.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de agendamento via WhatsApp</strong></p>
-            <p>
-                O seu site terá um sistema integrado para que os usuários possam fazer agendamentos de horário no seu próprio
-                site e enviar direto para o WhatsApp para que você possa confirmar o horário.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de busca</strong></p>
-            <p>
-                Vamos implementar no seu site uma barra de pesquisa para que os usuários encontrem com mais facilidade e precisão o que eles
-                estão procurando dentro do seu site.
-            </p>
-            <div class="resume">
-                <p><strong>Plano:</strong> Premium</p>
-                <p><strong>Garantia:</strong> 1 ano</p>
-                <p><strong>Prazo de entrega:</strong> entre 3 há 4 semanas</p>
-                <p><strong>Valor à vista:</strong> R$2.031,48</p>
-                <p><strong>Valor até 12x sem juros:</strong> R$169,29</p>
-                <div class="align-modal-btn">
-                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                    <button class="btn-action"><span>Contratar</span></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="window-modal">
-        <div class="window-modal-header">
-            Plano Ultimate
-            <button type="button" class="btn-close-modal"></button>
-        </div>
-        <div class="window-modal-content">
-            <p class="small-txt"><strong>Plano Basic, Standard e Premium inclusos</strong></p>
-            <p>
-                Todos os recursos acrescentados nos planos Basic, Standard e Premium virá junto com este plano (Ultimate).
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Página de destaque e promoções</strong></p>
-            <p>
-                Criaremos na página principal (home) da sua loja produtos destacados e produtos em promoções com o objetivo de atrair os usuários
-                para conhecerem os seus produtos e possivelmente comprá-los.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Painel de controle + Configurações gerais</strong></p>
-            <p>
-                Você vai poder administrar os seus produtos, estoques, pedidos, preços, métricas, site, apps, faturamento
-                e muito mais diretamente do painel de controle da Shopify. Também vamos deixar tudo configurado na sua loja para que
-                você possa apenas vender.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Cadastro ilimitados de produtos</strong></p>
-            <p>
-                A sua loja vai poder ter o número de produtos cadastrados que você quiser. Tornando a sua loja em um verdadeiro shopping online.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Plugins ilimitados</strong></p>
-            <p>
-                Vamos configurar o plugin que você quiser para dar mais funcionalidades para a sua loja ou para os usuários.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de gateway de pagamento</strong></p>
-            <p>
-                Adicionaremos diversas formas de pagamento (à vista, parcelado, boleto, PayPal e muito mais) na sua loja para que os usuários
-                possam comprar com segurança e com os melhores checkouts transparente do mercado.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de cálculo automático de frete</strong></p>
-            <p>
-                Iremos implementar na sua a loja o sistema de cálculo automático de frete para que os usuaŕios possa ver a taxa de frete a ser paga e escolher a melhor maneira
-                que quer receber o produto por SEDEX, PAC, e-SEDEX, SEDEX 10, SEDEX Hoje e entre outros.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de recomendação de produtos</strong></p>
-            <p>
-                Para que os usuários possam ter a melhor experiência na sua loja, vamos configurar o sistema de recomendação de produtos
-                que utiliza um algoritmo para adivinhar qual o produto os usuários possivelmente se interessam com base nas interações com a página,
-                histórico e carrinho, assim o algoritmo recomenda esses produtos para os usuários e aumenta as chances de você vendê-lo.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de comentários</strong></p>
-            <p>
-                Para dar mais credibilidade e confiança no seu produto, vamos adicionar na página do seu produto a opção dos usuários comentarem
-                algo a respeito do seu produto ou também podemos importar comentários de outros usuários que compraram o mesmo produto que você
-                vende, porém em outras lojas online.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de carrinho</strong></p>
-            <p>
-                Os usuários poderão adicionar quantos produtos eles quiserem no carrinho, assim os produtos vão permancer salvos e eles vão poder comprar
-                todos os produtos de uma vez.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de rastreamento</strong></p>
-            <p>
-                Iremos configurar o sistema de rastreamento na sua loja para que os usuários possam
-                saber onde os seus pacotes estão em tempo real o que acaba gerando mais confiança e transparência na sua loja.
-            </p>
-            <div class="window-modal-line"></div>
-            <p class="small-txt"><strong>Sistema de login</strong></p>
-            <p>
-                Os usuários poderão fazer login na sua loja com as suas contas do Facebook, Twitter, Google, Amazon e muito mais, assim na próxima vez
-                que eles forem comprar algo da sua loja eles não vão precisar preencher os campos manualmente o que significa mais agilidade e vendas
-                para você. 
-            </p>
-            <div class="resume">
-                <p><strong>Plano:</strong> Ultimate</p>
-                <p><strong>Garantia:</strong> 1 ano</p>
-                <p><strong>Prazo de entrega:</strong> entre 4 há 5 semanas</p>
-                <p><strong>Valor à vista:</strong> R$3.454,68</p>
-                <p><strong>Valor até 12x sem juros:</strong> R$287,89</p>
-                <div class="align-modal-btn">
-                    <button class="btn-action btn-action-light"><span>Entrar em contato</span></button>
-                    <button class="btn-action"><span>Contratar</span></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="background-window-modal"></div>
     <div class="scroll-pos"></div>
     <section id="section7">
         <div class="txt-center">
@@ -1327,7 +968,7 @@
             </p>
         </div>
         <form>
-            <div id="form-content">
+            <div id="enviado">
                 <div id="form-message">
                     <img src="img/check-solid-white.svg">
                 </div>
@@ -1336,38 +977,35 @@
             <p id="form-desc"><strong>OBS:</strong> responderemos em breve com uma mensagem no seu e-mail.</p>
         </form>
         <div id="address-and-contact">
-            <img src="img/envelope-regular.svg" alt="">
-            <img src="img/instagram-brands.svg" alt="">
-            <img src="img/facebook-brands.svg" alt="">
-            <img src="img/whatsapp-brands.svg" alt="">
+            <a href="mailto:deskwebcode.contact@gmail.com" target="_blank"><img src="img/envelope-regular.svg" alt=""></a>
+            <a href="https://www.instagram.com/deskwebcode/" target="_blank"><img src="img/instagram-brands.svg" alt=""></a>
         </div>
     </section>
     <footer>
         <div>
             <p><strong>Produtos</strong></p>
-            <p>Basic</p>
-            <p>Standard</p>
-            <p>Premium</p>
-            <p>Ultimate</p>
+            <p><a href="empresa/produtos.html#basic">Basic</a></p>
+            <p><a href="empresa/produtos.html#standard">Standard</a></p>
+            <p><a href="empresa/produtos.html#premium">Premium</a></p>
+            <p><a href="empresa/produtos.html#ultimate">Ultimate</a></p>
         </div>
         <div>
             <p><strong>Serviços</strong></p>
-            <p>Desenvolvimento de sites</p>
-            <p>Manutenções de sites</p>
+            <p><a href="index.html#desenvolvimento-de-sites">Desenvolvimento de sites</a></p>
         </div>
         <div>
             <p><strong>Empresa</strong></p>
-            <p>Sobre nós</p>
-            <p>Termos de Uso</p>
-            <p>Privacidade</p>
-            <p>Carreira</p>
+            <p><a href="empresa/sobre.html#sobre-nos">Sobre nós</a></p>
+            <p><a href="empresa/sobre.html#termos-de-uso">Termos de Uso</a></p>
+            <p><a href="empresa/sobre.html#privacidade">Privacidade</a></p>
+            <p><a href="empresa/sobre.html#carreira">Carreira</a></p>
         </div>
         <div>
             <p><strong>Atividade</strong></p>
-            <p>Prazo de entrega</p>
-            <p>Garantia</p>
-            <p>Devolução</p>
-            <p>Suporte</p>
+            <p><a href="empresa/sobre.html#prazo-de-entrega">Prazo de entrega</a></p>
+            <p><a href="empresa/sobre.html#garantia">Garantia</a></p>
+            <p><a href="empresa/sobre.html#devolucao">Devolução</a></p>
+            <p><a href="empresa/sobre.html#suporte">Suporte</a></p>
         </div>
         <div id="d">
             DeskWebCode 2018 - 2022 ©. Todos os direitos reservados.
