@@ -110,11 +110,11 @@
 
     #section7 {
         padding-top: 61px;
-        padding-bottom: 62px;
+        padding-bottom: 61px;
     }
 
     #section8 {
-        padding-top: 61px;
+        padding-top: 45px;
         padding-bottom: 44px;
     }
 
@@ -296,6 +296,11 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    #section9 {
+        width: calc(100% - 40px);
+        margin: 0 20px;
     }
 }
 
@@ -589,6 +594,12 @@
 @media screen and (max-width: 584px) {
     iframe {
         margin-top: 240px !important;
+    }
+}
+
+@media screen and (max-width: 513px) {
+    .resume .align-modal-btn, .resume .btn-action {
+        width: 100%;
     }
 }
 
