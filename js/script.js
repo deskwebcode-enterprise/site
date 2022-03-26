@@ -16,91 +16,8 @@ window.onload = () => {
     let circlesCount = 0;
 
     let scrollPos = document.querySelectorAll(".scroll-pos");
-
-    let btnKnowMore = document.querySelectorAll(".btn-know-more");
-    let btnCloseModal = document.querySelectorAll(".btn-close-modal");
-    let windowModal = document.querySelectorAll(".window-modal");
-    let backgroundWindowModal = document.querySelector("#background-window-modal");
-
-    btnKnowMore[0].onclick = () => {
-        windowModal[0].style.opacity = "1";
-        windowModal[0].style.visibility = "visible";
-
-        backgroundWindowModal.style.opacity = "1";
-        backgroundWindowModal.style.visibility = "visible";
-        
-        document.body.style.overflow = "hidden";
-    };
-
-    btnCloseModal[0].onclick = () => {
-        windowModal[0].style.opacity = "0";
-        windowModal[0].style.visibility = "hidden";
-
-        backgroundWindowModal.style.opacity = "0";
-        backgroundWindowModal.style.visibility = "hidden";
-        
-        document.body.style.overflow = "auto";
-    };
-
-    btnKnowMore[1].onclick = () => {
-        windowModal[1].style.opacity = "1";
-        windowModal[1].style.visibility = "visible";
-
-        backgroundWindowModal.style.opacity = "1";
-        backgroundWindowModal.style.visibility = "visible";
-        
-        document.body.style.overflow = "hidden";
-    };
-
-    btnCloseModal[1].onclick = () => {
-        windowModal[1].style.opacity = "0";
-        windowModal[1].style.visibility = "hidden";
-
-        backgroundWindowModal.style.opacity = "0";
-        backgroundWindowModal.style.visibility = "hidden";
-        
-        document.body.style.overflow = "auto";
-    };
-
-    btnKnowMore[2].onclick = () => {
-        windowModal[2].style.opacity = "1";
-        windowModal[2].style.visibility = "visible";
-
-        backgroundWindowModal.style.opacity = "1";
-        backgroundWindowModal.style.visibility = "visible";
-        
-        document.body.style.overflow = "hidden";
-    };
-
-    btnCloseModal[2].onclick = () => {
-        windowModal[2].style.opacity = "0";
-        windowModal[2].style.visibility = "hidden";
-
-        backgroundWindowModal.style.opacity = "0";
-        backgroundWindowModal.style.visibility = "hidden";
-        
-        document.body.style.overflow = "auto";
-    };
-
-    btnKnowMore[3].onclick = () => {
-        windowModal[3].style.opacity = "1";
-        windowModal[3].style.visibility = "visible";
-
-        backgroundWindowModal.style.opacity = "1";
-        backgroundWindowModal.style.visibility = "visible";
-        
-        document.body.style.overflow = "hidden";
-    };
-
-    btnCloseModal[3].onclick = () => {
-        windowModal[3].style.opacity = "0";
-        windowModal[3].style.visibility = "hidden";
-
-        backgroundWindowModal.style.opacity = "0";
-        backgroundWindowModal.style.visibility = "hidden";
-        
-        document.body.style.overflow = "auto";
-    };
+    let btnActionLight = document.querySelectorAll(".btn-action-light");
+    let btnOptionPlans = document.querySelectorAll(".btn-option-plans");
 
     changeMenuOnScroll();
 
@@ -127,22 +44,24 @@ window.onload = () => {
             else {
                 altarnate("#2d2e2e", "#ffffff", "5px solid #2d2e2e", "5px solid #ffffff");
             }
+
+            btnHamburgerOnOff();
         });
     }
 
     mainA[0].addEventListener("click", () => {
         if (window.innerWidth > 0) {
-            scrollMovePos(0, 0);
+            scrollMovePos(0, -50);;
         }
     });
 
     mainA[1].addEventListener("click", () => {
         if (window.innerWidth > 1299) {
-            scrollMovePos(1, 75);
+            scrollMovePos(1, 80);
         }
 
         else if (window.innerWidth > 0) {
-            scrollMovePos(1, 80);
+            scrollMovePos(1, 90);
         }
     });
 
@@ -202,31 +121,69 @@ window.onload = () => {
         }
 
         else if (window.innerWidth > 0) {
-            scrollMovePos(7, -70);
+            scrollMovePos(7, -68);
         }
     });
+
+    for (let w = 0; w < btnActionLight.length; w++) {
+        btnActionLight[w].addEventListener("click", () => {
+            if (window.innerWidth > 1299) {
+                scrollMovePos(7, -90);
+            }
+    
+            else if (window.innerWidth > 0) {
+                scrollMovePos(7, -68);
+            }
+        });
+    }
+    
+    for (let w = 0; w < btnOptionPlans.length; w++) {
+        btnOptionPlans[w].addEventListener("click", () => {
+            if (window.innerWidth > 1299) {
+                scrollMovePos(5, -90);
+            }
+    
+            else if (window.innerWidth > 0) {
+                scrollMovePos(5, -70);
+            }
+        });
+    }
 
     function scrollMovePos(elementPos, pointPos) {
         window.scrollBy(0, scrollPos[elementPos].getBoundingClientRect().y + pointPos);
     }
 
     btnHamburger.onclick = () => {
-        if (btnHamburgerCount == 0) {
-            mainUl.style.animation = "navUlright 0.3s linear forwards";
-            backgroundOccupy.style.animation = "occupyBottom 0.3s linear forwards";
-            btnHamburgerCount = 1;
-            
-            console.log("clicou");
-        }
-
-        else {
-            mainUl.style.animation = "navUlleft 0.3s linear forwards";
-            backgroundOccupy.style.animation = "occupyTop 0.3s linear forwards";
-            btnHamburgerCount = 0;
-
-            // document.body.style.overflow = "auto";
-        }
+        btnHamburgerOnOff();
     };
+
+    function btnHamburgerOnOff() {
+        let btnHamburgerPart = document.querySelectorAll(".as");
+        
+        if (window.innerWidth <= 1299) {
+            if (btnHamburgerCount == 0) {
+                mainUl.style.animation = "navUlright 0.3s linear forwards";
+                backgroundOccupy.style.animation = "occupyBottom 0.3s linear forwards";
+                btnHamburgerCount = 1;
+            
+                btnHamburgerPart[0].style.transform = "rotate(45deg) translate(10px, 10px)";
+                btnHamburgerPart[1].style.opacity = "0";
+                btnHamburgerPart[2].style.transform = "rotate(-45deg) translate(10px, -12px)";
+            }
+    
+            else {
+                mainUl.style.animation = "navUlleft 0.3s linear forwards";
+                backgroundOccupy.style.animation = "occupyTop 0.3s linear forwards";
+                btnHamburgerCount = 0;
+    
+    
+                for (let a = 0; a < btnHamburgerPart.length; a ++) {
+                    btnHamburgerPart[a].style.transform = "rotate(0deg) translate(0, 0)";
+                    btnHamburgerPart[a].style.opacity = "1";
+                }
+            }
+        }
+    }
 
     btnRightSlider.onclick = () => {
         circlesCount += 1;
@@ -383,7 +340,6 @@ window.onload = () => {
                     btnHamburgerPart[a].style.opacity = "1";
                 }
 
-                // document.body.style.overflow = "auto";
                 mainUl.style.animation = "navUlleft 0.3s linear forwards";
                 backgroundOccupy.style.animation = "occupyTop 0.3s linear forwards";
                 btnHamburgerCount = 0;
