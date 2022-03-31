@@ -317,7 +317,7 @@ body {
 
 .txt-separate, .txt-larger {
     width: fit-content;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
 }
 
 .txt-separate {
@@ -535,7 +535,7 @@ body {
 
 .main-h2 {
     font-size: 0.8rem;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     font-family: Montserrat-Light;
     color: #2d2e2e;
 }
@@ -590,7 +590,7 @@ body {
     font-family: Oswald-Light;
     padding-top: 10px;
     color: #2d2e2e;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin: 15px;
 }
 
