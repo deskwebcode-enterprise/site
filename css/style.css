@@ -1090,6 +1090,7 @@ body {
 .align-btn-action {
     width: 80%;
     display: flex;
+    justify-content: center;
     margin: 55px auto 45px auto;
 }
 
