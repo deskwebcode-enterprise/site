@@ -1282,6 +1282,7 @@ footer p:nth-child(1) {
     width: 850px;
     margin: auto;
     padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 #section9 p, #section9 ol {
