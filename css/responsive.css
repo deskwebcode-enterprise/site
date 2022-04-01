@@ -598,7 +598,7 @@
         margin-top: 20px;
     }
 
-    .square-how-it-works:last-child {
+    .square-how-it-works:nth-child(4) {
         margin-bottom: 40px;
     }
 
