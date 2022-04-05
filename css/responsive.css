@@ -646,17 +646,6 @@
     .square-correct {
         position: relative;
     }
-
-    .square-correct::after {
-        content: "";
-        width: 400%;
-        height: 1px;
-        background: #2d2e2e;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 30px;
-    }
 }
 
 @media screen and (max-width: 430px) {
