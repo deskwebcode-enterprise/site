@@ -562,6 +562,12 @@
     .resume .align-modal-btn, .resume .btn-action {
         width: 100%;
     }
+    
+    .portfolio-box {
+        width: 100%;
+        margin: 20px 5px;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
