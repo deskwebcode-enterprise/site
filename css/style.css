@@ -957,7 +957,6 @@ body {
 
 #section6 {
     padding: 80px 20px 72px 20px;
-    background: #fafafa;
 }
 
 #section10 {
@@ -994,7 +993,6 @@ body {
     position: relative;
     background: #ffffff;
     transition: background-color 0.2s linear;
-    border: 1px solid #dcdddf;
     box-shadow: 3px 3px 10px #e0e0e0;
     overflow: hidden;
 }
