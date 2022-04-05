@@ -692,7 +692,7 @@ body {
     margin: 30px 10px;
     padding-bottom: 10px;
     background: #ffffff;
-    box-shadow: -3px 3px 10px #e0e0e0;
+    box-shadow: 3px 3px 10px #e0e0e0;
     transition: background-color 0.2s linear;
     cursor: default;
     position: relative;
@@ -829,7 +829,7 @@ body {
     width: 80px;
     height: 80px;
     background: #2d2e2e;
-    box-shadow: -3px 3px 10px #575757;
+    box-shadow: 3px 3px 10px #575757;
     font-size: 2rem;
     color: #ffffff;
     font-family: Montserrat-Light;
@@ -888,7 +888,7 @@ body {
     position: relative;
     background: #2d2e2e;
     color: #dddddd;
-    box-shadow: -3px 3px 10px #646464;
+    box-shadow: 3px 3px 10px #646464;
     transition: background-color 0.2s linear;
 }
 
@@ -989,7 +989,7 @@ body {
     background: #ffffff;
     transition: background-color 0.2s linear;
     border: 1px solid #dcdddf;
-    box-shadow: -3px 3px 10px #e0e0e0;
+    box-shadow: 3px 3px 10px #e0e0e0;
     overflow: hidden;
 }
 
