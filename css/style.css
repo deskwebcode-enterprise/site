@@ -922,6 +922,38 @@ body {
     color: #ffffff;
 }
 
+#portfolio {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-box {
+    width: 400px;
+    margin: 40px;
+    position: relative;
+    border: 1px solid #d6d6d6;
+    transition: opacity 0.2s linear;
+}
+
+.portfolio-box:hover {
+    opacity: 0.9;
+}
+
+.portfolio-box img {
+    width: 100%;
+}
+
+.portfolio-box div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto-Regular;
+    padding: 30px 10px;
+}
+
 #section6 {
     padding: 80px 20px 72px 20px;
     background: #fafafa;
