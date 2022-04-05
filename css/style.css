@@ -932,10 +932,11 @@ body {
 
 .portfolio-box {
     width: 400px;
-    margin: 40px;
+    background: #ffffff;
+    margin: 50px 50px 0 0;
     position: relative;
-    border: 1px solid #d6d6d6;
     transition: opacity 0.2s linear;
+    box-shadow: 3px 3px 10px #e0e0e0;
 }
 
 .portfolio-box:hover {
@@ -956,6 +957,11 @@ body {
 
 #section6 {
     padding: 80px 20px 72px 20px;
+    background: #fafafa;
+}
+
+#section10 {
+    padding: 80px 20px 85px 20px;
     background: #fafafa;
 }
 
