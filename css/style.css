@@ -959,7 +959,7 @@ body {
     background: #fafafa;
 }
 
-#section6 p {
+#section6 p, #section10 {
     font-family: Montserrat-Light;
     line-height: 2;
     letter-spacing: 1px;
@@ -967,7 +967,7 @@ body {
     color: #333333;
 }
 
-#section6 .txt-center p {
+#section6 .txt-center p, #section10 .txt-center p {
     margin: 15px;
     padding: 0 25px;
 }
