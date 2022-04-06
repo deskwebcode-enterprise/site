@@ -152,8 +152,8 @@
     }
 
     .square-how-it-works:nth-child(1)::after {
-        height: 380px;
-        left: 82px;
+        height: 395px;
+        left: 81px;
     }
 
     .square-correct {
@@ -240,7 +240,7 @@
 
     .square-how-it-works:nth-child(1)::after {
         left: 56px;
-        height: 485px !important;
+        height: 400px !important;
     }
 
     .txt-list {
@@ -413,7 +413,7 @@
     }
 
     .square-how-it-works:nth-child(1)::after {
-        height: 620px !important;
+        height: 580px !important;
         left: 36px;
     }
 
