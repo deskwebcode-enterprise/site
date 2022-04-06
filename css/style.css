@@ -976,6 +976,7 @@ body {
     align-items: center;
     font-family: Roboto-Regular;
     padding: 30px 10px;
+    text-transform: uppercase;
 }
 
 #section6 {
