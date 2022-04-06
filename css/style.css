@@ -830,7 +830,7 @@ body {
 .square-how-it-works:nth-child(1)::after {
     content: "";
     width: 8px;
-    height: 400px !important;
+    height: 425px;
     display: block;
     position: absolute;
     border-radius: 15px;
