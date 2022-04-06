@@ -269,6 +269,7 @@
     }
 
     .txt-separate, .txt-larger {
+        width: 100%;
         margin: auto;
         text-align: center;
     }
@@ -327,16 +328,6 @@
 
     #btn-left-slider, #btn-right-slider {
         display: none;
-    }
-
-    .txt-separate {
-        width: 75%;
-        font-size: 1rem;
-    }
-
-    .txt-larger {
-        width: 75%;
-        font-size: 2.5rem;
     }
 
     .txt-group p {
@@ -512,11 +503,6 @@
 
     .txt-center {
         width: 100%;
-    }
-
-    .txt-separate, .txt-larger {
-        width: fit-content;
-        margin: auto;
     }
 
     .txt-group p {
