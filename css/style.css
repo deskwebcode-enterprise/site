@@ -827,26 +827,11 @@ body {
     position: relative;
 }
 
-.square-how-it-works:nth-child(1)::after {
-    content: "";
-    width: 8px;
-    height: 425px;
-    display: block;
-    position: absolute;
-    border-radius: 15px;
-    left: 77px;
-    top: 50px;
-    background: #2d2e2e;
-    z-index: 1;
-}
-
 .square-correct {
     width: 80px;
     height: 80px;
-    background: #2d2e2e;
-    box-shadow: 3px 3px 10px #575757;
-    font-size: 2rem;
-    color: #ffffff;
+    box-shadow: 3px 3px 10px #b6b6b6;
+    font-size: 2.3rem;
     font-family: Montserrat-Light;
     border-radius: 50%;
     margin-right: 40px;
@@ -906,6 +891,7 @@ body {
     color: #dddddd;
     /* box-shadow: 3px 3px 10px #8b8b8b; */
     transition: background-color 0.2s linear;
+    border: 1px solid #ffffff;
 }
 
 .box-services::after {
