@@ -955,6 +955,10 @@ body {
     box-shadow: 3px 3px 10px #474747;
 }
 
+.portfolio-box:nth-child(3) {
+    margin-right: 0;
+}
+
 .portfolio-box img {
     width: 100%;
 }
