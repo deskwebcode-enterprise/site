@@ -16,6 +16,16 @@
     }
 }
 
+@media screen and (max-width: 1554px) {
+    #portfolio {
+        width: 80%;
+    }
+
+    .portfolio-box:nth-child(2) {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 1500px) {
     #services {
         width: 80%;
@@ -205,6 +215,14 @@
 
     #section1 {
         padding-bottom: 50px;
+    }
+
+    #portfolio {
+        width: 400px;
+    }
+
+    .portfolio-box:nth-child(1) {
+        margin-right: 0;
     }
 }
 
@@ -609,6 +627,10 @@
 
     #section4 {
         padding-bottom: 55px;
+    }
+
+    #portfolio {
+        width: 95%;
     }
 }
 
