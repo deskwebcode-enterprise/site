@@ -634,6 +634,12 @@
     }
 }
 
+@media screen and (max-width: 440px) {
+    #section7 .txt-center p {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 410px) {
     #slider {
         height: 700px;
