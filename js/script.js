@@ -115,6 +115,16 @@ window.onload = () => {
         }
     });
 
+    mainA[7].addEventListener("click", () => {
+        if (window.innerWidth > 1299) {
+            scrollMovePos(7, -90);
+        }
+
+        else if (window.innerWidth > 0) {
+            scrollMovePos(7, -70);
+        }
+    });
+
     for (let w = 0; w < btnActionLight.length; w++) {
         btnActionLight[w].addEventListener("click", () => {
             if (window.innerWidth > 1299) {
@@ -280,6 +290,14 @@ window.onload = () => {
             }
     
             mainA[6].setAttribute("id", "main-a-activated");
+        }
+
+        if (scrollPos[7].getBoundingClientRect().top <= 85 && scrollPos[7].getBoundingClientRect().bottom <= 85) {
+            for (let a = 0; a < mainA.length; a ++) {
+                mainA[a].removeAttribute("id");
+            }
+    
+            mainA[7].setAttribute("id", "main-a-activated");
         }
     }
 
