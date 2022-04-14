@@ -40,7 +40,6 @@ html {
 
 body {
     overflow: hidden;
-    /* background: #fafafa; */
 }
 
 #page-load {
@@ -366,7 +365,7 @@ body {
     height: 50px;
     color: #ffffff;
     font-family: Roboto-Regular;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: inset 1px 1px 1px 0px #ffffff, 1px 1px 1px 0px #ffffff, 4px 4px 5px 0px #0000001a;
@@ -694,7 +693,7 @@ body {
 }
 
 #dife {
-    margin-top: 65px;
+    margin-top: 48px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -745,7 +744,7 @@ body {
 
 #section3 {
     text-align: left;
-    padding: 65px 20px 65px 20px;
+    padding: 65px 20px 55px 20px;
     background: #ffffff;
 }
 
@@ -855,7 +854,6 @@ body {
 
 #section5 {
     padding: 80px 0 60px 0;
-    /* background: #ffffff; */
     position: relative;
 }
 
@@ -876,7 +874,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .box-services {
@@ -889,7 +887,6 @@ body {
     position: relative;
     background: #2d2e2e;
     color: #dddddd;
-    /* box-shadow: 3px 3px 10px #8b8b8b; */
     transition: background-color 0.2s linear;
     border: 1px solid #ffffff;
 }
@@ -902,7 +899,6 @@ body {
     position: absolute;
     left: 7px;
     top: 7px;
-    /* border: 2px solid #a8a8a8; */
     background: #8d8d8d;
     z-index: -1;
     box-shadow: 6px 6px 0 #cfcfcf;
@@ -949,7 +945,7 @@ body {
 .portfolio-box {
     width: 400px;
     background: #ffffff;
-    margin: 50px 50px 0 0;
+    margin: 35px 50px 0 0;
     position: relative;
     transition: opacity 0.2s linear;
     box-shadow: 3px 3px 10px #474747;
@@ -973,12 +969,12 @@ body {
 }
 
 #section6 {
-    padding: 80px 20px 72px 20px;
+    padding: 77px 20px 72px 20px;
     background: #ffffff;
 }
 
 #section10 {
-    padding: 80px 20px 85px 20px;
+    padding: 75px 20px 80px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -1188,7 +1184,6 @@ body {
 
 #section7 {
     padding: 82px 0 80px 0;
-    /* background: #ffffff; */
     border-top: 1px solid #f0f0f0;
     position: relative;
 }
@@ -1319,6 +1314,115 @@ details .summary-chevron-up svg, details .summary-chevron-down svg {
 
 details summary::-webkit-details-marker {
     display: none;
+}
+
+#section20 {
+    text-align: center;
+    padding: 53px 20px 60px 20px;
+    background: #fafafa;
+}
+
+#section20 p {
+    margin: 15px auto;
+    padding: 0 25px;
+    font-family: Roboto-Light;
+    line-height: 2;
+    font-size: 0.9rem;
+}
+
+#section20 h4 {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    font-family: Oswald-Light;
+}
+
+#reviews {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.box-review {
+    width: 350px;
+    height: fit-content;
+    background: #ffffff;
+    box-shadow: 3px 3px 10px #e0e0e0;
+    margin: 15px;
+    padding: 20px;
+}
+
+.box-review .review-header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.box-review div:nth-child(1) {
+    display: flex;
+    justify-content: left;
+}
+
+.box-review div:nth-child(1) img {
+    margin: 0 3px;
+}
+
+.box-review .review-header div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #c4c3c3;
+    filter: sepia(10%) saturate(80%);
+}
+
+.box-review:nth-child(1) .review-header div:nth-child(1) {
+    background-image: url(../img/client1.jpg);
+}
+
+.box-review:nth-child(2) .review-header div:nth-child(1) {
+    background-image: url(../img/client2.jpg);
+}
+
+.box-review:nth-child(3) .review-header div:nth-child(1) {
+    background-image: url(../img/client3.jpg);
+}
+
+.box-review:nth-child(4) .review-header div:nth-child(1) {
+    background-image: url(../img/client4.jpg);
+}
+
+.box-review:nth-child(5) .review-header div:nth-child(1) {
+    background-image: url(../img/client5.jpg);
+}
+
+.box-review:nth-child(6) .review-header div:nth-child(1) {
+    background-image: url(../img/client6.jpg);
+}
+
+.box-review .review-header div:nth-child(2) span {
+    display: block;
+    text-align: left;
+    margin: 5px 15px;
+}
+
+.box-review .review-header div:nth-child(2) span:nth-child(1) {
+    font-family: Roboto-Medium;
+}
+
+.box-review .review-header div:nth-child(2) span:nth-child(2) {
+    font-family: Roboto-Light;
+}
+
+.box-review .review-desc {
+    font-family: Roboto-Light;
+    color: #555555;
+    line-height: 1.5;
 }
 
 footer {
