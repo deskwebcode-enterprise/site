@@ -6,7 +6,8 @@
 
     .price {
         width: calc(50% - 50px);
-        margin: 25px;
+        margin: 10px 20px;
+        margin-top: 30px;
     }
 }
 
@@ -90,7 +91,7 @@
 
     #section1 {
         padding-top: 220px;
-        padding-bottom: 60px;
+        padding-bottom: 39px;
     }
 
     #section2 {
@@ -126,6 +127,11 @@
     #section10 {
         padding-top: 61px;
         padding-bottom: 61px;
+    }
+
+    #section20 {
+        padding-top: 28px;
+        padding-bottom: 55px;
     }
 
     .p-column {
@@ -203,6 +209,7 @@
         width: 100%;
         justify-content: flex-start;
         margin: 20px 10px !important;
+        margin-bottom: 10px !important;
     }
 
     .number {
@@ -258,6 +265,12 @@
     .box-services {
         width: 70%;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .box-review {
+        width: 80%;
     }
 }
 
@@ -539,6 +552,15 @@
         margin: 0 10px;
     }
 
+    #reviews {
+        width: 100%;
+    }
+
+    .box-review {
+        width: 100%;
+        margin: 20px 10px;
+    }
+
     footer {
         justify-content: flex-start;
     }
@@ -556,7 +578,6 @@
     
     .portfolio-box {
         width: 100%;
-        margin: 20px 5px;
         padding: 0;
     }
 }
