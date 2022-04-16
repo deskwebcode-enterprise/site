@@ -417,11 +417,3 @@ window.onload = () => {
         circlesCount = cvar;
     }
 };
-
-setTimeout(() => {
-    let body = document.body;
-    let pageLoad = document.querySelector("#page-load");
-
-    body.style.overflow = "auto";
-    pageLoad.style.display = "none";
-}, 3000);
