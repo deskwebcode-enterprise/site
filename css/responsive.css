@@ -659,6 +659,15 @@
     #portfolio {
         width: 95%;
     }
+    
+    #section9 p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #section9 ol {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 440px) {
