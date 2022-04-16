@@ -20,6 +20,10 @@ window.onload = () => {
     let btnOptionPlans = document.querySelectorAll(".btn-option-plans");
 
     changeMenuOnScroll();
+    
+    particlesJs.addEventListener("animationend", function() {
+        particlesJs.classList.remove("particles-add-animated-img");
+    });
 
     if (window.scrollY >= 50) {
         altarnate("#ffffff", "#2d2e2e", "5px solid #ffffff", "5px solid #2d2e2e");
@@ -209,18 +213,24 @@ window.onload = () => {
         circleSlider(0);
 
         particlesJs.style.backgroundImage = "url(img/background-01.png)";
+        
+        particlesJs.classList.add("particles-add-animated-img");
     }
 
     circles[1].onclick = () => {
         circleSlider(1);
 
         particlesJs.style.backgroundImage = "url(img/background-02.png)";
+        
+        particlesJs.classList.add("particles-add-animated-img");
     }
 
     circles[2].onclick = () => {
         circleSlider(2);
 
         particlesJs.style.backgroundImage = "url(img/background-03.png)";
+        
+        particlesJs.classList.add("particles-add-animated-img");
     }
 
     window.onscroll = () => {
@@ -389,6 +399,8 @@ window.onload = () => {
         if (circlesCount == 2) {
             particlesJs.style.backgroundImage = "url(img/background-03.png)";
         }
+        
+        particlesJs.classList.add("particles-add-animated-img");
     }
 
     function circleSlider(cvar) {
