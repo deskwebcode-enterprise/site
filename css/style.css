@@ -86,6 +86,17 @@ html {
     transition: background-color 0.3s ease-in-out;
     font-family: Roboto-Light;
     background: #ffffff;
+    animation: animated-opacity 0.5s linear forwards;
+}
+
+@keyframes animated-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #name-logo {
@@ -195,6 +206,7 @@ html {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     z-index: 1;
+    animation: animated-opacity 0.5s linear forwards;
 }
 
 #btn-left-slider:hover, #btn-right-slider:hover {
