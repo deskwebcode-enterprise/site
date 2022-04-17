@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/main-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <title>DeskWebCode</title>
 </head>
 <body>
@@ -94,50 +95,50 @@
     <div class="scroll-pos"></div>
     <section id="section1">
         <div id="wrapper-txt">
-            <h2 id="about-us" class="main-h2">SOBRE NÓS</h2>
-                <div class="intro-bar"></div>
-                <h3 class="main-h3">
-                    <span>QUEM SOMOS</span><br>
-                    E O QUE FAZEMOS?
-                </h3>
-                <div class="main-p p-column">
-                    <p>
-                        Nós da <strong>DeskWebCode</strong> somos uma equipe especializada desde 2018 em projetos, desenvolvimento e manutenções de sites online voltados
-                        especialmente para negócios que querem gerar mais profissionalismo e credibilidade na transmisão de suas informações, ideias, valores
-                        e diferenciais dentro da internet.
-                    </p>
-                    <p>
-                        Nascemos justamente com o propósito claro de agregar mais valor na comunicação direta e indireta entre pequenos, médios, grandes negócios e seus
-                        respectivos públicos, assim não só criando mais facilidades para ambos os lados, mas também gerando novas oportunidades
-                        de negócios a curto ou longo prazo.
-                    </p>
-                </div>
+            <h2 id="about-us" class="main-h2" data-aos="fade-right">SOBRE NÓS</h2>
+            <div class="intro-bar" data-aos="fade"></div>
+            <h3 class="main-h3" data-aos="fade-left">
+                <span>QUEM SOMOS</span><br>
+                E O QUE FAZEMOS?
+            </h3>
+            <div class="main-p p-column">
+                <p data-aos="fade-right">
+                    Nós da <strong>DeskWebCode</strong> somos uma equipe especializada desde 2018 em projetos, desenvolvimento e manutenções de sites online voltados
+                    especialmente para negócios que querem gerar mais profissionalismo e credibilidade na transmisão de suas informações, ideias, valores
+                    e diferenciais dentro da internet.
+                </p>
+                <p data-aos="fade-left">
+                    Nascemos justamente com o propósito claro de agregar mais valor na comunicação direta e indireta entre pequenos, médios, grandes negócios e seus
+                    respectivos públicos, assim não só criando mais facilidades para ambos os lados, mas também gerando novas oportunidades
+                    de negócios a curto ou longo prazo.
+                </p>
+            </div>
         </div>
         <div id="result">
-            <div class="box-result">
+            <div class="box-result" data-aos="fade-right">
                 <img src="img/devices.png" alt="Dispositivos">
             </div>
             <div class="box-result">
-                <h3 class="main-h3">
+                <h3 class="main-h3" data-aos="fade-right">
                     <span>FOCAMOS SEMPRE</span><br>
                     EM RESULTADOS
                 </h3>
-                <p class="main-p">
+                <p class="main-p" data-aos="fade-left">
                     Em pouco tempo conseguimos mudar a maneira dos negócios físicos negociarem pela internet. Nós não abrimos
                     apenas mais novos canais de comunicação, mas também novos canais de vendas.
                 </p>
                 <div id="numbers">
                     <div class="numbers">
-                        <span class="number">2.500+</span>
-                        <span class="number-desc">Sites desenvolvidos</span>
+                        <span class="number" data-aos="fade-right">2.500+</span>
+                        <span class="number-desc" data-aos="fade-left">Sites desenvolvidos</span>
                     </div>
                     <div class="numbers">
-                        <span class="number">73.000+</span>
-                        <span class="number-desc">Manutenções realizadas</span>
+                        <span class="number" data-aos="fade-right">73.000+</span>
+                        <span class="number-desc" data-aos="fade-left">Manutenções realizadas</span>
                     </div>
                     <div class="numbers">
-                        <span class="number">2.500+</span>
-                        <span class="number-desc">Clientes satisfeitos</span>
+                        <span class="number" data-aos="fade-right">2.500+</span>
+                        <span class="number-desc" data-aos="fade-left">Clientes satisfeitos</span>
                     </div>
                 </div>
             </div>
@@ -1090,6 +1091,10 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
