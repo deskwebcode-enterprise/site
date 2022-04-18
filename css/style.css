@@ -97,17 +97,6 @@ html {
     transition: background-color 0.3s ease-in-out;
     font-family: Roboto-Light;
     background: #ffffff;
-    animation: animated-opacity 0.5s linear forwards;
-}
-
-@keyframes animated-opacity {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 #name-logo {
@@ -257,31 +246,25 @@ html {
     animation: none;
 }
 
-.particles-add-animated-img {
-    animation: animated-img-background 0.5s linear;
-}
-
-@keyframes animated-img-background {
-    0% {
-        opacity: 0;
-        transform: translate(0, -100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-}
-
 .txt-group {
     width: 50%;
     position: absolute;
     left: 35%;
     top: 50%;
     pointer-events: none;
-    transform: translate(0, -50%);
+    transform: translate(-50%, -50%);
     color: #292929;
-    animation: txt-group 0.4s linear forwards;
+    animation: txt-group 0.3s linear;
+}
+
+@keyframes txt-group {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .txt-group-display-on {
@@ -290,18 +273,6 @@ html {
 
 .txt-group-display-off {
     display: none;
-}
-
-@keyframes txt-group {
-    0% {
-        transform: translate(-50%, -10%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(-50%, -50%);
-        opacity: 1;
-    }
 }
 
 .square-slider span {
@@ -466,23 +437,8 @@ html {
     transition: transform 0.1s linear;
 }
 
-#btn-circles div {
-    animation: circles 0.4s linear forwards;
-    opacity: 0;
-}
-
 #btn-circles div:hover, #btn-circles-services div:hover {
     transform: scale(1.4);
-}
-
-@keyframes circles {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 .circle-disabled, .circle-services-disabled {
