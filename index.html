@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/main-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>DeskWebCode</title>
 </head>
 <body>
@@ -94,7 +95,7 @@
     <div class="scroll-pos"></div>
     <section id="section1">
         <div id="wrapper-txt">
-            <h2 id="about-us" class="main-h2">SOBRE NÓS</h2>
+            <h2 id="about-us" class="main-h2 anime">SOBRE NÓS</h2>
             <div class="intro-bar"></div>
             <h3 class="main-h3">
                 <span>QUEM SOMOS</span><br>
@@ -1092,7 +1093,43 @@
         })();
     </script>
     <script>
-        AOS.init();
+        var root = document.documentElement;
+        
+        root.className += ' js';
+        
+        function boxTop(idBox) {
+            var boxOffset = $(idBox).offset().top;
+            return boxOffset;
+        }
+        
+        $(document).ready(function() {
+            var $target = $('.anime'),
+            animationClass = 'anime-init',
+            windowHeight = $(window).height(),
+            offset = windowHeight;
+        
+            function animeScroll() {
+                var documentTop = $(document).scrollTop();
+                $target.each(function() {
+                
+                if (documentTop > boxTop(this) - offset) {
+                    $(this).addClass(animationClass);
+                }
+                
+                else {
+                    $(this).removeClass(animationClass);
+                }
+            });
+        }
+    
+        animeScroll();
+        
+        $(document).scroll(function() {
+            setTimeout(function() {
+                animeScroll()
+            }, 150);
+        });
+        });
     </script>
 </body>
 </html>
