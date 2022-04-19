@@ -730,6 +730,10 @@ html {
     width: 100%;
 }
 
+.img-right:nth-child(1) {
+    display: none;
+}
+
 #section4 {
     padding: 80px 20px 32px 20px;
     background: #fafafa;
