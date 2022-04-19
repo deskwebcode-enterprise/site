@@ -20,6 +20,7 @@ window.onload = () => {
     let btnOptionPlans = document.querySelectorAll(".btn-option-plans");
 
     changeMenuOnScroll();
+    animatedScroll();
     
     particlesJs.addEventListener("animationend", function() {
         particlesJs.classList.remove("particles-add-animated-img");
@@ -313,6 +314,8 @@ window.onload = () => {
         else {
             altarnate("#2d2e2e", "#ffffff", "5px solid #2d2e2e", "5px solid #ffffff");
         }
+
+        animatedScroll();
     }
 
     function altarnate(color1, color2, border1, border2) {
@@ -393,5 +396,45 @@ window.onload = () => {
         txtGroup[cvar].classList.add("txt-group-display-on");
 
         circlesCount = cvar;
+    }
+
+    function animatedScroll () {
+        var root = document.documentElement;
+        
+        root.className += ' js';
+        
+        function boxTop(idBox) {
+            var boxOffset = $(idBox).offset().top;
+            return boxOffset;
+        }
+        
+        $(document).ready(function() {
+            var $target = $('.anime'),
+            animationClass = 'anime-init',
+            windowHeight = $(window).height(),
+            offset = windowHeight;
+        
+            function animeScroll() {
+                var documentTop = $(document).scrollTop();
+                $target.each(function() {
+                
+                if (documentTop > boxTop(this) - offset) {
+                    $(this).addClass(animationClass);
+                }
+                
+                else {
+                    $(this).removeClass(animationClass);
+                }
+            });
+        }
+    
+        animeScroll();
+        
+        $(document).scroll(function() {
+            setTimeout(function() {
+                animeScroll()
+            }, 150);
+        });
+        });
     }
 };
