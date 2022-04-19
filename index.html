@@ -129,7 +129,7 @@
                 </p>
                 <div id="numbers">
                     <div class="numbers">
-                        <span class="number anime">2.500+</span>
+                        <span class="number anime">2.500</span>
                         <span class="number-desc anime">Sites desenvolvidos</span>
                     </div>
                     <div class="numbers">
@@ -1094,45 +1094,6 @@
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
         })();
-    </script>
-    <script>
-        var root = document.documentElement;
-        
-        root.className += ' js';
-        
-        function boxTop(idBox) {
-            var boxOffset = $(idBox).offset().top;
-            return boxOffset;
-        }
-        
-        $(document).ready(function() {
-            var $target = $('.anime'),
-            animationClass = 'anime-init',
-            windowHeight = $(window).height(),
-            offset = windowHeight;
-        
-            function animeScroll() {
-                var documentTop = $(document).scrollTop();
-                $target.each(function() {
-                
-                if (documentTop > boxTop(this) - offset) {
-                    $(this).addClass(animationClass);
-                }
-                
-                else {
-                    $(this).removeClass(animationClass);
-                }
-            });
-        }
-    
-        animeScroll();
-        
-        $(document).scroll(function() {
-            setTimeout(function() {
-                animeScroll()
-            }, 150);
-        });
-        });
     </script>
 </body>
 </html>
