@@ -167,6 +167,15 @@
         margin-right: 100px;
     }
 
+    .img-right:nth-child(1) {
+        display: flex;
+        margin: auto;
+    }
+
+    .asd {
+        display: none;
+    }
+
     .square-correct {
         width: 70px;
         height: 70px;
