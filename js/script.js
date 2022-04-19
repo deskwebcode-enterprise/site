@@ -316,10 +316,6 @@ window.onload = () => {
     }
 
     function altarnate(color1, color2, border1, border2) {
-        let txtLeft = document.querySelectorAll(".txt-left");
-        let imgRight = document.querySelectorAll(".img-right");
-        let boxSection3 = document.querySelector("#box-section3");
-
         mainNav.style.background = color2;
         nameLogo.style.color = color1;
 
@@ -356,16 +352,6 @@ window.onload = () => {
                 mainA[c].style.color = "#2d2e2e";
                 mainAactivated.style.borderLeft = "5px solid #2d2e2e";
             }
-        }
-
-        if (window.innerWidth <= 1300) {        
-            boxSection3.removeChild(txtLeft[0]);
-            boxSection3.appendChild(txtLeft[0]);
-        }
-
-        if (window.innerWidth > 1300) {
-            boxSection3.removeChild(imgRight[0]);
-            boxSection3.appendChild(imgRight[0]);
         }
     }
 
