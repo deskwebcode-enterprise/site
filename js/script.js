@@ -57,13 +57,7 @@ window.onload = () => {
     }
 
     mainA[0].addEventListener("click", () => {
-        animePageMove.style.display = "block";
-        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
-
-        animePageMove.addEventListener("animationend", () => {
-            animePageMove.style.display = "none";
-            animePageMove.style.animation = "none";
-        });
+        animePageClick();
 
         if (window.innerWidth > 0) {
             scrollMovePos(0, -50);;
@@ -71,13 +65,7 @@ window.onload = () => {
     });
 
     mainA[1].addEventListener("click", () => {
-        animePageMove.style.display = "block";
-        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
-
-        animePageMove.addEventListener("animationend", () => {
-            animePageMove.style.display = "none";
-            animePageMove.style.animation = "none";
-        });
+        animePageClick();
 
         if (window.innerWidth > 1299) {
             scrollMovePos(1, 80);
@@ -89,13 +77,7 @@ window.onload = () => {
     });
 
     mainA[2].addEventListener("click", () => {
-        animePageMove.style.display = "block";
-        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
-
-        animePageMove.addEventListener("animationend", () => {
-            animePageMove.style.display = "none";
-            animePageMove.style.animation = "none";
-        });
+        animePageClick();
 
         if (window.innerWidth > 1299) {
             scrollMovePos(2, -90);
@@ -107,13 +89,7 @@ window.onload = () => {
     });
 
     mainA[3].addEventListener("click", () => {
-        animePageMove.style.display = "block";
-        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
-
-        animePageMove.addEventListener("animationend", () => {
-            animePageMove.style.display = "none";
-            animePageMove.style.animation = "none";
-        });
+        animePageClick();
 
         if (window.innerWidth > 1299) {
             scrollMovePos(3, -90);
@@ -125,13 +101,7 @@ window.onload = () => {
     });
 
     mainA[4].addEventListener("click", () => {
-        animePageMove.style.display = "block";
-        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
-
-        animePageMove.addEventListener("animationend", () => {
-            animePageMove.style.display = "none";
-            animePageMove.style.animation = "none";
-        });
+        animePageClick();
 
         if (window.innerWidth > 1299) {
             scrollMovePos(4, -90);
@@ -143,13 +113,7 @@ window.onload = () => {
     });
 
     mainA[5].addEventListener("click", () => {
-        animePageMove.style.display = "block";
-        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
-
-        animePageMove.addEventListener("animationend", () => {
-            animePageMove.style.display = "none";
-            animePageMove.style.animation = "none";
-        });
+        animePageClick();
 
         if (window.innerWidth > 1299) {
             scrollMovePos(5, -90);
@@ -161,13 +125,7 @@ window.onload = () => {
     });
 
     mainA[6].addEventListener("click", () => {
-        animePageMove.style.display = "block";
-        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
-
-        animePageMove.addEventListener("animationend", () => {
-            animePageMove.style.display = "none";
-            animePageMove.style.animation = "none";
-        });
+        animePageClick();
 
         if (window.innerWidth > 1299) {
             scrollMovePos(6, -90);
@@ -179,13 +137,7 @@ window.onload = () => {
     });
 
     mainA[7].addEventListener("click", () => {
-        animePageMove.style.display = "block";
-        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
-
-        animePageMove.addEventListener("animationend", () => {
-            animePageMove.style.display = "none";
-            animePageMove.style.animation = "none";
-        });
+        animePageClick();
 
         if (window.innerWidth > 1299) {
             scrollMovePos(7, -90);
@@ -195,6 +147,27 @@ window.onload = () => {
             scrollMovePos(7, -70);
         }
     });
+    
+    function animePageClick() {
+        let animePageMoveTop = document.querySelector("#animePageMoveTop");
+        let animePageMoveBottom = document.querySelector("#animePageMoveBottom");
+
+        animePageMoveTop.style.display = "block";
+        animePageMoveTop.style.animation = "animePageMoveTop 0.3s linear";
+
+        animePageMoveTop.addEventListener("animationend", () => {
+            animePageMoveTop.style.display = "none";
+            animePageMoveTop.style.animation = "none";
+        });
+
+        animePageMoveBottom.style.display = "block";
+        animePageMoveBottom.style.animation = "animePageMoveBottom 0.3s linear";
+
+        animePageMoveBottom.addEventListener("animationend", () => {
+            animePageMoveBottom.style.display = "none";
+            animePageMoveBottom.style.animation = "none";
+        });
+    }
 
     for (let w = 0; w < btnActionLight.length; w++) {
         btnActionLight[w].addEventListener("click", () => {
