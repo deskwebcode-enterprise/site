@@ -236,7 +236,9 @@ window.onload = () => {
         else {
             altarnate("#2d2e2e", "#ffffff", "5px solid #2d2e2e", "5px solid #ffffff");
         }
-
+    }
+    
+    window.onwheel = () => {
         changeMenuOnScroll();
     }
 
