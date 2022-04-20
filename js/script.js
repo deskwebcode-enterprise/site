@@ -18,6 +18,8 @@ window.onload = () => {
     let scrollPos = document.querySelectorAll(".scroll-pos");
     let btnActionLight = document.querySelectorAll(".btn-action-light");
     let btnOptionPlans = document.querySelectorAll(".btn-option-plans");
+    
+    let animePageMove = document.querySelector("#animePageMove");
 
     changeMenuOnScroll();
     animatedScroll();
@@ -55,12 +57,28 @@ window.onload = () => {
     }
 
     mainA[0].addEventListener("click", () => {
+        animePageMove.style.display = "block";
+        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
+
+        animePageMove.addEventListener("animationend", () => {
+            animePageMove.style.display = "none";
+            animePageMove.style.animation = "none";
+        });
+
         if (window.innerWidth > 0) {
             scrollMovePos(0, -50);;
         }
     });
 
     mainA[1].addEventListener("click", () => {
+        animePageMove.style.display = "block";
+        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
+
+        animePageMove.addEventListener("animationend", () => {
+            animePageMove.style.display = "none";
+            animePageMove.style.animation = "none";
+        });
+
         if (window.innerWidth > 1299) {
             scrollMovePos(1, 80);
         }
@@ -71,6 +89,14 @@ window.onload = () => {
     });
 
     mainA[2].addEventListener("click", () => {
+        animePageMove.style.display = "block";
+        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
+
+        animePageMove.addEventListener("animationend", () => {
+            animePageMove.style.display = "none";
+            animePageMove.style.animation = "none";
+        });
+
         if (window.innerWidth > 1299) {
             scrollMovePos(2, -90);
         }
@@ -81,6 +107,14 @@ window.onload = () => {
     });
 
     mainA[3].addEventListener("click", () => {
+        animePageMove.style.display = "block";
+        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
+
+        animePageMove.addEventListener("animationend", () => {
+            animePageMove.style.display = "none";
+            animePageMove.style.animation = "none";
+        });
+
         if (window.innerWidth > 1299) {
             scrollMovePos(3, -90);
         }
@@ -91,6 +125,14 @@ window.onload = () => {
     });
 
     mainA[4].addEventListener("click", () => {
+        animePageMove.style.display = "block";
+        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
+
+        animePageMove.addEventListener("animationend", () => {
+            animePageMove.style.display = "none";
+            animePageMove.style.animation = "none";
+        });
+
         if (window.innerWidth > 1299) {
             scrollMovePos(4, -90);
         }
@@ -101,6 +143,14 @@ window.onload = () => {
     });
 
     mainA[5].addEventListener("click", () => {
+        animePageMove.style.display = "block";
+        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
+
+        animePageMove.addEventListener("animationend", () => {
+            animePageMove.style.display = "none";
+            animePageMove.style.animation = "none";
+        });
+
         if (window.innerWidth > 1299) {
             scrollMovePos(5, -90);
         }
@@ -111,6 +161,14 @@ window.onload = () => {
     });
 
     mainA[6].addEventListener("click", () => {
+        animePageMove.style.display = "block";
+        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
+
+        animePageMove.addEventListener("animationend", () => {
+            animePageMove.style.display = "none";
+            animePageMove.style.animation = "none";
+        });
+
         if (window.innerWidth > 1299) {
             scrollMovePos(6, -90);
         }
@@ -121,6 +179,14 @@ window.onload = () => {
     });
 
     mainA[7].addEventListener("click", () => {
+        animePageMove.style.display = "block";
+        animePageMove.style.animation = "animePageMoveStart 0.5s linear";
+
+        animePageMove.addEventListener("animationend", () => {
+            animePageMove.style.display = "none";
+            animePageMove.style.animation = "none";
+        });
+
         if (window.innerWidth > 1299) {
             scrollMovePos(7, -90);
         }
@@ -236,6 +302,8 @@ window.onload = () => {
         else {
             altarnate("#2d2e2e", "#ffffff", "5px solid #2d2e2e", "5px solid #ffffff");
         }
+        
+        changeMenuOnScroll();
     }
     
     window.onwheel = () => {
