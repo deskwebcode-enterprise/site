@@ -171,14 +171,21 @@ window.onload = () => {
     for (let w = 0; w < btnOptionPlans.length; w++) {
         btnOptionPlans[w].addEventListener("click", () => {
             animePageClick();
-            
+
             if (window.innerWidth > 1299) {
-                scrollMovePos(6, -90);
+                scrollMovePos(6, -80);
             }
     
             else if (window.innerWidth > 0) {
                 scrollMovePos(6, -70);
             }
+
+            changeMenuOnScroll()
+            
+            mainA[6].setAttribute("id", "main-a-activated");
+            mainA[6].style.color = "#fff";
+            mainA[6].style.borderTop = "5px solid #ffffff";
+            mainAactivated.style.borderTop = "5px solid #ffffff";
         });
     }
 
