@@ -16,7 +16,6 @@ window.onload = () => {
     let circlesCount = 0;
 
     let scrollPos = document.querySelectorAll(".scroll-pos");
-    let btnActionLight = document.querySelectorAll(".btn-action-light");
     let btnOptionPlans = document.querySelectorAll(".btn-option-plans");
     
     let animePageMove = document.querySelector("#animePageMove");
@@ -169,20 +168,10 @@ window.onload = () => {
         });
     }
 
-    for (let w = 0; w < btnActionLight.length; w++) {
-        btnActionLight[w].addEventListener("click", () => {
-            if (window.innerWidth > 1299) {
-                scrollMovePos(7, -90);
-            }
-    
-            else if (window.innerWidth > 0) {
-                scrollMovePos(7, -68);
-            }
-        });
-    }
-    
     for (let w = 0; w < btnOptionPlans.length; w++) {
         btnOptionPlans[w].addEventListener("click", () => {
+            animePageClick();
+            
             if (window.innerWidth > 1299) {
                 scrollMovePos(5, -90);
             }
