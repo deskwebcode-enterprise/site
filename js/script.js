@@ -173,11 +173,11 @@ window.onload = () => {
             animePageClick();
             
             if (window.innerWidth > 1299) {
-                scrollMovePos(5, -90);
+                scrollMovePos(6, -90);
             }
     
             else if (window.innerWidth > 0) {
-                scrollMovePos(5, -70);
+                scrollMovePos(6, -70);
             }
         });
     }
