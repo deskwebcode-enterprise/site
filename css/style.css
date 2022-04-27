@@ -893,7 +893,7 @@ html {
 .box-services {
     width: 400px;
     height: 200px;
-    margin: 30px;
+    margin: 15px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
