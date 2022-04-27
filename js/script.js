@@ -247,19 +247,19 @@ window.onload = () => {
     circles[0].onclick = () => {
         circleSlider(0);
 
-        particlesJs.style.backgroundImage = "url(img/background-01.png)";
+        particlesJs.style.backgroundImage = "url(img/background-01.webp)";
     }
 
     circles[1].onclick = () => {
         circleSlider(1);
 
-        particlesJs.style.backgroundImage = "url(img/background-02.png)";
+        particlesJs.style.backgroundImage = "url(img/background-02.webp)";
     }
 
     circles[2].onclick = () => {
         circleSlider(2);
 
-        particlesJs.style.backgroundImage = "url(img/background-03.png)";
+        particlesJs.style.backgroundImage = "url(img/background-03.webp)";
     }
 
     window.onscroll = () => {
@@ -408,15 +408,15 @@ window.onload = () => {
         circles[circlesCount].classList.add("circle-activated");
 
         if (circlesCount == 0) {
-            particlesJs.style.backgroundImage = "url(img/background-01.png)";
+            particlesJs.style.backgroundImage = "url(img/background-01.webp)";
         }
 
         if (circlesCount == 1) {
-            particlesJs.style.backgroundImage = "url(img/background-02.png)";
+            particlesJs.style.backgroundImage = "url(img/background-02.webp)";
         }
 
         if (circlesCount == 2) {
-            particlesJs.style.backgroundImage = "url(img/background-03.png)";
+            particlesJs.style.backgroundImage = "url(img/background-03.webp)";
         }
     }
 
