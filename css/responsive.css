@@ -101,7 +101,7 @@
 
     #section3 {
         padding-top: 20px;
-        padding-bottom: 42px;
+        padding-bottom: 33px;
     }
 
     #section4 {
@@ -132,6 +132,11 @@
     #section20 {
         padding-top: 28px;
         padding-bottom: 55px;
+    }
+    
+    #box-section3-result {
+        margin-top: 33px;
+        padding-top: 53px;
     }
 
     .p-column {
