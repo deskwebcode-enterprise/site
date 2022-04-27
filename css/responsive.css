@@ -447,6 +447,12 @@
     }
 }
 
+@media screen and (max-width: 794px) {
+    .result-itens {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 710px) {
     .txt-center {
         width: 100%;
@@ -676,6 +682,11 @@
 
     #section9 ol {
         margin-right: 0;
+    }
+
+    .result-itens {
+        width: 95%;
+        margin: 0;
     }
 }
 
