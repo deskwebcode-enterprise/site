@@ -682,10 +682,6 @@ html {
     position: relative;
 }
 
-.box-dife:hover {
-    background: #f8f8f8;
-}
-
 .box-dife-img {
     width: 60px;
     height: 60px;
