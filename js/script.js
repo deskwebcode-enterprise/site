@@ -460,6 +460,8 @@ window.onload = () => {
                 if (documentTop > boxTop(this) - offset) {
                     $(this).addClass(animationClass);
                 }
+                    
+                console.log("f")
             });
         }
     
