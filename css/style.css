@@ -895,7 +895,7 @@ html {
 .box-services {
     width: 400px;
     height: 200px;
-    margin: 15px;
+    margin: 10px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
