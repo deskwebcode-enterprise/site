@@ -525,46 +525,13 @@ html {
 
 .intro-bar {
     width: 100px;
-    height: 3px;
+    height: 2px;
     background: #2d2e2e;
     margin: auto;
     margin-top: 10px;
     position: relative;
     left: -3px;
     overflow: hidden;
-}
-
-.intro-bar::after {
-    content: "";
-    width: 102px;
-    height: 5px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #ffffff;
-    animation: introBar 3s ease-in-out infinite;
-}
-
-@keyframes introBar {
-    0% {
-        left: 100%;
-    }
-
-    100% {
-        left: -100%;
-    }
-}
-
-.intro-bar-c2::after {
-    background: #fafafa;
-}
-
-.intro-bar-c3 {
-    background: #ffffff;
-}
-
-.intro-bar-c3::after {
-    background: #202020;
 }
 
 .main-h3 {
