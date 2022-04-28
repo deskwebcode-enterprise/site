@@ -39,6 +39,10 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #animePageMoveTop {
     display: none;
     position: fixed;
