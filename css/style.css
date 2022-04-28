@@ -36,11 +36,6 @@
 
 html {
     font-size: 1rem;
-    overflow-x: hidden;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 #animePageMoveTop {
@@ -680,7 +675,7 @@ body {
 
 #section3 {
     text-align: left;
-    padding: 65px 0 0 0;
+    padding: 65px 20px 0 20px;
     background: #ffffff;
 }
 
