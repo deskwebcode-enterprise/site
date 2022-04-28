@@ -734,6 +734,29 @@ html {
     border-top: 1px solid #f0f0f0;
     background: #202020;
     color: #bdbdbd;
+    position: relative;
+}
+
+#box-section3-result::after {
+    content: "";
+    width: 20px;
+    height: 100%;
+    background: #202020;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    display: block;
+}
+
+#box-section3-result::before {
+    content: "";
+    width: 20px;
+    height: 100%;
+    background: #202020;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    display: block;
 }
 
 #box-section3-result .txt-center h3 {
