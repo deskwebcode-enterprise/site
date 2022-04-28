@@ -33,6 +33,13 @@
     }
 }
 
+@media screen and (max-width: 1494px) {
+    #result-itens {
+        width: 75%;
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 1299px) {
     #btn-hamburger {
         display: flex;
@@ -100,8 +107,11 @@
     }
 
     #section3 {
-        padding-top: 20px;
-        padding-bottom: 33px;
+        padding-top: 30px;
+    }
+
+    #result-itens {
+        padding-bottom: 25px;
     }
 
     #section4 {
@@ -285,6 +295,12 @@
 @media screen and (max-width: 1028px) {
     .box-review {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 1001px) {
+    #result-itens {
+        width: 100%;
     }
 }
 
