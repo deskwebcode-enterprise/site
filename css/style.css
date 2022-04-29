@@ -1045,7 +1045,7 @@ html {
     text-align: center;
     padding: 20px 0 0 0;
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: Montserrat-Light;
 }
 
@@ -1062,7 +1062,7 @@ html {
     display: flex;
     margin: auto;
     position: relative;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .portion {
@@ -1106,6 +1106,7 @@ html {
     margin: 5px 20px !important;
     padding: 0 4px;
     font-size: 0.9rem !important;
+    font-family: Roboto-Light !important;
 }
 
 .check {
