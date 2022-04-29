@@ -1008,6 +1008,7 @@ html {
     background: #ffffff;
     transition: background-color 0.2s linear;
     box-shadow: 3px 3px 10px #e0e0e0;
+    border-top: 3px solid #3b9dff;
     overflow: hidden;
 }
 
@@ -1042,7 +1043,8 @@ html {
 
 .price h4 {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
+    margin-top: 30px;
     font-size: 1.5rem;
     font-family: Montserrat-Light;
 }
@@ -1110,6 +1112,14 @@ html {
     width: 15px;
     margin-right: 5px;
     transform: translate(-5px, 2px);
+}
+
+.text-recomend {
+    width: 100%;
+    font-family: Montserrat-Light !important;
+    text-align: center;
+    font-size: 0.7rem !important;
+    margin-bottom: 15px;
 }
 
 .content-know-more {
