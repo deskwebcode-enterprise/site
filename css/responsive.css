@@ -156,6 +156,10 @@
         margin-top: 33px;
         padding-top: 53px;
     }
+    
+    #btn-review {
+        margin: 20px 0 5px 0;
+    }
 
     .p-column {
         width: 100%;
