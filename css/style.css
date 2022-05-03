@@ -1406,6 +1406,47 @@ details summary::-webkit-details-marker {
 .box-review:nth-child(29) .review-header div:nth-child(1), .box-review:nth-child(58) .review-header div:nth-child(1) {background: #ffd208;}
 .box-review:nth-child(30) .review-header div:nth-child(1), .box-review:nth-child(59) .review-header div:nth-child(1) {background: #3f3f3e;}
 
+.box-review .review-header div:nth-child(2) span {
+    display: block;
+    text-align: left;
+    margin: 5px 15px;
+}
+
+.box-review .review-header div:nth-child(2) span:nth-child(1) {
+    font-family: Roboto-Medium;
+}
+
+.box-review .review-header div:nth-child(2) span:nth-child(2) {
+    font-family: Roboto-Light;
+}
+
+.box-review .review-desc {
+    font-family: Roboto-Light;
+    color: #555555;
+    line-height: 1.5;
+}
+
+#align-btn-review {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    font-family: Roboto-Regular;
+    cursor: pointer;
+}
+
+#btn-review svg {
+    margin-left: 10px;
+}
+
 footer {
     width: 100%;
     margin: auto;
