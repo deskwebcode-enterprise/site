@@ -530,20 +530,26 @@ html {
     margin-top: 10px;
     position: relative;
     left: -3px;
-    overflow: hidden;
 }
 
 .intro-bar::after {
     content: "";
     width: 120%;
     height: 10px;
-    background: #ffffff;
     display: block;
     position: absolute;
     left: 120%;
     top: 50%;
     transform: translate(0, -50%);
     animation: intro-bar-anime 1.7s linear infinite;
+}
+
+.intro-bar1::after {
+    background: #ffffff;
+}
+
+.intro-bar2::after {
+    background: #fafafa;
 }
 
 @keyframes intro-bar-anime {
