@@ -533,6 +533,31 @@ html {
     overflow: hidden;
 }
 
+.intro-bar::after {
+    content: "";
+    width: 120%;
+    height: 10px;
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    transform: translate(0, -50%);
+    animation: intro-bar-anime 1.7s linear infinite;
+}
+
+@keyframes intro-bar-anime {
+    0% {
+        left: 120%;
+        transform: translate(0, -50%);
+    }
+
+    100% {
+        left: -120%;
+        transform: translate(0, -50%);
+    }
+}
+
 .main-h3 {
     font-size: 1.5rem;
     font-family: Roboto-Medium;
