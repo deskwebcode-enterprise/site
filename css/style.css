@@ -1211,6 +1211,7 @@ html {
     box-shadow: 0 0 10px #e2e8f0;
     font-family: Oswald-Light;
     line-height: 1.8;
+    border-radius: 5px;
 }
 
 .resume .align-modal-btn {
