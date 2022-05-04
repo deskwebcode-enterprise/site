@@ -1166,6 +1166,7 @@ html {
 .resume {
     background: #fff;
     padding: 21px;
+    margin: 30px 20px 0 20px;
     margin-top: 30px;
     box-shadow: 0 0 10px #e2e8f0;
     font-family: Oswald-Light;
@@ -1528,6 +1529,12 @@ footer p:nth-child(1) {
     margin: 20px 40px;
     font-family: Roboto-Medium;
     font-size: 1.3rem;
+}
+
+#section9 ol li {
+    margin: 20px 0;
+    list-style-position: inside;
+    padding: 20px;
 }
 
 hr {
