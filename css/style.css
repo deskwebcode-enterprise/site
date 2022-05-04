@@ -357,6 +357,7 @@ html {
     background: #2d2e2e;
     padding: 0;
     border: none;
+    border-radius: 5px;
     pointer-events: visible;
     position: relative;
     margin: 20px auto;
@@ -672,6 +673,7 @@ html {
     flex-wrap: wrap;
     margin: 30px 10px;
     padding-bottom: 10px;
+    border-radius: 5px;
     background: #ffffff;
     box-shadow: 3px 3px 10px #e0e0e0;
     transition: background-color 0.2s linear;
@@ -814,6 +816,7 @@ html {
     padding: 30px 20px;
     background: #242424;
     box-shadow: 0 0 10px #1b1b1b;
+    border-radius: 5px;
 }
 
 .result-itens div {
@@ -933,6 +936,7 @@ html {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 5px;
     position: relative;
     background: #2d2e2e;
     color: #dddddd;
@@ -984,6 +988,7 @@ html {
     margin: 35px 50px 0 0;
     position: relative;
     transition: opacity 0.2s linear;
+    border-radius: 5px;
     box-shadow: 3px 3px 10px #c9c9c9;
 }
 
@@ -1044,6 +1049,7 @@ html {
     box-shadow: 3px 3px 10px #e0e0e0;
     border-top: 3px solid #3b9dff;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .price-promo {
@@ -1379,6 +1385,7 @@ details summary::-webkit-details-marker {
     box-shadow: 3px 3px 10px #d8d8d8;
     margin: 15px;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .box-review .review-header {
