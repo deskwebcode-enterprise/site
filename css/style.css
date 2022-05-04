@@ -762,6 +762,7 @@ html {
 #box-section3-result {
     margin-top: 50px;
     padding-top: 80px;
+    padding-bottom: 20px;
     border-top: 1px solid #f0f0f0;
     background: #202020;
     color: #bdbdbd;
