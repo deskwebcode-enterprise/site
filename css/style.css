@@ -358,6 +358,7 @@ html {
     padding: 0;
     border: none;
     border-radius: 5px;
+    overflow: hidden;
     pointer-events: visible;
     position: relative;
     margin: 20px auto;
