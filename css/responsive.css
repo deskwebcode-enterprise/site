@@ -404,6 +404,10 @@
     #align-logo img {
         width: 50px;
     }
+    
+    #name-logo {
+        font-size: 0.9rem;
+    }
 
     #main-nav {
         height: 70px;
