@@ -1146,6 +1146,10 @@ html {
     color: #424242;
 }
 
+.price-desc {
+    padding: 0 10px;
+}
+
 .price-desc p {
     margin: 5px 20px !important;
     padding: 0 4px;
@@ -1184,7 +1188,7 @@ html {
     border: 1px solid #c4c4c4;
     cursor: pointer;
     background: transparent;
-    margin: 15px 5px 0 5px;
+    margin: 15px 5px 0 10px;
     text-decoration: none;
     color: #000000;
     transition: background-color 0.2s linear;
