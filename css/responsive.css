@@ -589,10 +589,6 @@
     #result-itens, .result-itens {
         width: 100%;
     }
-
-    .result-itens {
-        margin: 10px 0;
-    }
 }
 
 @media screen and (max-width: 600px) {
