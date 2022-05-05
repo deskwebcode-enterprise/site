@@ -781,7 +781,7 @@ html {
     height: 100%;
     background: #202020;
     position: absolute;
-    right: -20px;
+    right: -15px;
     top: 0;
     display: block;
 }
@@ -792,7 +792,7 @@ html {
     height: 100%;
     background: #202020;
     position: absolute;
-    left: -20px;
+    left: -15px;
     top: 0;
     display: block;
 }
