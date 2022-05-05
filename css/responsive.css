@@ -748,12 +748,6 @@
     #section9 ol {
         margin-right: 0;
     }
-
-    .result-itens {
-        width: 95%;
-        margin: 0;
-        padding: 20px 0;
-    }
 }
 
 @media screen and (max-width: 440px) {
