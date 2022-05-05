@@ -170,8 +170,8 @@
         padding-bottom: 25px;
     }
     
-    #btn-review {
-        margin: 20px 0 5px 0;
+    #align-btn-review a {
+        margin-bottom: 0;
     }
 
     .p-column {
