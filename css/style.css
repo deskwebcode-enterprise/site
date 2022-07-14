@@ -1558,7 +1558,6 @@ a[href*='tel'], a[href*='mailto'] {
 @media (min-width: 992px) {
 	.desktop .box-contacts {
 		box-shadow: none;
-		border: 1px solid #e1e1e1;
 	}
 	.desktop .box-contacts-decor {
 		margin-top: 17px;
@@ -6309,7 +6308,6 @@ textarea.textarea-lg {
 	background: #ffffff;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
-	filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.15));
 }
 
 .quote-modern::before {
