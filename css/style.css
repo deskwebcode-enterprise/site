@@ -6308,6 +6308,7 @@ textarea.textarea-lg {
 	background: #ffffff;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
+	margin-bottom: 45px;
 }
 
 .quote-modern::before {
