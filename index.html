@@ -22,6 +22,77 @@
           color: #fff;
         }
       }
+      
+      .cookie-alert-window {
+        position: fixed;
+        left: 0;
+        top: -100%;
+        width: 100%;
+        z-index: 1100;
+        border-radius: 0;
+        transition: all 500ms ease-out;
+        background: #1B1929;
+        color: #e9e9e9;
+        padding: 20px 20px;
+      }
+
+      .cookie-alert-window p {
+        width: 500px;
+        margin: auto;
+      }
+
+      .accept-cookies, .close-cookies {
+        margin: 5px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .cookie-alert-window {
+          font-size: 13px;
+        }
+
+        .cookie-alert-window p {
+          width: 85%;
+        }
+      }
+
+      .cookie-alert-window div {
+        margin-top: 20px;
+      }
+
+      .cookie-alert-window a {
+        text-decoration: underline;
+      }
+
+      .cookie-alert-window .accept-cookies {
+        margin-left: 10px;
+        vertical-align: baseline;
+      }
+
+      @media (max-width: 991px) {
+        .cookiealert .acceptcookies {
+          margin: 0;
+        }
+      }
+
+      @keyframes cookies-anima-open {
+        0% {
+          top: -100%;
+        }
+
+        100% {
+          top: 0;
+        }
+      }
+
+      @keyframes cookies-anima-close {
+        0% {
+          top: 0;
+        }
+
+        100% {
+          top: -100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1507,6 +1578,22 @@
           </div>
         </div>
       </footer>
+      
+      <div class="cookie-alert-window">
+        <p>
+          <strong>A DeskWebCode usa Cookies</strong> para garantir que você tenha a melhor experiência em nosso site.
+          Saiba mais em nossa <a href="politica-de-privacidade.html">Política de Privacidade</a> e <a href="politica-de-privacidade.html#cookies">Cookies</a>.
+        </p>
+  
+        <div>
+          <button type="button" class="btn button-primary btn-sm accept-cookies" aria-label="Close">
+            Aceitar
+          </button>
+          <button type="button" class="btn button-gray-4 btn-sm close-cookies" aria-label="Close">
+            Fechar
+          </button>
+        </div>
+      </div>
 
       <div class="modal fade" id="modalCta" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1547,6 +1634,50 @@
                   let msgError = document.querySelectorAll(".msg-error");
 
                   let rdNavItem = document.querySelectorAll(".rd-nav-item");
+                  
+                  let cookieAlertWindow = document.querySelectorAll(".cookie-alert-window");
+                  let acceptCookies = document.querySelectorAll(".accept-cookies");
+                  let closeCookies = document.querySelectorAll(".close-cookies");
+                  
+                  if (localStorage.getItem("accepted")) {
+                    if (localStorage.getItem("accepted") == "void" || localStorage.getItem("accepted") == "no") {
+                      callCookieOpen();
+                    }
+                  }
+
+                  else {
+                    localStorage.setItem("accepted", "void");
+
+                    callCookieOpen();
+                  }
+
+                  acceptCookies[0].addEventListener("click", () => {
+                    localStorage.setItem("accepted", "yes");
+
+                    callCookieClose();
+                  })
+
+                  closeCookies[0].addEventListener("click", () => {
+                    localStorage.setItem("accepted", "no");
+
+                    callCookieClose();
+                  });
+
+                  function callCookieOpen () {
+                    cookieAlertWindow[0].style.animation = "cookies-anima-open 2s linear";
+
+                    cookieAlertWindow[0].addEventListener("animationend", () => {
+                      cookieAlertWindow[0].style.top = "0";
+                    });
+                  }
+
+                  function callCookieClose () {
+                    cookieAlertWindow[0].style.animation = "cookies-anima-close 2s linear";
+
+                    cookieAlertWindow[0].addEventListener("animationend", () => {
+                      cookieAlertWindow[0].style.top = "-100%";
+                    });
+                  }
 
                   for (let i = 0; i < rdNavItem.length; i ++) {
                     rdNavItem[i].addEventListener("click", () => {
