@@ -18,79 +18,218 @@
     <style>
       @media screen and (max-width: 767px) {
         .nav-item a.nav-link-big.active {
-          background-color: #4b4b4b;
+          background-color: #6689ff;
           color: #fff;
         }
       }
-      
-      .cookie-alert-window {
-        position: fixed;
-        left: 0;
-        top: -100%;
-        width: 100%;
-        z-index: 1100;
-        border-radius: 0;
-        transition: all 500ms ease-out;
-        background: #1B1929;
-        color: #e9e9e9;
-        padding: 20px 20px;
+
+      .ul-content {
+        margin-left: 35px;
       }
 
-      .cookie-alert-window p {
-        width: 500px;
-        margin: auto;
+      .ul-content li::before {
+        content: "●";
+        position: absolute;
+        top: -1px;
+        left: -15px;
       }
 
-      .accept-cookies, .close-cookies {
-        margin: 5px;
+      .ul-content li {
+        margin-top: 10px !important;
+        position: relative;
       }
 
-      @media screen and (max-width: 600px) {
-        .cookie-alert-window {
-          font-size: 13px;
-        }
-
-        .cookie-alert-window p {
-          width: 85%;
-        }
+      .blurb-circle {
+        text-align: left;
       }
 
-      .cookie-alert-window div {
+      .blurb-circle .unit .blurb-circle__icon {
+        position: relative;
+        top: 3px;
+      }
+
+      .blurb-circle__icon .icon {
+        width: 2.4em;
+        height: 2.4em;
+        border-radius: 50%;
+        text-align: center;
+        /* color: #000; */
+        background: #ffffff;
+        font-size: 30px;
+        line-height: 2.45em;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 50%;
+      }
+
+      .blurb:nth-child(1) .icon {
+        background-image: url(imagens/section/entregavel.png);
+      }
+
+      .blurb:nth-child(2) .icon {
+        background-image: url(imagens/section/carteira-de-identidade.png);
+      }
+
+      .blurb:nth-child(3) .icon {
+        background-image: url(imagens/section/whatsapp.png);
+      }
+
+      .blurb-circle__icon .icon::before {
+        line-height: inherit;
+      }
+
+      .blurb-circle__icon + * {
         margin-top: 20px;
       }
 
-      .cookie-alert-window a {
-        text-decoration: underline;
+      .blurb-circle + .blurb-circle {
+        margin-top: 40px;
       }
 
-      .cookie-alert-window .accept-cookies {
-        margin-left: 10px;
-        vertical-align: baseline;
+      @media (min-width: 576px) {
+        .blurb-circle {
+          text-align: left;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .desktop .blurb-circle .blurb-circle__icon .icon {
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .blurb-circle__icon .icon {
+          font-size: 36px;
+        }
+        .blurb-circle + .blurb-circle {
+          margin-top: 55px;
+        }
+      }
+
+      .blurb-circle.blurb-circle_centered {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      @media (max-width: 767.98px) {
+        .blurb-circle {
+          max-width: 360px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .decor-text:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: attr(data-content);
+        display: inline-block;
+        font-size: 400px;
+        font-weight: 800;
+        font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: .668;
+        color: inherit;
+        opacity: .02;
+        pointer-events: none;
+      }
+
+      @media (min-width: 1200px) {
+        .decor-text:before {
+          font-size: 620px;
+        }
+      }
+
+      .decor-text.object-wrap:before {
+        left: 37vw;
+        z-index: 2;
+      }
+
+      .decor-text.bg-gray-lighter:before {
+        opacity: .03;
+      }
+
+      .decor-text.parallax-container:before {
+        opacity: .03;
+        z-index: 9;
+      }
+
+      .decor-text {
+        background-image: url(imagens/section/background-wpp.png);
+        background-repeat: no-repeat;
+      }
+
+      .decor-text h2, .decor-text h4, .decor-text p {
+        color: #fff !important;
+      }
+
+      .back-img {
+        width: calc(47% - 10px);
+        height: 350px;
+        background-color: #6689ff;
+        position: absolute;
+        top: 40%;
+        border-radius: 0 40px 40px 0;
+        background: #292758;
+        background: linear-gradient(90deg, #292758 0%, #2e1f44 35%, #2e1f44 100%);
+        box-shadow: 40px 40px 40px #1c1429;
+      }
+
+      .back-img img {
+        display: block;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.3;
+      }
+
+      .decor-text img {
+        width: 281px;
+        position: absolute;
+        right: 140px;
+      }
+
+      .heading-decorated_center::after,
+      .parallax-header .heading-decorated::after,
+      .text-center .heading-decorated::after {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (min-width: 768px) {
+        .heading-decorated::after {
+          width: 50px;
+        }
+        h1.heading-decorated::before,
+        .heading-1.heading-decorated::before {
+          width: 115px;
+        }
       }
 
       @media (max-width: 991px) {
-        .cookiealert .acceptcookies {
-          margin: 0;
-        }
-      }
-
-      @keyframes cookies-anima-open {
-        0% {
-          top: -100%;
+        .back-img {
+          width: calc(83% - 10px);
+          /* position: relative;
+          top: 0; */
+          top: 350px;
         }
 
-        100% {
+        .back-img img {
+          /* position: relative;
+          left: 0;
           top: 0;
-        }
-      }
-
-      @keyframes cookies-anima-close {
-        0% {
-          top: 0;
+          transform: translateY(0); */
         }
 
-        100% {
-          top: -100%;
+        .decor-text img {
+          position: relative;
+          right: 0;
         }
       }
     </style>
@@ -104,7 +243,7 @@
       </div>
     </div>
     <div class="page">
-      <div id="home">
+      <div>
         <header class="section page-header">
           <div class="rd-navbar-wrap">
             <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
@@ -113,13 +252,15 @@
                   <div class="rd-navbar-panel">
                     <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                     <div class="rd-navbar-brand">
-                      <img src="imagens/logo/logo-light-deskwebcode.webp" alt="" width="223" height="50"/>
+                      <a href="https://deskwebcode.com.br/">
+                        <img src="imagens/logo/logo-light-deskwebcode.webp" alt="" width="223" height="50"/>
+                      </a>
                     </div>
                   </div>
                   <div class="rd-navbar-main-element">
                     <div class="rd-navbar-nav-wrap">
                       <ul class="rd-navbar-nav">
-                        <li class="rd-nav-item active"><a class="rd-nav-link" href="https://www.deskwebcode.com.br">Home</a></li>
+                        <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>
                         <li class="rd-nav-item"><a class="rd-nav-link" href="#servicos">Serviços</a></li>
                         <li class="rd-nav-item"><a class="rd-nav-link" href="#como-funciona">Como funciona</a></li>
                         <li class="rd-nav-item"><a class="rd-nav-link" href="#precos">Preços</a></li>
@@ -133,49 +274,49 @@
             </nav>
           </div>
         </header>
-        <section class="section swiper-container swiper-slider swiper-slider-classic wow fadeInLeft" data-loop="true" data-autoplay="7859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
+        <section id="home" class="section swiper-container swiper-slider swiper-slider-classic wow fadeInLeft" data-loop="true" data-autoplay="7859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
           <div class="swiper-wrapper text-center">
-            <div class="swiper-slide" data-slide-bg="imagens/slider/slider-01.webp">
+            <div class="swiper-slide swiper-slide-1" data-slide-bg="imagens/slider/slider-01.webp">
               <div class="swiper-slide-caption section-md">
                 <div class="container">
                   <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">
                     O seu site <span class="span-display-block">profissional</span>
                   </h1>
                   <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">
-                    Criaremos para você, um Site completo com diversos recursos e funcionalidades para alavancar o seu Negócio através da Internet!
+                    Precisando atrair mais clientes ou vender em sua própria plataforma? Que tal, um Site completo com diversos recursos e funcionalidades?
                   </p>
-                  <a class="button button-primary button-ujarak fadeInUp animated" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">
-                    Entrar em contato
+                  <a class="button button-primary button-ujarak fadeInUp animated" href="#por-que-ter-um-site" data-caption-animate="fadeInUp" data-caption-delay="200">
+                    Veja as vantagens
                   </a>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide" data-slide-bg="imagens/slider/slider-02.webp">
+            <div class="swiper-slide swiper-slide-2" data-slide-bg="imagens/slider/slider-02.webp">
               <div class="swiper-slide-caption section-md">
                 <div class="container">
                   <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">
-                    Feito para <span class="span-display-block">o seu negócio</span>
+                    Feito para <span class="span-display-block">seu negócio</span>
                   </h1>
                   <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">
-                    WebSite, Hotsite, Landing Page, One Page, Blog, Loja WPP e Loja Shopify cada projeto desenvolvido para atender a sua necessidade.
+                    WebSite, Hotsite, Landing Page, One Page, Loja WPP e Loja Shopify cada projeto desenvolvido para atender a sua necessidade específica.
                   </p>
-                  <a class="button button-primary button-ujarak fadeInUp animated" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">
-                    Entrar em contato
+                  <a class="button button-primary button-ujarak fadeInUp animated" href="desenvolvimento.html" data-caption-animate="fadeInUp" data-caption-delay="200">
+                    Saiba Mais
                   </a>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide" data-slide-bg="imagens/slider/slider-03.webp">
+            <div class="swiper-slide swiper-slide-3" data-slide-bg="imagens/slider/slider-03.webp">
               <div class="swiper-slide-caption section-md">
                 <div class="container">
                   <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">
-                    Funcionalidades <span class="span-display-block">exclusivas</span>
+                    Sistemas <span class="span-display-block">exclusivos</span>
                   </h1>
                   <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">
                     Tenha em seu Site sistemas que vão auxiliar o seu Negócio com mais agilidade e facilidade nas vendas e atendimento aos seus Clientes.
                   </p>
-                  <a class="button button-primary button-ujarak fadeInUp animated" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">
-                    Entrar em contato
+                  <a class="button button-primary button-ujarak fadeInUp animated" href="#precos" data-caption-animate="fadeInUp" data-caption-delay="200">
+                    Escolha um plano
                   </a>
                 </div>
               </div>
@@ -196,7 +337,7 @@
         <div class="container">
           <div class="row row-30 justify-content-center">
             <div class="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp" data-wow-delay=".4s" style="display: flex;align-items: center">
-              <img src="imagens/section/looking-at-cell-phone.svg" alt="" width="515" height="592"/>
+              <img src="imagens/section/web-and-desktop-development.webp" alt="" width="515" height="592"/>
             </div>
             <div class="col-lg-7 col-xl-6">
               <div class="row row-30">
@@ -255,10 +396,11 @@
             <div class="container">
               <div class="row row-30 justify-content-end text-right">
                 <div class="col-sm-7">
-                  <h3 class="wow fadeInLeft" data-wow-delay=".1s">Nós criamos e você aprova!</h3>
+                  <h3 class="wow fadeInLeft" data-wow-delay=".1s">Visualize o seu site primeiro!</h3>
                   <p class="wow fadeInLeft" data-wow-delay=".2s">
-                    Queremos atender suas expectativas, por tanto, o seu Site só vai ao ar quando você estiver satisfeito! Conosco não existe
-                    limitações de revisões, alterações e nem mesmo cobranças adicionais durante o desenvolvimento do seu Site.
+                    Antes de você contratar os nossos serviços, você pode ter uma prévia de como vai ser o seu Site, assim você tem a total certeza de que todo o Design
+                    e Recursos do Site está realmente de acordo com os seus gostos e interesses.
+                    <!-- Queremos atender suas expectativas, por tanto,   e nem mesmo cobranças adicionais durante o desenvolvimento do seu Site. -->
                   </p>
                   <div class="group-sm group-middle group justify-content-end wow fadeInLeft" data-wow-delay=".3s">
                     <a class="button button-primary button-ujarak" href="#como-funciona">Veja Como funciona</a>
@@ -275,27 +417,13 @@
           <div class="box-differentials wow fadeInLeft" data-wow-delay=".1s">
             <div>
               <h5>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
-                  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-                  <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                  <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
                 </svg>
                 PLANEJADO
               </h5>
               <p>
-                Desenvolvemos Sites baseados diretamente nas <em>características</em> e <em>interesses</em> para que fique com a cara do seu Negócio.
-              </p>
-            </div>
-          </div>
-          <div class="box-differentials wow fadeInLeft" data-wow-delay=".4s">
-            <div>
-              <h5>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
-                  <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
-                </svg>
-                CRIAÇÃO AO VIVO
-              </h5>
-              <p>
-                Você não precisa esperar para ver o seu Site, acompanhe ao vivo cada processo de <em>desenvolvimento</em> e <em>alterações</em>.
+                Desenvolvemos Sites baseados diretamente nas características e interesses para que fique com a cara do seu Negócio.
               </p>
             </div>
           </div>
@@ -309,7 +437,7 @@
                 MODERNO
               </h5>
               <p>
-                Criamos Sites com aspectos visuais <em>totalmente modernos</em> para que o mesmo possa se destacar da concorrência na Internet.
+                Criamos Sites com aspectos visuais totalmente modernos para que o mesmo possa se destacar da concorrência na Internet.
               </p>
             </div>
           </div>
@@ -323,7 +451,21 @@
                 PERFORMANCE
               </h5>
               <p>
-                Entregamos Sites com mais <em>rapidez</em> e <em>eficiência</em> no carregamento de todos os arquivos e por toda a navegação.
+                Entregamos Sites com mais rapidez e eficiência no carregamento de todos os arquivos e por toda a navegação.
+              </p>
+            </div>
+          </div>
+          <div class="box-differentials wow fadeInLeft" data-wow-delay=".4s">
+            <div>
+              <h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                </svg>
+                SATISFAÇÃO
+              </h5>
+              <p>
+                O seu Site só vai ao ar quando você estiver satisfeito! Conosco não existe limitações de revisões e alterações.
               </p>
             </div>
           </div>
@@ -337,7 +479,7 @@
                 SEGURANÇA E GARANTIA
               </h5>
               <p>
-                Projetamos Sites para a maior segurança contra <em>ataques cibernéticos</em> e estendemos a garantia dos Sites por até <em>2 anos</em>.
+                Projetamos Sites para a maior segurança contra ataques cibernéticos e estendemos a garantia dos Sites por até 2 anos.
               </p>
             </div>
           </div>
@@ -350,27 +492,25 @@
                 SUPORTE ONLINE
               </h5>
               <p>
-                Qualquer problema ou dúvida pode contar com a nossa equipe de <em>suporte gratuito</em> que está Online e 24/h por semana.
+                Qualquer problema ou dúvida pode contar com a nossa equipe de suporte gratuito que está Online e 24/h por semana.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-sm bg-default" style="background: #f7f7f7">
+      <section class="section section-sm bg-default" style="background: #f7f7f7;padding-bottom: 60px;">
         <div class="container container-exp">
           <div class="row row-30 row-xl-24 justify-content-center align-items-center align-items-lg-start text-left">
-            <div class="col-md-6 col-lg-5 col-xl-4 text-center">
-              <a class="text-img" style="pointer-events: none;">
+            <div class="col-md-6 col-lg-5 col-xl-4 text-center text-img">
                 <div id="particles-js"></div>
                 <span class="counter">5</span>
-              </a>
               </div>
             <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
               <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
                 <h3 class="title-decoration-lines-left">Anos de experiência</h3>
                 <p class="text-gray-500">
-                  Em pouco tempo conseguimos mudar a maneira dos Negócios Físicos negociarem pela Internet. Nós não fazemos apenas Sites e sim,
+                  Em pouco tempo conseguimos mudar a maneira dos Negócios físicos negociarem pela Internet. Nós não fazemos apenas Sites e sim,
                   impulsionamos Negócios para frente.
                 </p>
                 <a class="button button-primary button-ujarak fadeInUp animated" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">
@@ -414,89 +554,89 @@
         </div>
       </section>
 
-      <section class="section-padding pb-0" id="timeline">
-        <div class="container container-timeline">
+      <section class="section-padding pb-0" id="por-que-ter-um-site">
+        <div class="container container-por-que-ter-um-site">
             <div class="row">
                 <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Por que ter <span class="span-wbr">um site?</span></h2>
-                <div class="timeline">
-                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes wow fadeInLeft" data-wow-delay=".1s">
-                      <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                        <h3 class="text-light timeline-txt-right">Mercado em alta</h3>
+                <div class="por-que-ter-um-site">
+                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start por-que-ter-um-site-nodes wow fadeInLeft" data-wow-delay=".1s">
+                      <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 por-que-ter-um-site-content bg-white shadow-lg">
+                        <h3 class="text-light por-que-ter-um-site-txt-right">Mercado em alta</h3>
                         <p>
-                          A grande parte dos consumidores que compravam em locais Físicos, estão se acostumando cada vez mais a <em>comprar</em> e <em>buscar informações</em>
+                          A grande parte dos consumidores que compravam em locais físicos, estão se acostumando cada vez mais a comprar e buscar informações
                           sobre os Negócios no ambiente digital.
                         </p>
                       </div>
-                      <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                      <div class="col-3 col-sm-1 order-2 por-que-ter-um-site-icons text-md-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6689ff" class="bi bi-globe2" viewBox="0 0 16 16">
                           <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
                         </svg>
                       </div>
-                      <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                      <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 por-que-ter-um-site-date">
                         <time>Tenha um canal Online</time>
                       </div>
                     </div>
-                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4 wow fadeInRight"  data-wow-delay=".2s">
-                      <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                        <h3 class="text-light timeline-txt-left">Informações na mão</h3>
-                        <p class="timeline-txt-left">
+                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start por-que-ter-um-site-nodes my-lg-5 my-4 wow fadeInRight"  data-wow-delay=".2s">
+                      <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 por-que-ter-um-site-content bg-white shadow-lg">
+                        <h3 class="text-light por-que-ter-um-site-txt-left">Informações na mão</h3>
+                        <p class="por-que-ter-um-site-txt-left">
                           Com um Site você pode mostrar todos os detalhes sobre o seu Negócio, Produtos/Serviços, Preços, Promoções, Formas de Pagamento, Contato, Endereço e muito mais.
                         </p>
                       </div>
-                      <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                      <div class="col-3 col-sm-1 order-2 por-que-ter-um-site-icons text-md-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6689ff" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
                           <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
                         </svg>
                       </div>
-                      <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                      <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 por-que-ter-um-site-date">
                           <time>Dê ao Cliente o que ele procura</time>
                       </div>
                     </div>
-                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes wow fadeInLeft" data-wow-delay=".3s">
-                      <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                        <h3 class="text-light timeline-txt-right">Independente</h3>
-                        <p class="timeline-txt-left">
-                          Os Clientes que acessarem o seu Site não serão <em>incomodados</em> ou <em>interrompidos</em> com os conteúdos das Redes sociais ou de outras plataformas e sim, apenas pelo seu.
+                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start por-que-ter-um-site-nodes wow fadeInLeft" data-wow-delay=".3s">
+                      <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 por-que-ter-um-site-content bg-white shadow-lg">
+                        <h3 class="text-light por-que-ter-um-site-txt-right">Independente</h3>
+                        <p class="por-que-ter-um-site-txt-left">
+                          Os Usuários que acessarem o seu Site não serão incomodados ou interrompidos com os conteúdos das Redes sociais ou de outras plataformas e sim, apenas pelo seu.
                         </p>
                       </div>
-                      <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                      <div class="col-3 col-sm-1 order-2 por-que-ter-um-site-icons text-md-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6689ff" class="bi bi-bell-slash" viewBox="0 0 16 16">
                           <path d="M5.164 14H15c-.299-.199-.557-.553-.78-1-.9-1.8-1.22-5.12-1.22-6 0-.264-.02-.523-.06-.776l-.938.938c.02.708.157 2.154.457 3.58.161.767.377 1.566.663 2.258H6.164l-1 1zm5.581-9.91a3.986 3.986 0 0 0-1.948-1.01L8 2.917l-.797.161A4.002 4.002 0 0 0 4 7c0 .628-.134 2.197-.459 3.742-.05.238-.105.479-.166.718l-1.653 1.653c.02-.037.04-.074.059-.113C2.679 11.2 3 7.88 3 7c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0c.942.19 1.788.645 2.457 1.284l-.707.707zM10 15a2 2 0 1 1-4 0h4zm-9.375.625a.53.53 0 0 0 .75.75l14.75-14.75a.53.53 0 0 0-.75-.75L.625 15.625z"/>
                         </svg>
                       </div>
-                      <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                      <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 por-que-ter-um-site-date">
                         <time>Tudo focado no seu Negócio</time>
                       </div>
                     </div>
-                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4 wow fadeInRight" data-wow-delay=".4s">
-                      <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                        <h3 class="text-light timeline-txt-left">Facilidade na busca</h3>
-                        <p class="timeline-txt-left">
-                          Os Usuários fazem bilhões de buscas diariamente no Google à procura de <em>informações</em> ou <em>compras</em> e em uma dessas eles podem se esbarrar com o seu Site.
+                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start por-que-ter-um-site-nodes my-lg-5 my-4 wow fadeInRight" data-wow-delay=".4s">
+                      <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 por-que-ter-um-site-content bg-white shadow-lg">
+                        <h3 class="text-light por-que-ter-um-site-txt-left">Facilidade na busca</h3>
+                        <p class="por-que-ter-um-site-txt-left">
+                          Os Usuários fazem bilhões de buscas diariamente no Google à procura de informações ou compras e em uma dessas eles podem se esbarrar com o seu Site.
                         </p>
                       </div>
-                      <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                      <div class="col-3 col-sm-1 order-2 por-que-ter-um-site-icons text-md-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6689ff" class="bi bi-google" viewBox="0 0 16 16">
                           <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
                         </svg>
                       </div>
-                      <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                      <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 por-que-ter-um-site-date">
                         <time>O seu Negócio no Google</time>
                       </div>
                     </div>
-                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4 wow fadeInRight" data-wow-delay=".6s">
-                      <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                        <h3 class="text-light timeline-txt-left">Análise de dados</h3>
-                        <p class="timeline-txt-left">
+                    <div class="row g-0 justify-content-end justify-content-md-around align-items-start por-que-ter-um-site-nodes my-lg-5 my-4 wow fadeInRight" data-wow-delay=".6s">
+                      <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 por-que-ter-um-site-content bg-white shadow-lg">
+                        <h3 class="text-light por-que-ter-um-site-txt-right">Análise de dados</h3>
+                        <p class="por-que-ter-um-site-txt-left">
                           Você consegue monitorar todos os Dados, Processos e Interações dos Usuários com o seu Site para desenvolver melhores estratégias certeiras para o seu Negócio.
                         </p>
                       </div>
-                      <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                      <div class="col-3 col-sm-1 order-2 por-que-ter-um-site-icons text-md-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6689ff" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
                           <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
                         </svg>
                       </div>
-                      <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                      <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 por-que-ter-um-site-date">
                         <time>Monitore Métricas importantes</time>
                       </div>
                     </div>
@@ -505,27 +645,96 @@
         </div>
     </section>
       
-    <section class="section section-fluid bg-default">
+    <section class="section-md bg-gray-lighter text-center decor-text" style="position: relative;" data-content="Process">
+      <div class="back-img">
+        <img src="imagens/section/whatsapp-2.png" alt="">
+      </div>
+      <div class="container">
+        <h2 class="heading-decorated">Pedidos e Agendamentos<br> no WhatsApp</h2>
+        <div class="row row-30 justify-content-center">
+          <div class="col-sm-10 col-lg-6">
+            <img src="imagens/section/wpp.webp" alt="" width="650" height="495"/>
+          </div>
+          <div class="col-sm-10 col-lg-6">
+            <article class="blurb blurb-circle">
+              <div class="unit flex-row unit-spacing-md">
+                <div class="unit-left">
+                  <div class="blurb-circle__icon">
+                    <span class="icon linear-icon-feather"></span>
+                  </div>
+                </div>
+                <div class="unit-body">
+                  <h4>Escolha de Produtos/Serviços</h4>
+                  <p>
+                    O cliente acessa o seu Site e escolhe o produto que deseja comprar ou serviço que
+                    deseja contratar.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="blurb blurb-circle">
+              <div class="unit flex-row unit-spacing-md">
+                <div class="unit-left">
+                  <div class="blurb-circle__icon">
+                    <span class="icon linear-icon-menu3"></span>
+                  </div>
+                </div>
+                <div class="unit-body">
+                  <h4>Preenchimento de Informações</h4>
+                  <p>
+                    O cliente preenche as informações do pedido para a entrega ou serviço para ser agendado.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="blurb blurb-circle">
+              <div class="unit flex-row unit-spacing-md">
+                <div class="unit-left">
+                  <div class="blurb-circle__icon">
+                    <span class="icon linear-icon-bag2"></span>
+                  </div>
+                </div>
+                <div class="unit-body">
+                  <h4>Pedido/Agendamento Recebido</h4>
+                  <p>
+                    O pedido do produto ou agendamento de serviço chega direto no seu WhatsApp de forma organizada.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <!-- <div class="group-sm group-middle group justify-content-start wow fadeInLeft" style="margin-top: 90px" data-wow-delay=".3s">
+              <p style="width: 100%;text-align: left;">
+                Teste você mesmo os nossos sistemas de pedido e agendamento no WhatsApp com uma demonstração gratuita.
+              </p><a class="button button-secondary button-pipaluk" href="#duvidas">Pedido</a>
+              <a class="button button-white-outline button-ujarak" href="#">Agendamento</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section section-fluid bg-default">
       <div class="parallax-container wow fadeInLeft" data-parallax-img="imagens/section/whatsapp-system.webp" data-wow-delay=".1s">
         <div class="parallax-content section-xl context-dark bg-overlay-68 bg-mobile-overlay">
           <div class="container">
             <div class="row row-30 justify-content-start text-left">
               <div class="col-sm-7">
-                <h3 class="wow fadeInLeft" data-wow-delay=".1s">Agendamentos e Pedidos no<br> <span style="color: #7e9cff">WhatsApp</span>!!!</h3>
+                <h3 class="wow fadeInLeft" data-wow-delay=".1s">Agendamentos e Pedidos no WhatsApp!!!</h3>
                 <p class="wow fadeInLeft" data-wow-delay=".2s">
-                  Nós tornaremos o seu Negócio ainda mais fácil permitindo os seus Clientes agendarem <em>Horários Presenciais</em> no seu Site e enviar no seu
-                  WhatsApp para a sua confirmação ou fazerem <em>Pedidos de Produtos</em> e enviar informações importantes para a entrega do produto direto no
+                  Nós tornaremos o seu Negócio ainda mais fácil permitindo os seus Clientes <b>agendarem horários presenciais</b> no seu Site e enviar no seu
+                  WhatsApp para a sua confirmação ou <b>fazerem pedidos de produtos</b> e enviar informações importantes para a entrega do produto direto no
                   seu WhatsApp.
                 </p>
                 <div class="group-sm group-middle group justify-content-start wow fadeInLeft" data-wow-delay=".3s">
                   <a class="button button-secondary button-pipaluk" href="#duvidas">Tirar dúvidas</a>
+                  <a class="button button-white-outline button-ujarak" href="#">Demonstração</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
       <section class="section section-sm bg-default text-md-left" id="como-funciona" style="background: #f7f7f7;padding-top: 70px;">
         <div class="container">
@@ -543,7 +752,7 @@
                   <div class="tab-pane fade show active" id="tabs-6-1">
                     <h5 class="font-weight-normal">COMPREENSÃO DO QUE DESEJA</h5>
                     <p>
-                      Um dos nossos profissionais da nossa equipe entrará em contato com você e guiará em todo o processo do <em>início</em> ao <em>fim</em> no Desenvolvimento, Dúvidas e Negociações a respeito do seu Site.
+                      Um dos nossos profissionais da nossa equipe entrará em contato com você e guiará em todo o processo do início ao fim no desenvolvimento, dúvidas e negociações a respeito do seu Site.
                     </p>
                     <div class="group-sm group-middle">
                       <a class="button button-primary button-ujarak fadeInUp animated" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">
@@ -554,7 +763,7 @@
                   <div class="tab-pane fade" id="tabs-6-2">
                     <h5 class="font-weight-normal">COLETA DE INFORMAÇÕES</h5>
                     <p>
-                      Vamos enviar <em>2 Briefings</em> para você poder preencher, assim vamos entender melhor e mais a fundo o seu Negócio e a sua real necessidade para planejarmos o Site perfeito para atendê-lo.
+                      Vamos enviar 2 Briefings para você poder preencher, assim vamos entender melhor e mais a fundo o seu Negócio e a sua real necessidade para planejarmos o Site perfeito para atendê-lo.
                     </p>
                     <div class="group-sm group-middle">
                       <a class="button button-primary button-ujarak fadeInUp animated" href="#modalCta" data-toggle="modal" data-caption-animate="fadeInUp" data-caption-delay="200">
@@ -625,7 +834,7 @@
         </div>
       </section>
 
-      <section class="section section-sm section-bottom-70 section-fluid bg-default" id="precos" style="padding-top: 60px;">
+      <section class="section section-sm section-bottom-70 section-fluid bg-default" id="precos" style="padding-top: 60px;padding-bottom: 50px;">
         <div class="container">
           <h2>Preços</h2>
           <div class="row row-30 justify-content-center">
@@ -646,17 +855,17 @@
                       Até 10 Páginas
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        O seu site vai ter até 10 páginas para a divisão do conteúdo do seu negócio.
+                        O seu Site vai ter até 10 páginas para a divisão do conteúdo do seu Negócio.
                       </div>
                     </li>
                     <li class="active">
                       Responsivo e Semântico
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        O seu site será compatível com diferentes tipos de telas fazendo com que qualquer usuário tenha
+                        O seu Site será compatível com diferentes tipos de telas fazendo com que qualquer usuário tenha
                         acesso, independentemente de qual dispositivo ele esteja utilizando como, por exemplo,
                         Smartphone, Tablet, Computador, TV, Multimídia de carro e muito mais. Também será usado as melhores palavras-chave baseadas nas técnicas
-                        de SEO (Search Engine Optimization) que vão permitir uma posição melhor nos resultados do Google fazendo com que o seu site cresça naturalmente
+                        de SEO (Search Engine Optimization) que vão permitir uma posição melhor nos resultados do Google fazendo com que o seu Site cresça naturalmente
                         dentro da Internet.
                       </div>
                     </li>
@@ -664,73 +873,73 @@
                       Elementos Essenciais
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        De acordo com o que você desejar iremos adaptar Header, Submenu, Seção de Sobre, Slider, Seções de Conteúdos, Seções Informativas,
+                        De acordo com o que você desejar iremos adaptar no seu Site Header, Submenu, Seção de Sobre, Slider, Seções de Conteúdos, Seções Informativas,
                         Paginação, Widget, Cards de Produtos/Serviços, Seção de Preços, Seção de Agendamento, Galeria de Imagens, Seção de Avaliações de Clientes,
-                        Seção de Dúvidas, Seção de Contato, Blog Incorporado e Rodapé.
+                        Seção de Dúvidas, Seção de Contato e Rodapé.
                       </div>
                     </li>
                     <li class="active">
                       UI e UX Design
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        O seu site será baseado nas técnicas de UI (User Interface) para ter interfaces mais fáceis
+                        O seu Site será baseado nas técnicas de UI (User Interface) para ter interfaces mais fáceis
                         e amigáveis para os usuários e também técnicas de UX (User Experience) para que os usuários
-                        tenham uma satisfação melhor com os seus serviços nas interações com o seu site.
+                        tenham uma satisfação melhor com os seus serviços nas interações com o seu Site.
                       </div>
                     </li>
                     <li class="active">
                       Analytics e Maps Integrados
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        O Google Analytics será anexado ao seu site, assim você conseguirá capturar dados do seu site e
-                        usuários para visualizar métricas importantes. O seu site também será anexado ao Google Maps para
-                        que os seus clientes consigam visualizar a localidade do seu negócio dentro do seu próprio site.
+                        O Google Analytics será anexado ao seu Site, assim você conseguirá capturar dados do seu Site e
+                        usuários para visualizar métricas importantes. O seu Site também será anexado ao Google Maps para
+                        que os seus clientes consigam visualizar a localidade do seu Negócio dentro do seu próprio Site.
                       </div>
                     </li>
                     <li class="active">
                       Sistema de Chat Ao Vivo
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        Os seus clientes poderão conversar com você ao vivo direto do seu site e você respondê-los por meio do
+                        Os seus clientes poderão conversar com você ao vivo direto do seu Site e você respondê-los por meio do
                         Painel de Controle ou App (Talk.to, JivoChat).
-                      </div>
-                    </li>
-                    <li class="active">
-                      Sistema de Agendamento
-                      <div class="box-pricing-list-tooltip"></div>
-                      <div class="box-pricing-list-tooltip-content">
-                        Os seus clientes poderão marcar horários pelo seu site e enviar as informações de agendamento (hora, data,
-                        nome, serviço a ser agendado e etc) direto no seu WhatsApp para a sua confirmação.
                       </div>
                     </li>
                     <li class="active">
                       Sistema de Discagem
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        Para o cliente não ter que digitar manualmente o número de telefone do seu negócio para
-                        efetuar uma ligação, o seu site terá um botão de atalho que faz o preenchimento automático
+                        Para o cliente não ter que digitar manualmente o número de telefone do seu Negócio para
+                        efetuar uma ligação, o seu Site terá um botão de atalho que faz o preenchimento automático
                         do número na discagem e com um clique o cliente faz a ligação.
+                      </div>
+                    </li>
+                    <li class="active">
+                      Agendamentos WhatsApp
+                      <div class="box-pricing-list-tooltip"></div>
+                      <div class="box-pricing-list-tooltip-content">
+                        Os seus clientes poderão marcar horários pelo seu Site e enviar as informações de agendamento (hora, data,
+                        nome, serviço a ser agendado e etc) direto no seu WhatsApp para a sua confirmação.
                       </div>
                     </li>
                     <li class="active">
                       Formulário de Contato
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        O seu site terá um formulário para os seus clientes entrarem em contato com você pelo seu E-mail.
+                        O seu Site terá um formulário para os seus clientes entrarem em contato com você pelo seu E-mail.
                       </div>
                     </li>
                     <li class="active">
                       Hospedagem e SSL Grátis
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        O seu site será hospedado sem custo nenhum em servidores Open Source e terá os dados totalmente criptografados, por tempo ilimitado.
+                        O seu Site será hospedado sem custo nenhum em servidores Open Source e terá os dados totalmente criptografados, por tempo ilimitado.
                       </div>
                     </li>
                     <li class="active">
                       Domínio por 1 Ano Grátis
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        O seu site terá 1 ano de domínio gratuito como, por exemplo, "www.minhaempresa.com".
+                        O seu Site terá 1 ano de domínio gratuito como, por exemplo, <em>www.minhaempresa.com.br</em>.
                       </div>
                     </li>
                   </ul>
@@ -740,8 +949,8 @@
                       <span><strong>Prazo de Entrega:</strong> <span>Entre 4 dias a 1 semana.</span></span>
                       <span><strong>Garantia:</strong> <span>2 anos (cobre qualquer defeito de fábrica).</span></span>
                       <span><strong>Suporte 24/h:</strong> <span>Gratuito (qualquer problema ou dúvida pode entrar a qualquer hora em contato com a nossa equipe).</span></span>
-                      <span><strong>Manual de Uso do Site:</strong> <span>Entregue, até 3 dias após a entrega do site.</span></span>
-                      <span><strong>Pagamento Contínuo:</strong> <span>Renovação de Domínio (Opcional R$40,00 - R$400,00 BRL/anual variando o valor escolhido de acordo com a quantidade de anos), Chat Online (Opcional R$49,00 BRL/mês caso queira mudar de plano). Esses valores são referentes aos serviços terceirizados integrados ao site com recursos pagos.</span></span>
+                      <span><strong>Manual de Uso do Site:</strong> <span>Entregue, até 3 dias após a entrega do Site.</span></span>
+                      <span><strong>Pagamento Contínuo:</strong> <span>Renovação de Domínio (Opcional R$40,00 - R$400,00 BRL/anual variando o valor escolhido de acordo com a quantidade de anos), Chat Online (Opcional R$49,00 BRL/mês caso queira mudar de plano). Esses valores são referentes aos serviços terceirizados integrados ao Site com recursos pagos.</span></span>
                     </div>
                   </details>
                 </div>
@@ -786,14 +995,14 @@
                       Até 20 Páginas
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        A sua Loja WPP vai ter até 20 páginas para a divisão do conteúdo do seu negócio.
+                        A sua Loja WPP vai ter até 20 páginas para a divisão do conteúdo do seu Negócio.
                       </div>
                     </li>
                     <li class="active">
                       Até 160 Produtos
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        A sua Loja WPP vai ter até <em>160 produtos cadastrados</em>, assim você pode ter o que mais vende no seu negócio anunciado dentro da sua Loja WPP.
+                        A sua Loja WPP vai ter até 160 produtos cadastrados, assim você pode ter o que mais vende no seu Negócio anunciado dentro da sua Loja WPP.
                       </div>
                     </li>
                     <li class="active">
@@ -809,36 +1018,36 @@
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
                         Existem muitos usuários de Internet que não atualizam os seus navegadores o que pode fazer com que a sua Loja WPP apareça incorretamente
-                        para esses usuários e para resolver isso, vamos tornar a sua Loja WPP compatível com diferentes versões de navegadores <em>desatualizados</em>
-                        e <em>atualizados</em>.
+                        para esses usuários e para resolver isso, vamos tornar a sua Loja WPP compatível com diferentes versões de navegadores desatualizados
+                        e atualizados.
                       </div>
                     </li>
                     <li class="active">
                       Traduzido para 3 Idiomas
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        A sua Loja WPP vai ser traduzida para <em>3 idiomas diferentes</em> que são os mais comuns falados pelo mundo (Português, Inglês e Espanhol).
+                        A sua Loja WPP vai ser traduzida para 3 idiomas diferentes que são os mais comuns falados pelo mundo (Português, Inglês e Espanhol).
                       </div>
                     </li>
                     <li class="active">
                       Mailchimp Integrado
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        A sua Loja WPP vai ser integrada ao Mailchimp que é uma plataforma de automação de marketing e serviço de e-mail marketing para gerenciar listas de e-mail e criar campanhas de e-mail marketing.
+                        A sua Loja WPP vai ser integrada ao Mailchimp que é uma plataforma de automação de marketing e serviço de E-mail marketing para gerenciar listas de E-mail e criar campanhas de E-mail marketing.
                       </div>
                     </li>
                     <li class="active">
                       Workspace Integrado
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        A sua Loja WPP vai ser integrada ao Google Workspace para o seu negócio ter um e-mail comercial como <em>contato@empresa.com.br</em> e diversas ferramentas de colaboração (teste gratuito de 14 dias).
+                        A sua Loja WPP vai ser integrada ao Google Workspace para o seu Negócio ter um e-mail comercial como <em>contato@minhaempresa.com.br</em> e diversas ferramentas de colaboração (teste gratuito de 14 dias).
                       </div>
                     </li>
                     <li class="active">
-                      Sistema de Pedido (WPP)
+                      Pedidos WhatsApp
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        Os seus clientes poderão fazer <em>solicitações de produtos</em> na sua Loja WPP e enviar as informações (Cliente, Produto, Preço, Endereço, Entrega,
+                        Os seus clientes poderão fazer solicitações de produtos na sua Loja WPP e enviar as informações (Cliente, Produto, Preço, Endereço, Entrega,
                         Frete e etc) direto para o seu WhatsApp para que você possa apenas processar esses pedidos.
                       </div>
                     </li>
@@ -865,7 +1074,7 @@
                       <span><strong>Prazo de Entrega:</strong> <span>Entre 1 a 2 semanas.</span></span>
                       <span><strong>Garantia:</strong> <span>2 anos (cobre qualquer defeito de fábrica).</span></span>
                       <span><strong>Suporte 24/h:</strong> <span>Gratuito (qualquer problema ou dúvida pode entrar a qualquer hora em contato com a nossa equipe).</span></span>
-                      <span><strong>Manual de Uso do Site:</strong> <span>Entregue, até 3 dias após a entrega do site.</span></span>
+                      <span><strong>Manual de Uso do Site:</strong> <span>Entregue, até 3 dias após a entrega do Site.</span></span>
                       <span><strong>Pagamento Contínuo:</strong> <span>Renovação de Domínio (Opcional R$40,00 - R$400,00 BRL/anual variando o valor escolhido de acordo com a quantidade de anos), Chat Online (Opcional R$49,00 BRL/mês caso queira mudar de plano), Mailchimp (Opcional R$55,00 - R$1.670,00 BRL/mês caso queira mudar de plano), Google Workspace (Opcional R$24,30 - R$81,00 BRL/mês, teste gratuito de 14 dias). Esses valores são referentes aos serviços terceirizados integrados a Loja WPP com recursos pagos.</span></span>
                     </div>
                   </details>
@@ -910,14 +1119,14 @@
                       Páginas Ilimitadas
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        A sua Loja Shopify vai ter a quantidade de páginas que você quiser para a divisão do conteúdo do seu negócio.
+                        A sua Loja Shopify vai ter a quantidade de páginas que você quiser para a divisão do conteúdo do seu Negócio.
                       </div>
                     </li>
                     <li class="active">
                       Produtos Ilimitados
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        Cadastraremos todos os produtos do seu negócio na sua Loja Shopify e você poderá adicionar sem limites novos produtos. Tornando a
+                        Cadastraremos todos os produtos do seu Negócio na sua Loja Shopify e você poderá adicionar sem limites novos produtos. Tornando a
                         sua Loja Shopify em um verdadeiro Shopping dentro da Internet.
                       </div>
                     </li>
@@ -933,22 +1142,24 @@
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
                         A sua Loja Shopify vai ter diversas formas de pagamento (À vista, Parcelado, Boleto, PayPal e muito mais) para que os seus clientes possam escolher a melhor forma
-                        de pagamento que eles quiserem e também comprarem com segurança diretamente da sua Loja Shopify com os melhores <em>Gateway de Pagamento</em> do mercado.
+                        de pagamento que eles quiserem e também comprarem com segurança diretamente da sua Loja Shopify com os melhores Gateway de Pagamento do mercado.
                       </div>
                     </li>
                     <li class="active">
                       Sistema de Cálculo de Frete
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        Os seus clientes vão poder ver a taxa de frete a ser paga no Checkout e escolher a melhor maneira que querem receber o produto de acordo com a transportadora configurada.
+                        Os seus clientes vão poder ver a taxa de frete a ser paga no Checkout e escolher a melhor maneira que querem receber o produto de acordo com a transportadora configurada,
+                        região e porcentagem sobre o preço dos produtos.
                       </div>
                     </li>
                     <li class="active">
-                      Sistema de Login
+                      Sistema de Recomendação
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        Os usuários poderão fazer login com as suas contas do Facebook, Twitter, Google, Amazon e muito mais, assim na próxima vez que eles forem comprar
-                        algo eles não vão precisar preencher os campos manualmente.
+                        A sua Loja Shopify utilizará um algoritmo para adivinhar qual produto os seus clientes possivelmente se
+                        interessam com base nas Interações, Histórico e Carrinho, assim é recomendado esses produtos e aumenta
+                        as chances de vender o que realmente os clientes gostam.
                       </div>
                     </li>
                     <li class="active">
@@ -960,19 +1171,18 @@
                       </div>
                     </li>
                     <li class="active">
-                      Sistema de Favoritos
+                      Sistema de Login
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        Os seus clientes vão poder adicionar (salvar) os produtos como favoritos na lista de desejos para poderem futuramente comprá-los.
+                        Os usuários poderão fazer Login com as suas contas do Facebook, Twitter, Google, Amazon e muito mais, assim na próxima vez que eles forem comprar
+                        algo eles não vão precisar preencher os campos manualmente.
                       </div>
                     </li>
                     <li class="active">
-                      Sistema de Recomendação
+                      Sistema de Favoritos
                       <div class="box-pricing-list-tooltip"></div>
                       <div class="box-pricing-list-tooltip-content">
-                        A sua Loja Shopify utilizará um algoritmo para adivinhar qual produto os seus clientes possivelmente se
-                        interessam com base nas Interações, Histórico e Carrinho, assim é recomendado esses produtos e aumenta
-                        as chances de vender o que realmente os clientes gostam.
+                        Os seus clientes vão poder adicionar (salvar) os produtos como favoritos na lista de desejos para poder futuramente comprá-los.
                       </div>
                     </li>
                   </ul>
@@ -1004,7 +1214,7 @@
           <h2>Feedbacks recentes</h2>
           <div class="row row-50 row-sm">
             <div class="col-md-6 col-xl-4 wow fadeInRight">
-              <article class="quote-modern quote-modern-custom">
+              <article class="quote-modern quote-modern-custom" style="box-shadow: 0 0 13px -4px rgb(0 0 0 / 17%)">
                 <div class="unit unit-spacing-md align-items-center">
                   <div class="unit-left">
                     <div class="client-feed client-feed-color-01">
@@ -1026,7 +1236,7 @@
               </article>
             </div>
             <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
-              <article class="quote-modern quote-modern-custom">
+              <article class="quote-modern quote-modern-custom" style="box-shadow: 0 0 13px -4px rgb(0 0 0 / 17%)">
                 <div class="unit unit-spacing-md align-items-center">
                   <div class="unit-left">
                     <div class="client-feed client-feed-color-02">
@@ -1049,7 +1259,7 @@
               </article>
             </div>
             <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
-              <article class="quote-modern quote-modern-custom">
+              <article class="quote-modern quote-modern-custom" style="box-shadow: 0 0 13px -4px rgb(0 0 0 / 17%)">
                 <div class="unit unit-spacing-md align-items-center">
                   <div class="unit-left">
                     <div class="client-feed client-feed-color-03">
@@ -1080,6 +1290,38 @@
         <div class="accordion" id="accordionFlushExample">
           <div class="accordion-col-align">
             <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingZero">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseZero" aria-expanded="false" aria-controls="flush-collapseZero">
+                  Qual é o melhor plano para o meu Negócio?
+                </button>
+              </h2>
+              <div id="flush-collapseZero" class="accordion-collapse collapse" aria-labelledby="flush-headingZero" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>
+                    Está com dúvidas de qual plano escolher para o seu negócio? Nós te ajudamos na escolha, logo abaixo listamos 3 ocasiões para contratar os nossos serviços de desenvolvimento de sites para o seu negócio:
+                  </p>
+                  <ul class="ul-content">
+                    <li>
+                      Se você quer apenas expor informações do seu Negócio que é o caso de Produtos/Serviços, Preços, Promoções, Formas de Pagamento, Contato, Endereço
+                      e muito mais ou se o seu negócio presta serviços e você queira dar a possibilidade dos seus clientes agendarem horários presenciais diretamente pelo
+                      WhatsApp, recomendamos o plano <a href="#precos">Standard</a>. Você pode optar entre os tipos de sites <a href="desenvolvimento.html#hot-site">Hot-Site</a>,
+                      <a href="desenvolvimento.html#landing-page">Landing Page</a> e <a href="desenvolvimento.html#one-page">One Page</a> para o plano <a href="#precos">Standard</a>.
+                    </li>
+                    <li>
+                      Caso o seu negócio venda produtos em pequena escala e você queira que os seus clientes façam pedidos de produtos para serem enviados diretamente
+                      pelo WhatsApp para você processar a entrega do produto, recomendamos o plano <a href="#precos">Ultimate</a>. Saiba mais, clicando em
+                      <a href="desenvolvimento.html#loja-wpp">Loja WPP</a>.
+                    </li>
+                    <li>
+                      Agora, se você quer ter um E-Commerce para vendas em grande escala com sistemas totalmente automatizados e poder administrar toda a sua loja Online
+                      e negócio por um Painel de Controle que é o caso de Produtos, Pedidos, Métricas, Faturamento, Frete, Estoque, Apps e muito mais, recomendamos o
+                      plano <a href="#precos">Premium</a>. Saiba mais, clicando em <a href="desenvolvimento.html#loja-shopify">Loja Shopify</a>.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingFifteen">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
                   E se eu não gostar do visual do meu Site?
@@ -1102,16 +1344,11 @@
                     desenvolvimento final do seu site que vai estar Online na Internet.
                   </p>
                   <p>
-                    Lembrando que no processo de desenvolvimento do seu site do início ao fim, você não tem limitações de revisões, alterações e nem mesmo
-                    cobranças adicionais, por tanto, caso não goste do visual, você é 100% livre para pedir modificações que lhe agradem.
+                    Lembrando que no processo de desenvolvimento do seu site do início ao fim, você não tem limitações de revisões e alterações, por tanto, caso não goste do visual, você é 100% livre para pedir modificações que lhe agradem.
                   </p>
                   <p>
                     Quando terminarmos o desenvolvimento final do seu site ainda é possível alterar determinados elementos específicos como imagens, textos e
                     cores.
-                  </p>
-                  <p>
-                    Após a entrega do seu site, você vai ter 7 dias de garantia de devolução, caso deseje continuar com o seu site, depois desse período
-                    será contado a nossa garantia de 2 anos que cobre defeitos de fábrica.
                   </p>
                 </div>
               </div>
@@ -1215,6 +1452,23 @@
               </div>
             </div>
             <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                  Eu vou ter sistema de agendamento ou pedido WPP no meu Site?
+                </button>
+              </h2>
+              <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>
+                    Sim, os seus clientes vão poder agendar horários presenciais no seu site e enviar no seu WhatsApp para a sua confirmação ou
+                    fazer pedidos de produtos e enviar informações importantes para a entrega do produto direto no seu WhatsApp. Saiba mais em <a href="desenvolvimento.html#loja-wpp">Loja WPP</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-col-align">
+            <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   Como eu vou receber o meu Site?
@@ -1233,8 +1487,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-col-align">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThirteen">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
@@ -1259,17 +1511,12 @@
                     É um serviço pago mensalmente que é opcional para ser atualizado os arquivos do seu site como artigos, notícias, textos, fotos, vídeos, banners, backups e tudo aquilo que compõe o seu site.
                   </p>
                   <p>
-                    Caso, você contrate o nosso plano Premium, você deverá arcar com os custos mensais da plataforma da Shopify que varia entre $14 - $299 USD/mês já que
-                    você vai estar usufruindo dos serviços da Shopify e caso queira migrar para algum plano de App mais amplo integrado em sua Loja Shopify
-                    deverá arcar com os custos dos mesmos variando entre $9.90 - $80 USD/mês.
+                    Caso, você contrate o nosso plano Premium, você deverá arcar com os custos mensais da plataforma da Shopify que varia entre $14 - $299 USD/mês dependendo de qual plano você queira escolher já que
+                    você vai estar usufruindo dos serviços pagos da Shopify que são necessário para a sua Loja Online funcionar.
                   </p>
                   <p>
                     Em todos os nossos planos, você vai receber 1 ano grátis de domínio e ao passar este período, você deverá fazer a renovação que varia entre
                     R$40,00 - R$400,00 dependendo de quantos anos você queira utilizar o domínio.
-                  </p>
-                  <p>
-                    Em todos os nossos planos, você também vai receber um manual de uso do seu site, mas caso não queira realizar manutenções por conta própria em
-                    seu site seguindo o manual, você pode realizar um orçamento conosco para efetuarmos novas atualizações em seu site.
                   </p>
                 </div>
               </div>
@@ -1283,8 +1530,8 @@
               <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <p>
-                    Sim, caso você queira ter um Blog ou Loja Shopify, você precisa construir os seus próprios textos ou tirar fotos dos
-                    seus próprios produtos seguindo os nossos padrões e nos enviar para adaptarmos no layout do seu Site/Loja.
+                    Sim, caso você queira ter uma Loja Shopify, você precisa construir os seus próprios textos ou tirar fotos dos
+                    seus próprios produtos seguindo os nossos padrões e nos enviar para adaptarmos no layout da sua Loja.
                   </p>
                 </div>
               </div>
@@ -1298,7 +1545,7 @@
               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   Depende, em todos os nossos 3 planos (Standard, Ultimate e Premium), nós já entregamos o seu site com o conteúdo praticamente pronto ou seja todos os textos resumidos, imagens
-                  ilustrativas, ícones e fontes. Porém, se você tiver a habilidade em Design e Redação, você também pode nos enviar e vamos adaptar no layout
+                  ilustrativas, ícones e fontes. Porém, se você tiver a habilidade em Design e Redação ou queira adicionar determinados conteúdos, você também pode nos enviar e vamos adaptar no layout
                   do seu site.
                 </div>
               </div>
@@ -1513,22 +1760,6 @@
           </div>
         </div>
       </footer>
-      
-      <div class="cookie-alert-window">
-        <p>
-          <strong>A DeskWebCode usa Cookies</strong> para garantir que você tenha a melhor experiência neste site.
-          Saiba mais em nossa <a href="politica-de-privacidade.html">Política de Privacidade</a> e <a href="politica-de-privacidade.html#cookies">Cookies</a>.
-        </p>
-  
-        <div>
-          <button type="button" class="btn button-primary btn-sm accept-cookies" aria-label="Close">
-            Aceitar
-          </button>
-          <button type="button" class="btn button-gray-4 btn-sm close-cookies" aria-label="Close">
-            Fechar
-          </button>
-        </div>
-      </div>
 
       <div class="modal fade" id="modalCta" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1570,49 +1801,39 @@
 
                   let rdNavItem = document.querySelectorAll(".rd-nav-item");
                   
-                  let cookieAlertWindow = document.querySelectorAll(".cookie-alert-window");
-                  let acceptCookies = document.querySelectorAll(".accept-cookies");
-                  let closeCookies = document.querySelectorAll(".close-cookies");
-                  
-                  if (localStorage.getItem("accepted")) {
-                    if (localStorage.getItem("accepted") == "void" || localStorage.getItem("accepted") == "no") {
-                      callCookieOpen();
+                  window.onresize = () => {
+                    let swiperSlide = document.querySelectorAll(".swiper-slide");
+
+                    if (window.innerWidth <= 600) {
+                      for (let i = 0; i < swiperSlide.length; i ++) {
+                        swiperSlide[i].setAttribute("data-slide-bg", "imagens/slider/slider-mobile.webp");
+                        swiperSlide[i].style.backgroundImage = "url(imagens/slider/slider-mobile.webp)";
+                      }
                     }
-                  }
 
-                  else {
-                    localStorage.setItem("accepted", "void");
+                    else {
+                      let swiperSlide1 = document.querySelectorAll(".swiper-slide-1");
 
-                    callCookieOpen();
-                  }
+                      for (let i1 = 0; i1 < swiperSlide1.length; i1 ++) {
+                        swiperSlide1[i1].setAttribute("data-slide-bg", "imagens/slider/slider-01.webp");
+                        swiperSlide1[i1].style.backgroundImage = "url(imagens/slider/slider-01.webp)";
+                      }
 
-                  acceptCookies[0].addEventListener("click", () => {
-                    localStorage.setItem("accepted", "yes");
+                      let swiperSlide2 = document.querySelectorAll(".swiper-slide-2");
 
-                    callCookieClose();
-                  })
+                      for (let i2 = 0; i2 < swiperSlide2.length; i2 ++) {
+                        swiperSlide2[i2].setAttribute("data-slide-bg", "imagens/slider/slider-02.webp");
+                        swiperSlide2[i2].style.backgroundImage = "url(imagens/slider/slider-02.webp)";
+                      }
 
-                  closeCookies[0].addEventListener("click", () => {
-                    localStorage.setItem("accepted", "no");
+                      let swiperSlide3 = document.querySelectorAll(".swiper-slide-3");
 
-                    callCookieClose();
-                  });
-
-                  function callCookieOpen () {
-                    cookieAlertWindow[0].style.animation = "cookies-anima-open 2s linear";
-
-                    cookieAlertWindow[0].addEventListener("animationend", () => {
-                      cookieAlertWindow[0].style.top = "0";
-                    });
-                  }
-
-                  function callCookieClose () {
-                    cookieAlertWindow[0].style.animation = "cookies-anima-close 2s linear";
-
-                    cookieAlertWindow[0].addEventListener("animationend", () => {
-                      cookieAlertWindow[0].style.top = "-100%";
-                    });
-                  }
+                      for (let i3 = 0; i3 < swiperSlide3.length; i3 ++) {
+                        swiperSlide3[i3].setAttribute("data-slide-bg", "imagens/slider/slider-03.webp");
+                        swiperSlide3[i3].style.backgroundImage = "url(imagens/slider/slider-03.webp)";
+                      }
+                    }
+                  };
 
                   for (let i = 0; i < rdNavItem.length; i ++) {
                     rdNavItem[i].addEventListener("click", () => {
