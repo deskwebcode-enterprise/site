@@ -2713,8 +2713,6 @@
 
 .fa-shopping-bag:before {
 	content: "\f290";
-	stroke: #000;
-	color: #fff;
 }
 
 .fa-shopping-basket:before {
@@ -13698,8 +13696,7 @@
 }
 
 .linearicons-outbox:before {
-	content: "\f847";
-	font-family: FontAwesome;
+	content: "\e99e";
 }
 
 .linearicons-box:before {
@@ -14516,6 +14513,7 @@
 
 .linearicons-telephone:before {
 	content: "\ea6a";
+	font-size: 1rem !important;
 }
 
 .linearicons-phone-lock:before {
@@ -14539,8 +14537,7 @@
 }
 
 .linearicons-phone-in-out:before {
-	content: "\f1c2";
-	font-family: FontAwesome;
+	content: "\ea70";
 }
 
 .linearicons-phone-error:before {
