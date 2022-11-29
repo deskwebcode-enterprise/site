@@ -482,7 +482,7 @@
 				},
 				{
 					type: regula.Constraint.Numeric,
-					newMessage: "O número é obrigatório."
+					newMessage: "O campo numérico é obrigatório."
 				},
 				{
 					type: regula.Constraint.Selected,
@@ -785,14 +785,6 @@
 			for (var i = 0; i < plugins.checkbox.length; i++) {
 				$(plugins.checkbox[i]).addClass("checkbox-custom").after("<span class='checkbox-custom-dummy'></span>")
 			}
-		}
-
-		// UI To Top
-		if ( isDesktop && !isNoviBuilder ) {
-			$().UItoTop( {
-				easingType:     'easeOutQuad',
-				containerClass: 'ui-to-top fa fa-angle-up'
-			} );
 		}
 
 		// lightGallery
@@ -1098,153 +1090,166 @@
 		}
 
 		// RD Mailform
-		if (plugins.rdMailForm.length) {
-			var i, j, k,
-				msg = {
-					'MF000': 'Successfully sent!',
-					'MF001': 'Recipients are not set!',
-					'MF002': 'Form will not work locally!',
-					'MF003': 'Please, define email field in your form!',
-					'MF004': 'Please, define type of your form!',
-					'MF254': 'Something went wrong with PHPMailer!',
-					'MF255': 'Aw, snap! Something went wrong.'
-				};
+		// if (plugins.rdMailForm.length) {
+		// 	var i, j, k,
+		// 		msg = {
+		// 			'MF000': 'Successfully sent!',
+		// 			'MF001': 'Recipients are not set!',
+		// 			'MF002': 'Form will not work locally!',
+		// 			'MF003': 'Please, define email field in your form!',
+		// 			'MF004': 'Please, define type of your form!',
+		// 			'MF254': 'Something went wrong with PHPMailer!',
+		// 			'MF255': 'Aw, snap! Something went wrong.'
+		// 		};
 
-			for (i = 0; i < plugins.rdMailForm.length; i++) {
-				var $form = $(plugins.rdMailForm[i]),
-					formHasCaptcha = false;
+		// 	for (i = 0; i < plugins.rdMailForm.length; i++) {
+		// 		var $form = $(plugins.rdMailForm[i]),
+		// 			formHasCaptcha = false;
 
-				$form.attr('novalidate', 'novalidate').ajaxForm({
-					data: {
-						"form-type": $form.attr("data-form-type") || "contact",
-						"counter": i
-					},
-					beforeSubmit: function (arr, $form, options) {
-						if (isNoviBuilder)
-							return;
+		// 		$form.attr('novalidate', 'novalidate').ajaxForm({
+		// 			data: {
+		// 				"form-type": $form.attr("data-form-type") || "contact",
+		// 				"counter": i
+		// 			},
+		// 			beforeSubmit: function (arr, $form, options) {
+		// 				if (isNoviBuilder)
+		// 					return;
 
-						var form = $(plugins.rdMailForm[this.extraData.counter]),
-							inputs = form.find("[data-constraints]"),
-							output = $("#" + form.attr("data-form-output")),
-							captcha = form.find('.recaptcha'),
-							captchaFlag = true;
+		// 				var form = $(plugins.rdMailForm[this.extraData.counter]),
+		// 					inputs = form.find("[data-constraints]"),
+		// 					output = $("#" + form.attr("data-form-output")),
+		// 					captcha = form.find('.recaptcha'),
+		// 					captchaFlag = true;
 
-						output.removeClass("active error success");
+		// 				output.removeClass("active error success");
 
-						if (isValidated(inputs, captcha)) {
+		// 				if (isValidated(inputs, captcha)) {
 
-							// veify reCaptcha
-							if (captcha.length) {
-								var captchaToken = captcha.find('.g-recaptcha-response').val(),
-									captchaMsg = {
-										'CPT001': 'Please, setup you "site key" and "secret key" of reCaptcha',
-										'CPT002': 'Something wrong with google reCaptcha'
-									};
+		// 					// veify reCaptcha
+		// 					if (captcha.length) {
+		// 						var captchaToken = captcha.find('.g-recaptcha-response').val(),
+		// 							captchaMsg = {
+		// 								'CPT001': 'Please, setup you "site key" and "secret key" of reCaptcha',
+		// 								'CPT002': 'Something wrong with google reCaptcha'
+		// 							};
 
-								formHasCaptcha = true;
+		// 						formHasCaptcha = true;
 
-								$.ajax({
-									method: "POST",
-									url: "bat/reCaptcha.php",
-									data: {'g-recaptcha-response': captchaToken},
-									async: false
-								})
-									.done(function (responceCode) {
-										if (responceCode !== 'CPT000') {
-											if (output.hasClass("snackbars")) {
-												output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + captchaMsg[responceCode] + '</span></p>')
+		// 						$.ajax({
+		// 							method: "POST",
+		// 							url: "https://deskwebcode.us9.list-manage.com/subscribe/post?u=ea94f00ba4b2e45703d1c5b95&amp;id=4a0f01b869&amp;f_id=00e306e1f0",
+		// 							headers: {
+		// 								'Content-Type': 'application/x-www-form-urlencoded'
+		// 							},
+		// 							success: function (result) {
+		// 								console.log(result);
+		// 							},
+		// 							error: function () {
+		// 								console.log("error");
+		// 							},
+		// 							data: {'g-recaptcha-response': captchaToken},
+		// 							async: false
+		// 						})
+		// 							.done(function (responceCode) {
+		// 								if (responceCode !== 'CPT000') {
+		// 									if (output.hasClass("snackbars")) {
+		// 										output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + captchaMsg[responceCode] + '</span></p>')
 
-												setTimeout(function () {
-													output.removeClass("active");
-												}, 3500);
+		// 										setTimeout(function () {
+		// 											output.removeClass("active");
+		// 										}, 3500);
 
-												captchaFlag = false;
-											} else {
-												output.html(captchaMsg[responceCode]);
-											}
+		// 										captchaFlag = false;
+		// 									} else {
+		// 										output.html(captchaMsg[responceCode]);
+		// 									}
 
-											output.addClass("active");
-										}
-									});
-							}
+		// 									output.addClass("active");
+		// 								}
+		// 							});
+		// 					}
 
-							if (!captchaFlag) {
-								return false;
-							}
+		// 					if (!captchaFlag) {
+		// 						return false;
+		// 					}
 
-							form.addClass('form-in-process');
+		// 					form.addClass('form-in-process');
 
-							if (output.hasClass("snackbars")) {
-								output.html('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xxs"></span><span>Sending</span></p>');
-								output.addClass("active");
-							}
-						} else {
-							return false;
-						}
-					},
-					error: function (result) {
-						if (isNoviBuilder)
-							return;
+		// 					if (output.hasClass("snackbars")) {
+		// 						output.html('<p><span class="icon text-middle fa fa-circle-o-notch fa-spin icon-xxs"></span><span>Enviando</span></p>');
+		// 						output.addClass("active");
 
-						var output = $("#" + $(plugins.rdMailForm[this.extraData.counter]).attr("data-form-output")),
-							form = $(plugins.rdMailForm[this.extraData.counter]);
+		// 						setTimeout(function () {
+		// 							output.removeClass("active");
+		// 						}, 3500);
+		// 					}
+		// 				} else {
+		// 					return false;
+		// 				}
+		// 			},
+		// 			error: function (result) {
+		// 				if (isNoviBuilder)
+		// 					return;
 
-						output.text(msg[result]);
-						form.removeClass('form-in-process');
+		// 				var output = $("#" + $(plugins.rdMailForm[this.extraData.counter]).attr("data-form-output")),
+		// 					form = $(plugins.rdMailForm[this.extraData.counter]);
 
-						if (formHasCaptcha) {
-							grecaptcha.reset();
-						}
-					},
-					success: function (result) {
-						if (isNoviBuilder)
-							return;
+		// 				output.text(msg[result]);
+		// 				form.removeClass('form-in-process');
 
-						var form = $(plugins.rdMailForm[this.extraData.counter]),
-							output = $("#" + form.attr("data-form-output")),
-							select = form.find('select');
+		// 				if (formHasCaptcha) {
+		// 					grecaptcha.reset();
+		// 				}
+		// 			},
+		// 			success: function (result) {
+		// 				if (isNoviBuilder)
+		// 					return;
 
-						form
-							.addClass('success')
-							.removeClass('form-in-process');
+		// 				var form = $(plugins.rdMailForm[this.extraData.counter]),
+		// 					output = $("#" + form.attr("data-form-output")),
+		// 					select = form.find('select');
 
-						if (formHasCaptcha) {
-							grecaptcha.reset();
-						}
+		// 				form
+		// 					.addClass('success')
+		// 					.removeClass('form-in-process');
 
-						result = result.length === 5 ? result : 'MF255';
-						output.text(msg[result]);
+		// 				if (formHasCaptcha) {
+		// 					grecaptcha.reset();
+		// 				}
 
-						if (result === "MF000") {
-							if (output.hasClass("snackbars")) {
-								output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + msg[result] + '</span></p>');
-							} else {
-								output.addClass("active success");
-							}
-						} else {
-							if (output.hasClass("snackbars")) {
-								output.html(' <p class="snackbars-left"><span class="icon icon-xxs mdi mdi-alert-outline text-middle"></span><span>' + msg[result] + '</span></p>');
-							} else {
-								output.addClass("active error");
-							}
-						}
+		// 				result = result.length === 5 ? result : 'MF255';
+		// 				output.text(msg[result]);
 
-						form.clearForm();
+		// 				if (result === "MF000") {
+		// 					if (output.hasClass("snackbars")) {
+		// 						output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + msg[result] + '</span></p>');
+		// 					} else {
+		// 						output.addClass("active success");
+		// 					}
+		// 				} else {
+		// 					if (output.hasClass("snackbars")) {
+		// 						output.html(' <p class="snackbars-left"><span class="icon icon-xxs mdi mdi-alert-outline text-middle"></span><span>' + msg[result] + '</span></p>');
+		// 					} else {
+		// 						output.addClass("active error");
+		// 					}
+		// 				}
 
-						if (select.length) {
-							select.select2("val", "");
-						}
+		// 				form.clearForm();
 
-						form.find('input, textarea').trigger('blur');
+		// 				if (select.length) {
+		// 					select.select2("val", "");
+		// 				}
 
-						setTimeout(function () {
-							output.removeClass("active error success");
-							form.removeClass('success');
-						}, 3500);
-					}
-				});
-			}
-		}
+		// 				form.find('input, textarea').trigger('blur');
+
+		// 				setTimeout(function () {
+		// 					output.removeClass("active error success");
+		// 					form.removeClass('success');
+		// 				}, 3500);
+		// 			}
+		// 		});
+		// 	}
+		// }
 
 		// Custom Toggles
 		if ( plugins.customToggle.length ) {
@@ -1335,13 +1340,13 @@
 						}
 					},
 					"color":       {
-						"value": "#f7f7f7"
+						"value": "#ffffff"
 					},
 					"shape":       {
 						"type":    "circle",
 						"stroke":  {
 							"width": 0,
-							"color": "#f7f7f7"
+							"color": "#000000"
 						},
 						"polygon": {
 							"nb_sides": 5
@@ -1375,7 +1380,7 @@
 					"line_linked": {
 						"enable":   true,
 						"distance": 150,
-						"color":    "#f7f7f7",
+						"color":    "#ffffff",
 						"opacity":  0.4,
 						"width":    1
 					},
