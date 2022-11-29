@@ -1,0 +1,529 @@
+<!doctype html>
+<html class="wide wow-animation" lang="pt-br">
+  <head>
+    <title>Mensagem Enviada - DeskWebCode</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="DeskWebCode">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo/logo-fav-deskwebcode.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-mod.css">
+    <style>
+      .icon-social-networks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .icon-social-networks a {
+        color: #000;
+        font-size: 1.2rem !important;
+        margin: 0 4px;
+      }
+
+      .icon-social-networks a:nth-child(1) {
+        position: relative;
+        top: 4px;
+      }
+
+      .footer-social-list-2 li:nth-child(1) {
+        position: relative;
+        top: 3px;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 991px) {
+        .icon-social-networks {
+          display: block;
+        }
+      }
+
+      .swal2-close {
+        position: relative;
+        top: -23px;
+        right: -15px;
+      }
+
+      .swal2-footer {
+        font-size: 0.8rem !important;
+        text-align: center;
+        display: block !important;
+      }
+
+      .swal2-html-container {
+        overflow: initial !important;
+      }
+
+      .swal2-title {
+        padding: 20px 20px 0 20px !important;
+      }
+
+      html {
+        counter-reset: boxNumber;
+      }
+
+      .box-benefits div, .box-wpp div {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 15px;
+      }
+
+      .box-wpp {
+        text-align: left;
+      }
+
+      .box-wpp div {
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        background: #0bde5c13;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .box-wpp div:nth-child(1) {
+        background: transparent;
+        border-bottom: none;
+      }
+
+      .box-benefits div:last-child {
+        border-bottom: none;
+      }
+
+      .box-wpp-intro {
+        margin-bottom: 30px;
+      }
+
+      .box-benefits div dt {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .box-wpp div dt {
+        padding: 10px 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .box-benefits div dt::before {
+        counter-increment: boxNumber;
+        content: counter(boxNumber);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6689ff;
+        background-image: linear-gradient(to left, #45476f, #4768af);
+        color: #fff;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        position: absolute;
+        left: -70px;
+        top: 0;
+        z-index: 1;
+      }
+
+      .box-benefits div dt, .box-benefits div dd {
+        margin-left: 70px;
+      }
+
+      .box-benefits div dd {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        line-height: 1.8;
+      }
+
+      .box-benefits-left, .box-wpp-left {
+        text-align: left;
+      }
+
+      @media screen and (max-width: 500px) {
+        .box-benefits div dt::before {
+          width: 50px;
+          height: 50px;
+          font-size: 1.4rem;
+        }
+
+        .box-benefits div dt, .box-benefits div dd {
+          margin-left: 30px;
+        }
+
+        .box-benefits div dt {
+          padding: 10px;
+        }
+
+        .box-benefits div dd {
+          padding: 10px;
+        }
+
+        .box-benefits div dt::before {
+          left: -55px;
+        }
+
+        .swal2-html-container {
+          margin: 10px !important;
+        }
+
+        .swal2-title {
+          padding: 10px 0 !important;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .box-pricing-divider > span {
+          font-size: 45px;
+          top: 50%;
+        }
+      }
+
+      .box-pricing-black .box-pricing-list > li.active2 {
+        color: #5d6264 !important;
+      }
+
+      .box-pricing-black .box-pricing-list > li.active2::before {
+        color: #5d6264;
+        color: #b66969;
+        content: "\f00d";
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active::before {
+        content: none;
+        text-align: left;
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active {
+        text-indent: 0;
+        padding-left: 0;
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active:first-child {
+        color: #acacac;
+      }
+
+      #suporte {
+        width: 900px;
+        margin: auto;
+        padding: 60px 20px;
+        counter-reset: h2;
+      }
+
+      @media screen and (max-width: 1000px) {
+        #suporte {
+          width: 80%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        #suporte {
+          width: 100%;
+        }
+      }
+
+      .box-counter {
+        counter-reset: h3;
+      }
+
+      #suporte p, .ul-content {
+        text-align: left;
+      }
+
+      .ul-content {
+        margin-left: 35px;
+      }
+
+      .ul-content li {
+        margin-top: 10px !important;
+        position: relative;
+      }
+
+      .ul-content li::before {
+        content: "●";
+        position: absolute;
+        top: -1px;
+        left: -15px;
+      }
+
+      .h2-counter, .h3-counter {
+        text-align: left;
+        margin-top: 50px !important;
+      }
+
+      .h3-counter {
+        text-align: left;
+        margin-top: 20px !important;
+      }
+
+      .h2-counter::before {
+        counter-increment: h2;
+        content: counter(h2) " - ";
+        padding-right: 10px;  
+      }
+
+      .h3-counter::before {
+        counter-increment: h3;
+        content: counter(h2) "." counter(h3) " - ";
+        padding-right: 10px;  
+      }
+
+      .wrapper-table-maintenance {
+        height: 400px;
+        overflow: auto;
+        margin: 30px 0;
+        border: 1px solid #dee2e6;
+      }
+
+      .table-maintenance {
+        width: 100%;
+      }
+
+      .table-maintenance th, .table-maintenance td {
+        border: 1px solid #dee2e6;
+      }
+
+      .table-maintenance th {
+        background: #f3f4f5;
+        height: 40px;
+        border-top: none;
+        border-left: none;
+      }
+
+      .table-maintenance td {
+        text-align: left;
+        border-left: none;
+      }
+
+      .table-maintenance tr:last-child td {
+        border-bottom: none;
+      }
+
+      .table-maintenance th, .table-maintenance td {
+        padding: 10px;
+      }
+
+      #contato {
+        width: 900px;
+        margin: auto;
+      }
+
+      .box-trank {
+        display: flex;
+      }
+
+      .box-trank div:first-child {
+        padding: 20px;
+        margin-right: 30px;
+      }
+
+      .box-trank div:first-child img {
+        width: 500px;
+      }
+
+      @media screen and (max-width: 940px) {
+        .box-trank div:first-child {
+          margin-right: 0;
+        }
+
+        .box-trank div:first-child img {
+          width: 400px;
+        }
+      }
+
+      @media screen and (max-width: 990px) {
+        #contato {
+          width: 100%;
+          padding: 50px 20px;
+        }
+      }
+
+      .p-footer {
+        font-size: 13px;
+        text-align: center;
+        background: #f8f8f8;
+        padding: 40px;
+        margin-top: 37px;
+        color: #3e3e3e;
+      }
+
+      @media screen and (max-width: 500px) {
+        .box-trank {
+          flex-wrap: wrap;
+        }
+
+        .box-trank div:first-child {
+          margin: auto;
+        }
+
+        .box-trank div:first-child img {
+          width: 200px;
+        }
+
+        .p-footer {
+          padding: 20px;
+          margin-top: 40px;
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/">
+        <img src="img/ie8/warning_bar_0000_us.jpg" height="42" width="820" alt="Você está usando um navegador desatualizado. Para uma experiência de navegação mais rápida e segura, atualize o seu navegador.">
+      </a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div id="home">
+        <header class="section page-header">
+          <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+              <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                  <div class="rd-navbar-panel">
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                      <span></span>
+                    </button>
+                    <div class="rd-navbar-brand">
+                      <a class="brand" href="https://deskwebcode.com.br">
+                        <img src="img/logo/logo-deskwebcode.webp" alt="Logo DeskWebCode" width="223" height="50"/>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="rd-navbar-main-element">
+                    <div class="rd-navbar-nav-wrap">
+                      <div class="icon-social-networks">
+                        <ul class="list-inline list-inline-sm footer-social-list-2">
+                          <li>
+                            <a class="icon mdi material-icons-chat_bubble_outline" href="#"></a>
+                          </li>
+                          <li>
+                            <a class="icon mdi mdi-email-outline" href="mailto:deskwebcode.enterprise@gmail.com" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a class="icon fa fa-whatsapp" href="https://wa.me/5519999810179" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a class="icon fa fa-instagram" href="https://www.instagram.com/deskwebcode"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <ul class="rd-navbar-nav">
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br">Home</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#servicos">Serviços</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#como-funciona">Como funciona</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#planos">Planos</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#duvidas">Dúvidas</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#contato">Contato</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <section id="contato" class="section section-sm section-last bg-default text-left" id="contacts">
+          <div class="box-trank">
+            <div>
+              <img src="img/icon/checkmark.webp">
+            </div>
+            <div>
+              <h3>Recebemos a sua <br>mensagem...</h3>
+              <p>
+                Aguarde, em alguns minutos um profissional da nossa equipe entrará em contato pelo seu E-mail/Telefone. Geralmente respondemos em menos de 5 minutos.
+              </p>
+              <p>
+                Agrademos o contato :)
+              </p>
+              <a href="https://deskwebcode.com.br" class="button button-secondary button-pipaluk">Página principal</a>
+            </div>
+          </div>
+          <p class="p-footer">
+            Ao navegar em nosso site, você concorda em fornecer informações conforme descrito nos nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e
+            <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a> em formulários pelo nosso site para uso pessoal ou relacionados a negócios
+            de nossos serviços ofertados na plataforma, campanha, anúncio ou qualquer outro meio apontando para a nossa autoria e nossos domínios.
+          </p>
+        </section>
+        <footer class="section section-fluid footer-minimal context-dark">
+            <div class="bg-gray-15">
+            <div class="container-fluid">
+                <div class="footer-minimal-inset oh">
+                <ul class="footer-list-category-2">
+                    <li>Website</li>
+                    <li>Hotsite</li>
+                    <li>Landing page</li>
+                    <li>One page</li>
+                    <li>E-commerce</li>
+                </ul>
+                </div>
+                <div class="footer-minimal-bottom-panel text-sm-left">
+                <div class="row row-10 align-items-md-center">
+                    <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                    <div>
+                        <ul class="list-inline list-inline-sm footer-social-list-2">
+                        <li>
+                            <i class="icon mdi mdi-icons-chat_bubble_outline material-icons-chat_bubble_outline"></i>
+                        </li>
+                        <li>
+                            <a class="icon mdi mdi-email-outline" href="mailto:deskwebcode.enterprise@gmail.com?subject=Entrar em Contato" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="icon fa fa-whatsapp" href="https://wa.me/5519999810179" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="icon fa fa-instagram" href="https://www.instagram.com/deskwebcode" target="_blank"></a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 order-sm-first">
+                    <!-- Rights-->
+                    <p class="rights"><span>&copy;&nbsp;</span>2018 - <span class="copyright-year"></span> <span>DeskWebCode</span>
+                    </p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-md-right" style="font-size: 12px;">
+                    <a href="termos-e-uso.html">Termos e uso</a> |
+                    <a href="politica-de-privacidade.html">Política de Privacidade</a> |
+                    <a href="suporte.html">Suporte</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

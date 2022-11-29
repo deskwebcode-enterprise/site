@@ -1,0 +1,875 @@
+<!doctype html>
+<html class="wide wow-animation" lang="pt-br">
+  <head>
+    <title>Política de Privacidade - DeskWebCode</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="DeskWebCode">
+    <meta name="description" content="A Política de Privacidade da DeskWebCode explica quais dados a DeskWebCode coleta e como a mesma utiliza esses dados a favor dela e de seus usuários dentro e fora da plataforma.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo/logo-fav-deskwebcode.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-mod.css">
+    <style>
+      .icon-social-networks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .icon-social-networks a {
+        color: #000;
+        font-size: 1.2rem !important;
+        margin: 0 4px;
+      }
+
+      .icon-social-networks a:nth-child(1) {
+        position: relative;
+        top: 4px;
+      }
+
+      .footer-social-list-2 li:nth-child(1) {
+        position: relative;
+        top: 3px;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 991px) {
+        .icon-social-networks {
+          display: block;
+        }
+      }
+
+      .swal2-close {
+        position: relative;
+        top: -23px;
+        right: -15px;
+      }
+
+      .swal2-footer {
+        font-size: 0.8rem !important;
+        text-align: center;
+        display: block !important;
+      }
+
+      .swal2-html-container {
+        overflow: initial !important;
+      }
+
+      .swal2-title {
+        padding: 20px 20px 0 20px !important;
+      }
+
+      html {
+        counter-reset: boxNumber;
+      }
+
+      .box-benefits div, .box-wpp div {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 15px;
+      }
+
+      .box-wpp {
+        text-align: left;
+      }
+
+      .box-wpp div {
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        background: #0bde5c13;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .box-wpp div:nth-child(1) {
+        background: transparent;
+        border-bottom: none;
+      }
+
+      .box-benefits div:last-child {
+        border-bottom: none;
+      }
+
+      .box-wpp-intro {
+        margin-bottom: 30px;
+      }
+
+      .box-benefits div dt {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .box-wpp div dt {
+        padding: 10px 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .box-benefits div dt::before {
+        counter-increment: boxNumber;
+        content: counter(boxNumber);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6689ff;
+        background-image: linear-gradient(to left, #45476f, #4768af);
+        color: #fff;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        position: absolute;
+        left: -70px;
+        top: 0;
+        z-index: 1;
+      }
+
+      .box-benefits div dt, .box-benefits div dd {
+        margin-left: 70px;
+      }
+
+      .box-benefits div dd {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        line-height: 1.8;
+      }
+
+      .box-benefits-left, .box-wpp-left {
+        text-align: left;
+      }
+
+      @media screen and (max-width: 500px) {
+        .box-benefits div dt::before {
+          width: 50px;
+          height: 50px;
+          font-size: 1.4rem;
+        }
+
+        .box-benefits div dt, .box-benefits div dd {
+          margin-left: 30px;
+        }
+
+        .box-benefits div dt {
+          padding: 10px;
+        }
+
+        .box-benefits div dd {
+          padding: 10px;
+        }
+
+        .box-benefits div dt::before {
+          left: -55px;
+        }
+
+        .swal2-html-container {
+          margin: 10px !important;
+        }
+
+        .swal2-title {
+          padding: 10px 0 !important;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .box-pricing-divider > span {
+          font-size: 45px;
+          top: 50%;
+        }
+      }
+
+      .box-pricing-black .box-pricing-list > li.active2 {
+        color: #5d6264 !important;
+      }
+
+      .box-pricing-black .box-pricing-list > li.active2::before {
+        color: #5d6264;
+        color: #b66969;
+        content: "\f00d";
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active::before {
+        content: none;
+        text-align: left;
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active {
+        text-indent: 0;
+        padding-left: 0;
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active:first-child {
+        color: #acacac;
+      }
+
+      #politica-de-privacidade {
+        width: 900px;
+        margin: auto;
+        padding: 60px 20px;
+        counter-reset: h2;
+      }
+
+      @media screen and (max-width: 1000px) {
+        #politica-de-privacidade {
+          width: 80%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        #politica-de-privacidade {
+          width: 100%;
+        }
+      }
+
+      .box-counter {
+        counter-reset: h3;
+      }
+
+      #politica-de-privacidade p, .ul-content {
+        text-align: left;
+      }
+
+      .ul-content {
+        margin-left: 35px;
+      }
+
+      .ul-content li {
+        margin-top: 10px !important;
+        position: relative;
+      }
+
+      .ul-content li::before {
+        content: "●";
+        position: absolute;
+        top: -1px;
+        left: -15px;
+      }
+
+      .h2-counter, .h3-counter {
+        text-align: left;
+        margin-top: 50px !important;
+      }
+
+      .h3-counter {
+        text-align: left;
+        margin-top: 20px !important;
+      }
+
+      .h2-counter::before {
+        counter-increment: h2;
+        content: counter(h2) " - ";
+        padding-right: 10px;  
+      }
+
+      .h3-counter::before {
+        counter-increment: h3;
+        content: counter(h2) "." counter(h3) " - ";
+        padding-right: 10px;  
+      }
+
+      .wrapper-table-maintenance {
+        height: 400px;
+        overflow: auto;
+        margin: 30px 0;
+        border: 1px solid #dee2e6;
+      }
+
+      .table-maintenance {
+        width: 100%;
+      }
+
+      .table-maintenance th, .table-maintenance td {
+        border: 1px solid #dee2e6;
+      }
+
+      .table-maintenance th {
+        background: #f3f4f5;
+        height: 40px;
+        border-top: none;
+        border-left: none;
+      }
+
+      .table-maintenance td {
+        text-align: left;
+        border-left: none;
+      }
+
+      .table-maintenance tr:last-child td {
+        border-bottom: none;
+      }
+
+      .table-maintenance th, .table-maintenance td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/">
+        <img src="img/ie8/warning_bar_0000_us.jpg" height="42" width="820" alt="Você está usando um navegador desatualizado. Para uma experiência de navegação mais rápida e segura, atualize o seu navegador.">
+      </a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div id="home">
+        <header class="section page-header">
+          <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+              <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                  <div class="rd-navbar-panel">
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                      <span></span>
+                    </button>
+                    <div class="rd-navbar-brand">
+                      <a class="brand" href="https://deskwebcode.com.br">
+                        <img src="img/logo/logo-deskwebcode.webp" alt="Logo DeskWebCode" width="223" height="50"/>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="rd-navbar-main-element">
+                    <div class="rd-navbar-nav-wrap">
+                      <div class="icon-social-networks">
+                        <ul class="list-inline list-inline-sm footer-social-list-2">
+                          <li>
+                            <a class="icon mdi material-icons-chat_bubble_outline" href="#"></a>
+                          </li>
+                          <li>
+                            <a class="icon mdi mdi-email-outline" href="mailto:deskwebcode.enterprise@gmail.com" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a class="icon fa fa-whatsapp" href="https://wa.me/5519999810179" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a class="icon fa fa-instagram" href="https://www.instagram.com/deskwebcode"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <ul class="rd-navbar-nav">
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br">Home</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#servicos">Serviços</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#como-funciona">Como funciona</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#planos">Planos</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#duvidas">Dúvidas</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#contato">Contato</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <section id="politica-de-privacidade">
+          <h1>Política de Privacidade</h1>
+          <span><strong>Última atualização:</strong> 26/11/2022 às 13:20</span>
+          <p>
+            A sua privacidade é de suma importância para a DeskWebCode já que acreditamos que qualquer dado recolhido deve existir o consentimento por
+            parte do usuário e de todos os envolvidos para tal finalidade, no qual buscamos sempre respeitar em primeiro lugar por completo a sua privacidade
+            em relação a qualquer tipo de informação que se referem a Coleta, Produção, Recepção, Classificação, Utilização, Acesso, Reprodução, Transmissão,
+            Distribuição, Processamento, Arquivamento, Armazenamento, Eliminação, Avaliação ou Controle da Informação, Modificação, Comunicação, Transferência,
+            Difusão ou Extração em nossa plataforma, os mesmos se aplicam também em outras plataformas diretamente ligadas a DeskWebCode.
+          </p>
+          <p>
+            A DeskWebCode é altamente atualizada, onde os dados que trabalhamos possuem tratamentos baseados na Lei de Proteção de Dados (13.709/2018) que
+            traz garantias de privacidade, confidencialidade, retenção, proteção aos direitos fundamentais de liberdade e o livre desenvolvimento da personalidade
+            do titular dos dados. Além disso, respeitamos a Constituição Federal da República Federativa do Brasil, o Código de Defesa do Consumidor
+            (Lei 8.078/90), Marco Civil da Internet (Lei 12.965/14) além de quaisquer outras leis, decretos, regulamentos, tratados e outros não pronunciados neste
+            documento, mas que tenham efeito de lei no Brasil, inclusive as que venham a ser futuramente editadas.
+          </p>
+          <h2 class="h2-counter">Dados sujeitos a coleta</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Pessoais</h3>
+            <p>
+              Dentro da plataforma DeskWebCode podemos colher toda e qualquer informação relacionada à pessoa física identificada ou identificável, esses incluem
+              dados diretos como Nome Completo, Gênero, E-mail, Telefone, RG, CPF e Endereço. Também se aplicam dados indiretos como endereços de IP, geolocalização de
+              dispositivo móvel e demais identificadores eletrônicos.
+            </p>
+            <h3 class="h3-counter">Sensíveis</h3>
+            <p>
+              Nós da DeskWebCode podemos colher informações sobre a Origem Racial ou Étnica, Convicção religiosa, Opinião política, Filiação a Sindicato ou a Organização
+              de Caráter Religioso, Filosófico ou Político, dado referente à Saúde ou à Vida Sexual, dado Genético ou Biométrico. Quando este tipo de dado for
+              necessário existirá uma proteção mais rigorosa em relação ao consentimento específico dos titulares dos dados.
+            </p>
+            <h3 class="h3-counter">Anonimizados/pseudo-Anonimizados</h3>
+            <p>
+              Estes dados estão relativamente relacionados aos dados mencionados anteriormente, porém não permite que os titulares dos dados sejam identificados
+              levando em consideração a utilização de meios técnicos razoáveis e disponíveis na ocasião de seu tratamento, por meio dos quais serão perdidos a
+              possibilidade de associação, direta ou indireta, aos indivíduos envolvidos. O mesmo se aplica aos dados Pseudo-Anonimizados processo semelhante ao da
+              Anonimização, levando em consideração a informação adicional mantida separadamente pelo controlador em ambiente controlado e seguro.
+            </p>
+          </div>
+          <h2 class="h2-counter">Tipos de dados que operamos</h2>
+          <p>
+            Em nossa plataforma DeskWebCode na maior parte das Vendas/Contratações de Produtos/Serviços, Marketing, Campanhas, Anúncios, Promoções, Postagem, Atendimento,
+            Contato ou qualquer outro meio ligado diretamente ou indiretamente a DeskWebCode com o intuito de colher quaisquer dados a respeito dos usuários, este
+            processo estará respectivamente relacionado aos Dados Pessoais dos titulares dos dados com o seu livre consentimento.
+          </p>
+          <p>
+            No momento de coleta para o desenvolvimento do site do contratante deixamos claro de maneira objetiva quais dados estão prestes a serem coletados, isso se
+            efetivará de acordo com a conscientização do titular dos dados. Dependendo da configuração no site do contratante sendo essas configurações avançadas do DNS,
+            alterações simultâneas de repositórios e entre outras, poderá ser solicitado por parte de nossa equipe Conta/Senha para a realização do serviço ou caso
+            o contratante queira fazê-lo por conta própria seguindo as nossas instruções também será possível.
+          </p>
+          <p>
+            Todos os nossos serviços atuais são baseados apenas em torno desses dados e não solicitamos acesso à outras informações a não ser esses dados, a menos que
+            realmente precisemos para fornecer algum determinado serviço futuro específico que poderá ocorrer com os titulares dos dados.
+          </p>
+          <h2 class="h2-counter">Finalidade dos dados</h2>
+          <p>
+            Coletamos informações para fornecer serviços melhores a todos os nossos usuários da nossa plataforma DeskWebCode e aumentar a experiência significativamente
+            dos mesmos em suas respectivas interações, dentre os principais objetivos incluem entrar em contato (usando o Nome Completo, E-mail, Telefone e Mensagem), coletar dados para a prestação de serviços,
+            criar serviços de acordo com os interesses de nossos usuários, melhorar nossos serviços com opiniões positivas/negativas de nossos usuários, criar campanhas
+            de Marketing assertivas com base nas informações de nossos usuários e entre outras finalidades construtivas a favor de beneficiar a DeskWebCode e usuário.
+          </p>
+          <p>
+            As informações coletadas e como essas informações serão usadas vão depender de como os usuários usarão os nossos serviços, bem como se relacionam com a nossa
+            empresa DeskWebCode, isso afeta as limitações de como os usuários usufruem dos nossos serviços e como trataremos os dados acessíveis ao nosso favor.
+          </p>
+          <p>
+            Como a maioria dos controladores e operadores de serviços de internet, coletamos informações não pessoais relacionadas aos navegadores, aplicativos e
+            servidores, no qual normalmente disponibilizam, como o Tipo de navegador, Preferência de idioma, Localização geográfica, Site de referência, Data e
+            momento de cada Solicitação de visitante.
+          </p>
+          <p>
+            Usamos essas informações para unir com outras sub-informações a fim de ter um controle melhor da gestão e administração da DeskWebCode, conhecendo melhor qual região
+            mais acessam os nossos serviços, quais horários tem picos de audiência maior, estatísticas sobre a idade das pessoas que realizaram a Compra/Contratação
+            de determinado Produto/Serviço e etc. Todos esses dados contribuem para continuarmos fornecendo serviços cada vez mais preferíveis para todos os nossos
+            usuários.
+          </p>
+          <h2 class="h2-counter">Compartilhamento de dados com terceiros</h2>
+          <p>
+            Nós da DeskWebCode podemos delegar serviços para empresas terceirizadas o que pode mudar a maneira como os seus dados serão trabalhados, porém quando
+            isso ocorrer o titular dos dados será notificado e a Política de Privacidade deste documento estará sujeita a variações, visando sempre respeitar
+            continuamente as leis impostas no país onde reside a DeskWebCode e a empresa oposta contratada para prestar respectivos serviços.
+          </p>
+          <div class="box-counter">
+            <h3 class="h3-counter">Agentes, Consultores e Prestadores de Serviços</h3>
+            <p>
+              Podemos compartilhar seus dados pessoais com nossos contratados e prestadores de serviços que processam dados pessoais em nome da
+              DeskWebCode para executar determinadas funções relacionadas aos negócios. Essas empresas incluem provedores de serviços de Banco de dados,
+              provedores de serviços de Backup e Recuperação de desastres, provedores de serviços de E-mail e entre outros. Quando contratamos outra empresa
+              para desempenhar tais funções, podemos fornecer a ela informações, incluindo Dados Pessoais, relacionadas ao desempenho de tais funções.
+            </p>
+            <h3 class="h3-counter">Empresa e afiliadas</h3>
+            <p>
+              Também podemos compartilhar seus Dados Pessoais com nossas matrizes, subsidiárias e/ou afiliadas para fins consistentes com nossos
+              <a href="termos-e-uso.html">Termos e Uso</a> e Política de Privacidade.
+            </p>
+            <h3 class="h3-counter">Transferências de negócios</h3>
+            <p>
+              À medida que desenvolvemos nossos negócios, podemos vender ou comprar negócios ou ativos. Em caso de alienação societária, fusão, reorganização,
+              dissolução ou evento similar, os Dados Pessoais podem fazer parte dos ativos transferidos.
+            </p>
+            <h3 class="h3-counter">Divulgações para segurança nacional ou aplicação da lei</h3>
+            <p>
+              Em determinadas circunstâncias, podemos ser obrigados a divulgar seus Dados Pessoais em resposta a solicitações válidas de autoridades públicas,
+              inclusive para atender a requisitos de segurança nacional ou de aplicação da lei.
+            </p>
+            <h3 class="h3-counter">Requisitos legais</h3>
+            <p>
+              Podemos divulgar seus Dados Pessoais se exigido por lei para (por exemplo) responder a uma intimação ou solicitação de aplicação da lei, um tribunal
+              ou agência governamental, ou na crença de boa fé de que tal ação é necessário (a) para cumprir uma obrigação legal, (b) para proteger ou defender
+              nossos direitos, interesses ou propriedade ou de terceiros, (c) para prevenir ou investigar possíveis irregularidades relacionadas aos Serviços,
+              (d) para agir em circunstâncias urgentes para proteger a segurança pessoal dos Usuários dos Serviços ou do público ou (e) para proteger contra
+              responsabilidade legal.
+            </p>
+          </div>
+          <h2 class="h2-counter">Segurança dos dados</h2>
+          <p>
+            A DeskWebCode mantêm medidas de segurança razoáveis e apropriadas para proteger os Dados Pessoais dos titulares contra Perda, Uso indevido, Acesso não
+            autorizado, Divulgação, Alteração ou Destruição de acordo com a LGPD (Lei Geral de Proteção de Dados Pessoais) e as leis vigentes que regem
+            o país onde a DeskWebCode esta situada, aumentando a segurança de todos os envolvidos.
+          </p>
+          <p>
+            Quando for necessário coletar dados dos usuários eles estarão devidamente protegidos com criptografia impedindo que os dados sejam
+            interceptados, capturados ou visualizados durante a transferência das informações até o servidor que hospeda o nosso site DeskWebCode. O
+            mesmo vale para todas as empresas que terceirizam os seus serviços a fim de lidar com os dados dos usuários para nós da DeskWebCode.
+          </p>
+          <p>
+            Ao utilizarmos armazenamento de dados para os nossos respectivos serviços, procuramos realizar Backups em Banco de dados extremamente
+            robusto, capaz de suportar grandes volumes de dados para aprimorar e aumentar a segurança dos titulares, visando sempre estar em
+            conformidade com a LGPD como, limitando o acesso à base de dados, estruturando os dados separadamente, testes em bases distintas e
+            registros de atividades, sendo válido também em serviços de empresas de terceiros contratadas.
+          </p>
+          <h2 class="h2-counter">Dados registrados</h2>
+          <p>
+            Quando nós da DeskWebCode coletarmos qualquer dado vindo de sua autoria estando disponível ao nosso acesso, você pode solicitar um documento
+            que contêm todos os dados que foram apurados desde o momento do registro até o período da resposta a sua solicitação.
+          </p>
+          <p>
+            Não questionaremos o acesso, porém você deverá estar ciente em ter os meios disponíveis para ter acesso as suas informações que é o caso de
+            ter "E-mail" e "Senha" cadastradas em nossa plataforma para exigir os seus dados, esse processo só será conveniente caso tenha cadastrado em
+            nossos sistemas ou de terceiros que prestam serviços em nosso nome, caso não tenha realizado algum tipo Login/Cadastro e acredita em ter
+            dados registrados em nossa plataforma, você pode entrar em contato conosco para analisarmos este cenário.
+          </p>
+          <p>
+            Ao exigir esse direito, responderemos o mais breve possível dentro do prazo de 1 há 15 dias se possuímos ou não dados e uma declaração clara
+            e completa com informações sobre a origem dos dados, critérios e finalidade do tratamento, todo esse processo será dado de forma simplificada
+            para o titular dos dados, priorizando o acesso de seu interesse.
+          </p>
+          <p>
+            Você também pode exigir dados armazenados em históricos, no qual foram necessários para o seu proveito com o que ofertamos ao mercado, esses
+            incluem informações e conversas registradas em Bate papos, Redes Sociais e E-mail, porém só foram utilizados apenas para um único propósito,
+            onde não estão sendo tratados de forma específica e continuadamente.
+          </p>
+          <p>
+            O acesso a dados em bancos de dados de terceiros deverá existir um contato direto com a empresa terceirizada para solicitar os dados de seu interesse,
+            esse processo não será realizado pela nossa plataforma e sim, com o contratante de nossos serviços, estando de nossa responsabilidade apenas
+            guiá-lo da melhor maneira possível.
+          </p>
+          <h2 id="exclusao-de-dados" class="h2-counter">Exclusão de dados</h2>
+          <p>
+            Você pode excluir qualquer dado ou todos os dados que forem de sua origem quando houver em nosso banco de dados ou de terceiros contratados
+            para auxiliar respectivos serviços para nós da DeskWebCode. A exclusão dos dados será iniciada após atendermos a sua solicitação, levando em
+            conta que esse processo poderá afetar os serviços que oferecemos atualmente ou os que venham a ser realizados futuramente.
+          </p>
+          <p>
+            A exclusão de dados em bancos de dados de terceiros deverá existir um contato direto com a empresa terceirizada para excluir os dados de seu interesse,
+            esse processo não será realizado pela nossa plataforma e sim, com o contratante de nossos serviços, estando de nossa responsabilidade apenas
+            guiá-lo da melhor maneira possível.
+          </p>
+          <h2 class="h2-counter">Nossos deveres ao coletar dados</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Consentimento do titular</h3>
+            <p>
+              Deverá ser fornecido por escrito ou por outro meio que demonstre a manifestação de vontade do titular dos dados em aceitação de qualquer
+              Preceito/Política na plataforma DeskWebCode. O consentimento pode ser revogado a qualquer momento mediante manifestação expressa do titular.
+            </p>
+            <h3 class="h3-counter">Transparência e direto</h3>
+            <p>
+              Tratar os dados pessoais para algum determinado fim específico e explicar claramente para qual será o objetivo de cada dado coletado.
+            </p>
+            <h3 class="h3-counter">Apenas o essencial</h3>
+            <p>
+              Coletar e utilizar apenas dados necessários para realizar algum tratamento de informações.
+            </p>
+            <h3 class="h3-counter">Segurança</h3>
+            <p>
+              Adotar medidas preventivas de segurança para todos os dados que forem apurados, nunca realizando o tratamento para fins discriminatórios ilícitos ou abusivos.
+            </p>
+            <h3 class="h3-counter">Seguir boas práticas</h3>
+            <p>
+              Replicar boas práticas e certificações existentes no mercado relacionados a Coleta, Produção, Recepção, Classificação, Utilização, Acesso,
+              Reprodução, Transmissão, Distribuição, Processamento, Arquivamento, Armazenamento, Eliminação, Avaliação ou Controle da informação, Modificação,
+              Comunicação, Transferência, Difusão ou Extração dos dados.
+            </p>
+            <h3 class="h3-counter">Tempo de resposta curto</h3>
+            <p>
+              Resolver incidentes que por acaso aconteçam com a maior agilidade possível.
+            </p>
+            <h3 class="h3-counter">Realizar auditorias</h3>
+            <p>
+              Analisar cuidadosamente e sistematicamente as atividades desenvolvidas em nossa plataforma DeskWebCode, cujo objetivo é averiguar se as nossas
+              políticas estão de acordo com as planejadas e/ou estabelecidas previamente, se foram implementadas com eficácia e adequadas (em conformidade) à
+              consecução das normas estabelecidas na lei.
+            </p>
+            <h3 class="h3-counter">Elaborar e atualizar Planos de contingência</h3>
+            <p>
+              Planejar de maneira clara e concisa a descrita das medidas a serem tomadas, no caso da ocorrência de um evento indesejável que afete ou possa
+              afetar negativamente determinados processos, visando sempre manter requalificado quando for necessário.
+            </p>
+          </div>
+          <h2 class="h2-counter">Direitos garantidos aos seus dados</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Solicitação de dados</h3>
+            <p>
+              Confirmação de que existe um ou mais tratamento de dados sendo realizado em nossos servidores ou de terceiros contratados em nosso nome.
+            </p>
+            <h3 class="h3-counter">Acesso aos dados</h3>
+            <p>
+              Retorno de todos os dados que estão sendo tratados ou não em nossa plataforma DeskWebCode que lhe digam respeito a sua autoria.
+            </p>
+            <h3 class="h3-counter">Correção de dados</h3>
+            <p>
+              Reparos de dados que estão incompletos, inexados ou desatualizados por parte dos titulares antes, durante ou depois de usufruírem dos nossos serviços.
+            </p>
+            <h3 class="h3-counter">Eliminação de dados</h3>
+            <p>
+              Remoção de um ou todos os Dados Pessoais desnecessários, excessivos, ilícito ou por decisão particular do titular.
+            </p>
+            <h3 class="h3-counter">Obtenção de informações</h3>
+            <p>
+              Acesso as informações sobre o compartilhamento de seus dados com empresas públicas e privadas, caso exista e informações sobre o não compartilhamento
+              ou seja, sobre a opção de não autorizar o tratamento e as consequências da negativa.
+            </p>
+            <h3 class="h3-counter">Portabilidade de dados</h3>
+            <p>
+              Efetivamento da portabilidade de seus dados de um fornecedor de serviços ou produtos para outro.
+            </p>
+            <h3 class="h3-counter">Revogação, Reclamação e Oposição</h3>
+            <p>
+              Direito em anular o consentimento de acordo com os termos da lei, reclame contra o controlador dos dados junto à autoridade nacional e caso discorde
+              de um tratamento feito sem seu consentimento considerando o mesmo irregular.
+            </p>
+          </div>
+          <h2 class="h2-counter">Dados de crianças</h2>
+          <p>
+            A DeskWebCode não coleta intencionalmente nenhuma informação pessoal de crianças menores de 13 anos. Se você tiver menos de 13 anos, não envie nenhuma
+            informação pessoal através da nossa plataforma DeskWebCode. Incentivamos os pais e responsáveis legais a monitorar o uso da Internet de seus
+            filhos e ajudar a aplicar esta Política de Privacidade, instruindo seus filhos a nunca fornecer informações pessoais por meio da plataforma
+            DeskWebCode sem a permissão deles.
+          </p>
+          <p>
+            Se você tiver motivos para acreditar que uma criança menor de 13 anos nos forneceu informações pessoais por meio dos Sites ou Serviços
+            específicos, entre em contato conosco e faremos esforços comercialmente razoáveis para excluir essas informações.
+          </p>
+          <h2 class="h2-counter">Cookies</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Armazenamento De Cookies</h3>
+            <p>
+              Um Cookie é uma sequência de informações que um site armazena no computador de um visitante e que o navegador do visitante fornece ao site
+              cada vez que o visitante retorna. A DeskWebCode usa Cookies para ajudar a DeskWebCode a identificar e rastrear visitantes, seu uso do site
+              DeskWebCode e suas preferências de acesso ao site.
+            </p>
+            <p>
+              Os visitantes da DeskWebCode que não desejam ter Cookies colocados em seus computadores devem configurar seus navegadores para recusar
+              Cookies antes de usar os sites da DeskWebCode, com a desvantagem de que certos recursos dos sites da DeskWebCode podem não funcionar
+              corretamente sem o auxílio de Cookies.
+            </p>
+            <h3 class="h3-counter">Bloqueio de Cookies</h3>
+            <p>
+              A maioria dos usuários da DeskWebCode utilizam atualmente os navegadores Google Chrome e Mozilla Firefox, sendo necessário que o bloqueio dos
+              Cookies sejam realizados manualmente por parte do usuário em seu próprio computador/navegador.
+            </p>
+            <p>
+              Para bloquear os Cookies vindo do nosso site no Google Chrome vá em <em>Configurações</em>, <em>Privacidade e Segurança</em>, <em>Cookies e outros dados do site</em>, <em>Sites que nunca
+              podem usar Cookies</em>, clique em <em>Adicionar</em>, Cole a URL: <em>https://deskwebcode.com.br</em> e clique novamente em <em>Adicionar</em>.
+            </p>
+            <p>
+              Para bloquear os Cookies vindo do nosso site no Mozilla Firefox vá em <em>Configurações</em>, <em>Privacidade e Segurança</em>, <em>Gerenciar Exceções</em>, Copie a URL: <em>https://deskwebcode.com.br</em> e cole
+              no campo <em>Endereço do Site</em>, clique em <em>Bloquear</em> e clique em <em>Salvar Alterações</em>.
+            </p>
+            <h3 class="h3-counter">Cookies em Publicidades</h3>
+            <p>
+              Os anúncios que aparecem em qualquer um de nossos sites DeskWebCode podem ser entregues aos usuários por parceiros de publicidade, que
+              podem definir Cookies. Esses Cookies permitem que o servidor de anúncios reconheça seu computador sempre que enviar um anúncio online
+              para compilar informações sobre você ou outras pessoas que usam seu computador.
+            </p>
+            <p>
+              Essas informações permitem que as redes de anúncios, entre outros, forneçam anúncios direcionados que acreditam ser de maior interesse
+              para você. Esta Política de Privacidade cobre o uso de Cookies por DeskWebCode e não cobre o uso de Cookies por terceiros.
+            </p>
+          </div>
+        </section>
+        <footer class="section section-fluid footer-minimal context-dark">
+            <div class="bg-gray-15">
+            <div class="container-fluid">
+                <div class="footer-minimal-inset oh">
+                <ul class="footer-list-category-2">
+                    <li>Website</li>
+                    <li>Hotsite</li>
+                    <li>Landing page</li>
+                    <li>One page</li>
+                    <li>E-commerce</li>
+                </ul>
+                </div>
+                <div class="footer-minimal-bottom-panel text-sm-left">
+                <div class="row row-10 align-items-md-center">
+                    <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                    <div>
+                        <ul class="list-inline list-inline-sm footer-social-list-2">
+                        <li>
+                            <i class="icon mdi mdi-icons-chat_bubble_outline material-icons-chat_bubble_outline"></i>
+                        </li>
+                        <li>
+                            <a class="icon mdi mdi-email-outline" href="mailto:deskwebcode.enterprise@gmail.com?subject=Entrar em Contato" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="icon fa fa-whatsapp" href="https://wa.me/5519999810179" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="icon fa fa-instagram" href="https://www.instagram.com/deskwebcode" target="_blank"></a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 order-sm-first">
+                    <!-- Rights-->
+                    <p class="rights"><span>&copy;&nbsp;</span>2018 - <span class="copyright-year"></span> <span>DeskWebCode</span>
+                    </p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-md-right" style="font-size: 12px;">
+                    <a href="termos-e-uso.html">Termos e uso</a> |
+                    <a href="politica-de-privacidade.html">Política de Privacidade</a> |
+                    <a href="suporte.html">Suporte</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      let formLarge = document.querySelector("#form-large");
+      let formInputTextLarge = document.querySelectorAll(".form-input-text-large");
+      let formInputEmailLarge = document.querySelectorAll(".form-input-email-large");
+      let formInputNumberLarge = document.querySelectorAll(".form-input-number-large");
+      let formInputMensageLarge = document.querySelectorAll(".form-input-mensage-large");
+      let btnFormLarge = document.querySelectorAll(".btn-form-large");
+      let materialIconsChat_bubble_outline = document.querySelectorAll(".material-icons-chat_bubble_outline");
+
+      materialIconsChat_bubble_outline[0].onclick = () => {
+        Swal.fire({
+          title: 'Chat Online',
+          text: 'Clique no botão abaixo da tela do lado direito para entrar em contato ao vivo pelo nosso site e um de nossos profissionais da nossa equipe responderá em menos de 5 minutos.',
+          footer: '<a id="outras-formas" href="#outros-contatos" onclick="disableSwal2backdropShow()">Outras formas de contato</a>',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+      };
+
+      materialIconsChat_bubble_outline[1].onclick = () => {
+        Swal.fire({
+          title: 'Chat Online',
+          text: 'Clique no botão abaixo da tela do lado direito para entrar em contato ao vivo pelo nosso site e um de nossos profissionais da nossa equipe responderá em menos de 5 minutos.',
+          footer: '<a id="outras-formas" href="#outros-contatos" onclick="disableSwal2backdropShow()">Outras formas de contato</a>',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+      };
+
+      function boxMessageKnowMore() {
+        Swal.fire({
+          title: 'Design Do Seu Site',
+          text: 'Vamos apresentar a você Designs de sites de acordo com as informações enviadas sobre o seu negócio, assim você poderá escolher o melhor Design que gostar ou solicitar modificações. E o melhor de tudo é que não existe custo nenhum envolvido adicionalmente, por tanto, fique tranquilo(a) em pedir quantos Designs ou alterações achar que for necessário já que o seu site só vai ao ar quando você estiver satisfeito(a).',
+          imageUrl: 'img/content/website-lanchonete-e-delivery.webp',
+          imageWidth: 860,
+          width: 600,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageBenefits() {
+        Swal.fire({
+          title: 'Por Que Ter Um Site?',
+          html: '<dl class="box-benefits"><div class="box-benefits-left"><dt>Mercado Em Alta</dt><dd>A grande parte dos consumidores que compravam em locais físicos, estão se acostumando cada vez mais a comprar e buscar informações sobre os negócios no ambiente digital e para isso é necessário ter um site voltado inteiramente para o seu negócio.</dd></div><div class="box-benefits-left"><dt>Informações Na Mão</dt><dd>Com um site você pode mostrar o que o cliente procura como, por exemplo, todos os detalhes sobre o seu negócio, serviços/produtos, preços, promoções, formas de pagamento, contato, endereço e muito mais.</dd></div><div class="box-benefits-left"><dt>Independente</dt><dd>Os usuários e clientes que acessarem o seu site não serão incomodados ou interrompidos com conteúdos das redes sociais ou de outras plataformas e sim, apenas pelo seu conteúdo que está dentro do seu próprio site.</dd></div><div class="box-benefits-left"><dt>Facilidade Na Busca</dt><dd>As pessoas fazem bilhões de buscas diariamente no Google e entre outros mecanismos de buscas a procura de informações ou compras e em uma dessas elas podem se esbarrar com o seu site e se interessar pelos seus serviços ou produtos.</dd></div><div class="box-benefits-left"><dt>Presença 24h</dt><dd>Em uma loja física você tem horário para fechar já em um site não. O que significa que os seus clientes poderão contratar os seus serviços ou comprar os seus produtos a qualquer hora.</dd></div><div class="box-benefits-left"><dt>Nível mundial</dt><dd>Qualquer pessoa do mundo poderá acessar o seu site e isso abre novos mercado para você.</dd></div><div class="box-benefits-left"><dt>Custo benefício</dt><dd>Ter um site para o seu negócio na internet custa muito menos do que um negócio físico.</dd></div><div class="box-benefits-left"><dt>Estratégias de marketing</dt><dd>O seu site terá técnicas de conversões usadas em cada seção do seu site para aumentar as chances dos seus clientes contratarem ou comprarem os seus serviços/produtos.</dd></div><div class="box-benefits-left"><dt>Análise De Dados</dt><dd>Você consegue monitorar todos os dados, processos e interações dos usuários com o seu site para desenvolver melhores estratégias certeiras de marketing para o seu negócio.</dd></div><div class="box-benefits-left"><dt>Ferramentas</dt><dd>O seu site poderá ter diversas ferramentas para vendas e atendimento ao cliente como, por exemplo, ferramentas WhatsApp (para agendamento, orçamento e pedido), compras ou contratações por meio de links de pagamentos, chat ao vivo para responder os seus clientes direto do seu site ou aplicativo, ligação por clique e diversas outras ferramentas de e-commerce (carrinho, favoritos, frete, gateway de pagamento e muito mais).</dd></div></dl>',
+          imageUrl: 'img/content/website-artistico-e-produtos.webp',
+          imageWidth: 860,
+          width: 800,
+          padding: 30,
+          footer: 'Para saber detalhes de quais recursos e ferramentas virão no seu site, confira nossos planos (Básico, Padrão, Ultimate, Premium, E-commerce e Empresarial).',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageWpp() {
+        Swal.fire({
+          title: 'Ferramentas WhatsApp',
+          html: '<dl class="box-wpp"><dd class="box-wpp-intro">Evite ficar fazendo as mesmas perguntas aos clientes (Qual é o endereço para entrega? Qual a forma de pagamento? Qual tamanho deseja? E etc), economize tempo em conversas no WhatsApp com campos pré-configurados em seu site para serem preenchidos pelos clientes, seja para agendar um horário, realizar um orçamento ou enviar um pedido diretamente para o seu WhatsApp.</dd><div class="box-wpp box-wpp-left"><dt>Agendamento no WhatsApp</dt><dd>Se você presta serviços ficou mais fácil o cliente escolher o melhor horário e data para usufruir de seus serviços. O cliente simplesmente acessa o seu site e vai até a seção de agendamento e digita as informações como, por exemplo, data, hora, nome, etc e envia direto no seu WhatsApp para a sua confirmação do horário e data disponíveis na sua agenda.</dd></div><div class="box-wpp box-wpp-left"><dt>Orçamento no WhatsApp</dt><dd>Permita que os seus clientes possam realizar orçamentos de seus serviços preenchendo as informações no seu site e enviando direto no seu WhatsApp para você determinar o valor do serviço a ser prestado.</dd></div><div class="box-wpp box-wpp-left"><dt>Pedido no WhatsApp</dt><dd>Um ótimo recurso usado por vários negócios que trabalham com Delivery. Você pode vender os produtos que está no seu site, dando a possibilidade dos seus clientes usarem um Checkout adaptado para colher informações do cliente, produto, entrega e enviar direto no seu WhatsApp de forma estruturada para que você possa apenas processar o pedido.</dd></div></dl>',
+          imageUrl: 'img/content/ferramentas-whatsapp.webp',
+          imageWidth: 960,
+          width: 800,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageStep() {
+        Swal.fire({
+          title: 'Processo De Criação Do Seu Site',
+          html: '<dl class="box-benefits"><div class="box-benefits-left"><dt>Compreensão Do Que Deseja</dt><dd>Para desenvolvermos o seu site é importante entendermos qual é a sua real necessidade para planejarmos e estruturarmos o seu site de acordo com o que deseja. Nessa primeira etapa conversaremos um pouco mais a respeito do seu site e esclareceremos todas as suas dúvidas.</dd></div><div class="box-benefits-left"><dt>Coleta De Informações</dt><dd>Para criarmos o rascunho inicial (Design do seu site) iremos colher informações suas e de se negócio por meio de Briefings. As informações que precisamos para desenvolver o seu site são as mesmas que você demonstra para os seus clientes como, por exemplo, endereço, telefone, e-mail, redes sociais, tipos de serviços/produtos, preços, características, imagens e qualquer outro material relevante para o desenvolvimento do seu site.</dd></div><div class="box-benefits-left"><dt>Rascunho Inicial</dt><dd>Vamos apresentar a você rascunhos iniciais (Designs de sites) de acordo com as informações enviadas sobre o seu negócio nos Briefings, assim você poderá escolher o melhor Design que gostar ou solicitar modificações. E o melhor de tudo é que não existe custo nenhum envolvido adicionalmente, por tanto, fique tranquilo(a) em pedir quantos Designs ou alterações achar que for necessário já que o seu site só vai ao ar quanto você estiver satisfeito(a).</dd></div><div class="box-benefits-left"><dt>Desenvolvimento Final</dt><dd>Após, todas as etapas acima, você poderá contratar um de nossos planos (Básico, Padrão, Ultimate, Premium, E-commerce e Empresarial) para iniciarmos o desenvolvimento final do seu site, onde começaremos a tornar o seu site funcional para uso. Quando terminarmos, enviaremos um link para você ter acesso total ao seu site 100% online e logo em seguida um segundo link para que você possa baixar todos os arquivos e código fonte que compõe o seu site para mantê-lo guardado offline como backup. Também enviaremos todos os links e acessos dos provedores de hospedagem, domínio, sistemas vinculados e manual de uso para que você possa fazer futuras personalizações, renovações de domínio e configurações/consultas nos sistemas integrados.</dd></div></dl>',
+          imageUrl: 'img/content/temas-de-site-para-desenvolvimento.webp',
+          imageWidth: 860,
+          width: 800,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function disableSwal2backdropShow() {
+        let swal2backdropShow = document.querySelectorAll(".swal2-backdrop-show");
+
+        swal2backdropShow[0].style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      btnFormLarge[0].onclick = () => {
+        if (formInputTextLarge[0].value != "" && formInputEmailLarge[0].value != "" && formInputNumberLarge[0].value != "" && formInputMensageLarge[0].value != "") {
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace("(", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace(")", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace(" ", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace("-", "");
+
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Mensagem enviada!',
+            text: 'Aguarde, em alguns minutos um profissional da nossa equipe entrará em contato pelo seu e-mail/telefone.',
+            showConfirmButton: true
+          })
+        }
+      }
+    </script>
+    <script>
+      window.onload = () => {
+        const $input = document.querySelector('[data-js="input"]')
+      $input.addEventListener('input', handleInput, false)
+
+      function handleInput (e) {
+        e.target.value = phoneMask(e.target.value)
+      }
+
+      function phoneMask (phone) {
+        return phone.replace(/\D/g, '')
+          .replace(/^(\d)/, '($1')
+          .replace(/^(\(\d{2})(\d)/, '$1) $2')
+          .replace(/(\d{5})(\d{1,5})/, '$1-$2')
+          .replace(/(-\d{4})\d+?$/, '$1');
+        }
+      }
+  </script>
+  </body>
+</html>

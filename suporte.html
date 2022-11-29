@@ -1,0 +1,633 @@
+<!doctype html>
+<html class="wide wow-animation" lang="pt-br">
+  <head>
+    <title>Suporte - DeskWebCode</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="DeskWebCode">
+    <meta name="description" content="Precisando de suporte? Preencha os campos do formulário dessa página ou mande uma mensagem pelas nossas redes sociais e responderemos o mais breve possível.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo/logo-fav-deskwebcode.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-mod.css">
+    <style>
+      .icon-social-networks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .icon-social-networks a {
+        color: #000;
+        font-size: 1.2rem !important;
+        margin: 0 4px;
+      }
+
+      .icon-social-networks a:nth-child(1) {
+        position: relative;
+        top: 4px;
+      }
+
+      .footer-social-list-2 li:nth-child(1) {
+        position: relative;
+        top: 3px;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 991px) {
+        .icon-social-networks {
+          display: block;
+        }
+      }
+
+      .swal2-close {
+        position: relative;
+        top: -23px;
+        right: -15px;
+      }
+
+      .swal2-footer {
+        font-size: 0.8rem !important;
+        text-align: center;
+        display: block !important;
+      }
+
+      .swal2-html-container {
+        overflow: initial !important;
+      }
+
+      .swal2-title {
+        padding: 20px 20px 0 20px !important;
+      }
+
+      html {
+        counter-reset: boxNumber;
+      }
+
+      .box-benefits div, .box-wpp div {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 15px;
+      }
+
+      .box-wpp {
+        text-align: left;
+      }
+
+      .box-wpp div {
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        background: #0bde5c13;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .box-wpp div:nth-child(1) {
+        background: transparent;
+        border-bottom: none;
+      }
+
+      .box-benefits div:last-child {
+        border-bottom: none;
+      }
+
+      .box-wpp-intro {
+        margin-bottom: 30px;
+      }
+
+      .box-benefits div dt {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .box-wpp div dt {
+        padding: 10px 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .box-benefits div dt::before {
+        counter-increment: boxNumber;
+        content: counter(boxNumber);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6689ff;
+        background-image: linear-gradient(to left, #45476f, #4768af);
+        color: #fff;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        position: absolute;
+        left: -70px;
+        top: 0;
+        z-index: 1;
+      }
+
+      .box-benefits div dt, .box-benefits div dd {
+        margin-left: 70px;
+      }
+
+      .box-benefits div dd {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        line-height: 1.8;
+      }
+
+      .box-benefits-left, .box-wpp-left {
+        text-align: left;
+      }
+
+      @media screen and (max-width: 500px) {
+        .box-benefits div dt::before {
+          width: 50px;
+          height: 50px;
+          font-size: 1.4rem;
+        }
+
+        .box-benefits div dt, .box-benefits div dd {
+          margin-left: 30px;
+        }
+
+        .box-benefits div dt {
+          padding: 10px;
+        }
+
+        .box-benefits div dd {
+          padding: 10px;
+        }
+
+        .box-benefits div dt::before {
+          left: -55px;
+        }
+
+        .swal2-html-container {
+          margin: 10px !important;
+        }
+
+        .swal2-title {
+          padding: 10px 0 !important;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .box-pricing-divider > span {
+          font-size: 45px;
+          top: 50%;
+        }
+      }
+
+      .box-pricing-black .box-pricing-list > li.active2 {
+        color: #5d6264 !important;
+      }
+
+      .box-pricing-black .box-pricing-list > li.active2::before {
+        color: #5d6264;
+        color: #b66969;
+        content: "\f00d";
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active::before {
+        content: none;
+        text-align: left;
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active {
+        text-indent: 0;
+        padding-left: 0;
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active:first-child {
+        color: #acacac;
+      }
+
+      #suporte {
+        width: 900px;
+        margin: auto;
+        padding: 60px 20px;
+        counter-reset: h2;
+      }
+
+      @media screen and (max-width: 1000px) {
+        #suporte {
+          width: 80%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        #suporte {
+          width: 100%;
+        }
+      }
+
+      .box-counter {
+        counter-reset: h3;
+      }
+
+      #suporte p, .ul-content {
+        text-align: left;
+      }
+
+      .ul-content {
+        margin-left: 35px;
+      }
+
+      .ul-content li {
+        margin-top: 10px !important;
+        position: relative;
+      }
+
+      .ul-content li::before {
+        content: "●";
+        position: absolute;
+        top: -1px;
+        left: -15px;
+      }
+
+      .h2-counter, .h3-counter {
+        text-align: left;
+        margin-top: 50px !important;
+      }
+
+      .h3-counter {
+        text-align: left;
+        margin-top: 20px !important;
+      }
+
+      .h2-counter::before {
+        counter-increment: h2;
+        content: counter(h2) " - ";
+        padding-right: 10px;  
+      }
+
+      .h3-counter::before {
+        counter-increment: h3;
+        content: counter(h2) "." counter(h3) " - ";
+        padding-right: 10px;  
+      }
+
+      .wrapper-table-maintenance {
+        height: 400px;
+        overflow: auto;
+        margin: 30px 0;
+        border: 1px solid #dee2e6;
+      }
+
+      .table-maintenance {
+        width: 100%;
+      }
+
+      .table-maintenance th, .table-maintenance td {
+        border: 1px solid #dee2e6;
+      }
+
+      .table-maintenance th {
+        background: #f3f4f5;
+        height: 40px;
+        border-top: none;
+        border-left: none;
+      }
+
+      .table-maintenance td {
+        text-align: left;
+        border-left: none;
+      }
+
+      .table-maintenance tr:last-child td {
+        border-bottom: none;
+      }
+
+      .table-maintenance th, .table-maintenance td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/">
+        <img src="img/ie8/warning_bar_0000_us.jpg" height="42" width="820" alt="Você está usando um navegador desatualizado. Para uma experiência de navegação mais rápida e segura, atualize o seu navegador.">
+      </a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div id="home">
+        <header class="section page-header">
+          <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+              <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                  <div class="rd-navbar-panel">
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                      <span></span>
+                    </button>
+                    <div class="rd-navbar-brand">
+                      <a class="brand" href="https://deskwebcode.com.br">
+                        <img src="img/logo/logo-deskwebcode.webp" alt="Logo DeskWebCode" width="223" height="50"/>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="rd-navbar-main-element">
+                    <div class="rd-navbar-nav-wrap">
+                      <div class="icon-social-networks">
+                        <ul class="list-inline list-inline-sm footer-social-list-2">
+                          <li>
+                            <a class="icon mdi material-icons-chat_bubble_outline" href="#"></a>
+                          </li>
+                          <li>
+                            <a class="icon mdi mdi-email-outline" href="mailto:deskwebcode.enterprise@gmail.com" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a class="icon fa fa-whatsapp" href="https://wa.me/5519999810179" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a class="icon fa fa-instagram" href="https://www.instagram.com/deskwebcode"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <ul class="rd-navbar-nav">
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br">Home</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#servicos">Serviços</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#como-funciona">Como funciona</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#planos">Planos</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#duvidas">Dúvidas</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#contato">Contato</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <section id="suporte">
+          <h1>Suporte técnico</h1>
+          <p>
+            Todos os serviços de desenvolvimento ou manutenção de sites que nós da DeskWebCode prestamos em nossa plataforma possui suporte 24 horas por semana e 100% gratuito
+            para todos os visitantes ou clientes de nossa plataforma.
+          </p>
+          <p>
+            Qualquer problema ou dúvida poderá ser resolvida solicitando o suporte por qualquer meio de contato e fornecendo algumas informações 
+            para apresentarmos a melhor solução. O contato pode ser por WhatsApp, bate-papo, e‑mail e muito mais, assim um de nossos integrantes de nossa equipe te atenderá
+            o mais breve possível (em geral respondemos em menos de 5 minutos).
+          </p>
+          <section id="contato" class="section section-sm section-last bg-default text-left" id="contacts">
+            <div class="container">
+              <article class="title-classic">
+                <div class="title-classic-title">
+                  <h3>Entrar em contato</h3>
+                </div>
+              </article>
+              <form id="form-large" class="rd-form rd-form-variant-2 rd-mailform validate" data-form-output="form-output-global" data-form-type="contact" name="mc-embedded-subscribe-form" method="post" action="https://deskwebcode.us9.list-manage.com/subscribe/post?u=ea94f00ba4b2e45703d1c5b95&amp;id=4a0f01b869&amp;f_id=00e306e1f0">
+                <div class="row row-14 gutters-14">
+                  <div class="col-md-4">
+                    <div class="form-wrap">
+                      <input class="form-input form-input-text-large" id="mce-FNAME" type="text" name="FNAME" data-constraints="@Required">
+                      <label class="form-label" for="mce-FNAME">Nome completo</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-wrap">
+                      <input class="form-input required email form-input-email-large" id="mce-EMAIL" type="email" name="EMAIL" data-constraints="@Email @Required" required>
+                      <label class="form-label" for="mce-EMAIL">E-mail</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-wrap">
+                      <input class="form-input form-input-number-large" id="mce-PHONE" data-js="input" type="text" name="PHONE" data-constraints="@Required">
+                      <label class="form-label" for="mce-PHONE">Telefone</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label form-input-mensage-large" for="mce-LNAME">Mensagem</label>
+                      <textarea class="form-input textarea-lg" id="mce-LNAME" name="LNAME" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-primary button-pipaluk btn-form-large">Enviar</button>
+              </form>
+            </div>
+          </section>
+        </section>
+        <footer class="section section-fluid footer-minimal context-dark">
+            <div class="bg-gray-15">
+            <div class="container-fluid">
+                <div class="footer-minimal-inset oh">
+                <ul class="footer-list-category-2">
+                    <li>Website</li>
+                    <li>Hotsite</li>
+                    <li>Landing page</li>
+                    <li>One page</li>
+                    <li>E-commerce</li>
+                </ul>
+                </div>
+                <div class="footer-minimal-bottom-panel text-sm-left">
+                <div class="row row-10 align-items-md-center">
+                    <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                    <div>
+                        <ul class="list-inline list-inline-sm footer-social-list-2">
+                        <li>
+                            <i class="icon mdi mdi-icons-chat_bubble_outline material-icons-chat_bubble_outline"></i>
+                        </li>
+                        <li>
+                            <a class="icon mdi mdi-email-outline" href="mailto:deskwebcode.enterprise@gmail.com?subject=Entrar em Contato" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="icon fa fa-whatsapp" href="https://wa.me/5519999810179" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="icon fa fa-instagram" href="https://www.instagram.com/deskwebcode" target="_blank"></a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 order-sm-first">
+                    <!-- Rights-->
+                    <p class="rights"><span>&copy;&nbsp;</span>2018 - <span class="copyright-year"></span> <span>DeskWebCode</span>
+                    </p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-md-right" style="font-size: 12px;">
+                    <a href="termos-e-uso.html">Termos e uso</a> |
+                    <a href="politica-de-privacidade.html">Política de Privacidade</a> |
+                    <a href="suporte.html">Suporte</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      let formLarge = document.querySelector("#form-large");
+      let formInputTextLarge = document.querySelectorAll(".form-input-text-large");
+      let formInputEmailLarge = document.querySelectorAll(".form-input-email-large");
+      let formInputNumberLarge = document.querySelectorAll(".form-input-number-large");
+      let formInputMensageLarge = document.querySelectorAll(".form-input-mensage-large");
+      let btnFormLarge = document.querySelectorAll(".btn-form-large");
+      let materialIconsChat_bubble_outline = document.querySelectorAll(".material-icons-chat_bubble_outline");
+
+      materialIconsChat_bubble_outline[0].onclick = () => {
+        Swal.fire({
+          title: 'Chat Online',
+          text: 'Clique no botão abaixo da tela do lado direito para entrar em contato ao vivo pelo nosso site e um de nossos profissionais da nossa equipe responderá em menos de 5 minutos.',
+          footer: '<a id="outras-formas" href="#outros-contatos" onclick="disableSwal2backdropShow()">Outras formas de contato</a>',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+      };
+
+      materialIconsChat_bubble_outline[1].onclick = () => {
+        Swal.fire({
+          title: 'Chat Online',
+          text: 'Clique no botão abaixo da tela do lado direito para entrar em contato ao vivo pelo nosso site e um de nossos profissionais da nossa equipe responderá em menos de 5 minutos.',
+          footer: '<a id="outras-formas" href="#outros-contatos" onclick="disableSwal2backdropShow()">Outras formas de contato</a>',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+      };
+
+      function boxMessageKnowMore() {
+        Swal.fire({
+          title: 'Design Do Seu Site',
+          text: 'Vamos apresentar a você Designs de sites de acordo com as informações enviadas sobre o seu negócio, assim você poderá escolher o melhor Design que gostar ou solicitar modificações. E o melhor de tudo é que não existe custo nenhum envolvido adicionalmente, por tanto, fique tranquilo(a) em pedir quantos Designs ou alterações achar que for necessário já que o seu site só vai ao ar quando você estiver satisfeito(a).',
+          imageUrl: 'img/content/website-lanchonete-e-delivery.webp',
+          imageWidth: 860,
+          width: 600,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageBenefits() {
+        Swal.fire({
+          title: 'Por Que Ter Um Site?',
+          html: '<dl class="box-benefits"><div class="box-benefits-left"><dt>Mercado Em Alta</dt><dd>A grande parte dos consumidores que compravam em locais físicos, estão se acostumando cada vez mais a comprar e buscar informações sobre os negócios no ambiente digital e para isso é necessário ter um site voltado inteiramente para o seu negócio.</dd></div><div class="box-benefits-left"><dt>Informações Na Mão</dt><dd>Com um site você pode mostrar o que o cliente procura como, por exemplo, todos os detalhes sobre o seu negócio, serviços/produtos, preços, promoções, formas de pagamento, contato, endereço e muito mais.</dd></div><div class="box-benefits-left"><dt>Independente</dt><dd>Os usuários e clientes que acessarem o seu site não serão incomodados ou interrompidos com conteúdos das redes sociais ou de outras plataformas e sim, apenas pelo seu conteúdo que está dentro do seu próprio site.</dd></div><div class="box-benefits-left"><dt>Facilidade Na Busca</dt><dd>As pessoas fazem bilhões de buscas diariamente no Google e entre outros mecanismos de buscas a procura de informações ou compras e em uma dessas elas podem se esbarrar com o seu site e se interessar pelos seus serviços ou produtos.</dd></div><div class="box-benefits-left"><dt>Presença 24h</dt><dd>Em uma loja física você tem horário para fechar já em um site não. O que significa que os seus clientes poderão contratar os seus serviços ou comprar os seus produtos a qualquer hora.</dd></div><div class="box-benefits-left"><dt>Nível mundial</dt><dd>Qualquer pessoa do mundo poderá acessar o seu site e isso abre novos mercado para você.</dd></div><div class="box-benefits-left"><dt>Custo benefício</dt><dd>Ter um site para o seu negócio na internet custa muito menos do que um negócio físico.</dd></div><div class="box-benefits-left"><dt>Estratégias de marketing</dt><dd>O seu site terá técnicas de conversões usadas em cada seção do seu site para aumentar as chances dos seus clientes contratarem ou comprarem os seus serviços/produtos.</dd></div><div class="box-benefits-left"><dt>Análise De Dados</dt><dd>Você consegue monitorar todos os dados, processos e interações dos usuários com o seu site para desenvolver melhores estratégias certeiras de marketing para o seu negócio.</dd></div><div class="box-benefits-left"><dt>Ferramentas</dt><dd>O seu site poderá ter diversas ferramentas para vendas e atendimento ao cliente como, por exemplo, ferramentas WhatsApp (para agendamento, orçamento e pedido), compras ou contratações por meio de links de pagamentos, chat ao vivo para responder os seus clientes direto do seu site ou aplicativo, ligação por clique e diversas outras ferramentas de e-commerce (carrinho, favoritos, frete, gateway de pagamento e muito mais).</dd></div></dl>',
+          imageUrl: 'img/content/website-artistico-e-produtos.webp',
+          imageWidth: 860,
+          width: 800,
+          padding: 30,
+          footer: 'Para saber detalhes de quais recursos e ferramentas virão no seu site, confira nossos planos (Básico, Padrão, Ultimate, Premium, E-commerce e Empresarial).',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageWpp() {
+        Swal.fire({
+          title: 'Ferramentas WhatsApp',
+          html: '<dl class="box-wpp"><dd class="box-wpp-intro">Evite ficar fazendo as mesmas perguntas aos clientes (Qual é o endereço para entrega? Qual a forma de pagamento? Qual tamanho deseja? E etc), economize tempo em conversas no WhatsApp com campos pré-configurados em seu site para serem preenchidos pelos clientes, seja para agendar um horário, realizar um orçamento ou enviar um pedido diretamente para o seu WhatsApp.</dd><div class="box-wpp box-wpp-left"><dt>Agendamento no WhatsApp</dt><dd>Se você presta serviços ficou mais fácil o cliente escolher o melhor horário e data para usufruir de seus serviços. O cliente simplesmente acessa o seu site e vai até a seção de agendamento e digita as informações como, por exemplo, data, hora, nome, etc e envia direto no seu WhatsApp para a sua confirmação do horário e data disponíveis na sua agenda.</dd></div><div class="box-wpp box-wpp-left"><dt>Orçamento no WhatsApp</dt><dd>Permita que os seus clientes possam realizar orçamentos de seus serviços preenchendo as informações no seu site e enviando direto no seu WhatsApp para você determinar o valor do serviço a ser prestado.</dd></div><div class="box-wpp box-wpp-left"><dt>Pedido no WhatsApp</dt><dd>Um ótimo recurso usado por vários negócios que trabalham com Delivery. Você pode vender os produtos que está no seu site, dando a possibilidade dos seus clientes usarem um Checkout adaptado para colher informações do cliente, produto, entrega e enviar direto no seu WhatsApp de forma estruturada para que você possa apenas processar o pedido.</dd></div></dl>',
+          imageUrl: 'img/content/ferramentas-whatsapp.webp',
+          imageWidth: 960,
+          width: 800,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageStep() {
+        Swal.fire({
+          title: 'Processo De Criação Do Seu Site',
+          html: '<dl class="box-benefits"><div class="box-benefits-left"><dt>Compreensão Do Que Deseja</dt><dd>Para desenvolvermos o seu site é importante entendermos qual é a sua real necessidade para planejarmos e estruturarmos o seu site de acordo com o que deseja. Nessa primeira etapa conversaremos um pouco mais a respeito do seu site e esclareceremos todas as suas dúvidas.</dd></div><div class="box-benefits-left"><dt>Coleta De Informações</dt><dd>Para criarmos o rascunho inicial (Design do seu site) iremos colher informações suas e de se negócio por meio de Briefings. As informações que precisamos para desenvolver o seu site são as mesmas que você demonstra para os seus clientes como, por exemplo, endereço, telefone, e-mail, redes sociais, tipos de serviços/produtos, preços, características, imagens e qualquer outro material relevante para o desenvolvimento do seu site.</dd></div><div class="box-benefits-left"><dt>Rascunho Inicial</dt><dd>Vamos apresentar a você rascunhos iniciais (Designs de sites) de acordo com as informações enviadas sobre o seu negócio nos Briefings, assim você poderá escolher o melhor Design que gostar ou solicitar modificações. E o melhor de tudo é que não existe custo nenhum envolvido adicionalmente, por tanto, fique tranquilo(a) em pedir quantos Designs ou alterações achar que for necessário já que o seu site só vai ao ar quanto você estiver satisfeito(a).</dd></div><div class="box-benefits-left"><dt>Desenvolvimento Final</dt><dd>Após, todas as etapas acima, você poderá contratar um de nossos planos (Básico, Padrão, Ultimate, Premium, E-commerce e Empresarial) para iniciarmos o desenvolvimento final do seu site, onde começaremos a tornar o seu site funcional para uso. Quando terminarmos, enviaremos um link para você ter acesso total ao seu site 100% online e logo em seguida um segundo link para que você possa baixar todos os arquivos e código fonte que compõe o seu site para mantê-lo guardado offline como backup. Também enviaremos todos os links e acessos dos provedores de hospedagem, domínio, sistemas vinculados e manual de uso para que você possa fazer futuras personalizações, renovações de domínio e configurações/consultas nos sistemas integrados.</dd></div></dl>',
+          imageUrl: 'img/content/temas-de-site-para-desenvolvimento.webp',
+          imageWidth: 860,
+          width: 800,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function disableSwal2backdropShow() {
+        let swal2backdropShow = document.querySelectorAll(".swal2-backdrop-show");
+
+        swal2backdropShow[0].style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      btnFormLarge[0].onclick = () => {
+        if (formInputTextLarge[0].value != "" && formInputEmailLarge[0].value != "" && formInputNumberLarge[0].value != "" && formInputMensageLarge[0].value != "") {
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace("(", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace(")", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace(" ", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace("-", "");
+
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Mensagem enviada!',
+            text: 'Aguarde, em alguns minutos um profissional da nossa equipe entrará em contato pelo seu e-mail/telefone.',
+            showConfirmButton: true
+          })
+        }
+      }
+    </script>
+    <script>
+      window.onload = () => {
+        const $input = document.querySelector('[data-js="input"]')
+      $input.addEventListener('input', handleInput, false)
+
+      function handleInput (e) {
+        e.target.value = phoneMask(e.target.value)
+      }
+
+      function phoneMask (phone) {
+        return phone.replace(/\D/g, '')
+          .replace(/^(\d)/, '($1')
+          .replace(/^(\(\d{2})(\d)/, '$1) $2')
+          .replace(/(\d{5})(\d{1,5})/, '$1-$2')
+          .replace(/(-\d{4})\d+?$/, '$1');
+        }
+      }
+  </script>
+  </body>
+</html>

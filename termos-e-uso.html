@@ -1,0 +1,970 @@
+<!doctype html>
+<html class="wide wow-animation" lang="pt-br">
+  <head>
+    <title>Termos e Uso - DeskWebCode</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="DeskWebCode">
+    <meta name="description" content="Ao acessar, navegar ou utilizar o site DeskWebCode, todos os usuários declaram expressamente na aceitação das condições impostas neste Termos e Uso, bem como não poder usufruir ou estar sujeito a sanções caso viole.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo/logo-fav-deskwebcode.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-mod.css">
+    <style>
+      .icon-social-networks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .icon-social-networks a {
+        color: #000;
+        font-size: 1.2rem !important;
+        margin: 0 4px;
+      }
+
+      .icon-social-networks a:nth-child(1) {
+        position: relative;
+        top: 4px;
+      }
+
+      .footer-social-list-2 li:nth-child(1) {
+        position: relative;
+        top: 3px;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 991px) {
+        .icon-social-networks {
+          display: block;
+        }
+      }
+
+      .swal2-close {
+        position: relative;
+        top: -23px;
+        right: -15px;
+      }
+
+      .swal2-footer {
+        font-size: 0.8rem !important;
+        text-align: center;
+        display: block !important;
+      }
+
+      .swal2-html-container {
+        overflow: initial !important;
+      }
+
+      .swal2-title {
+        padding: 20px 20px 0 20px !important;
+      }
+
+      html {
+        counter-reset: boxNumber;
+      }
+
+      .box-benefits div, .box-wpp div {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 15px;
+      }
+
+      .box-wpp {
+        text-align: left;
+      }
+
+      .box-wpp div {
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        background: #0bde5c13;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .box-wpp div:nth-child(1) {
+        background: transparent;
+        border-bottom: none;
+      }
+
+      .box-benefits div:last-child {
+        border-bottom: none;
+      }
+
+      .box-wpp-intro {
+        margin-bottom: 30px;
+      }
+
+      .box-benefits div dt {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .box-wpp div dt {
+        padding: 10px 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .box-benefits div dt::before {
+        counter-increment: boxNumber;
+        content: counter(boxNumber);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6689ff;
+        background-image: linear-gradient(to left, #45476f, #4768af);
+        color: #fff;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        position: absolute;
+        left: -70px;
+        top: 0;
+        z-index: 1;
+      }
+
+      .box-benefits div dt, .box-benefits div dd {
+        margin-left: 70px;
+      }
+
+      .box-benefits div dd {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        line-height: 1.8;
+      }
+
+      .box-benefits-left, .box-wpp-left {
+        text-align: left;
+      }
+
+      @media screen and (max-width: 500px) {
+        .box-benefits div dt::before {
+          width: 50px;
+          height: 50px;
+          font-size: 1.4rem;
+        }
+
+        .box-benefits div dt, .box-benefits div dd {
+          margin-left: 30px;
+        }
+
+        .box-benefits div dt {
+          padding: 10px;
+        }
+
+        .box-benefits div dd {
+          padding: 10px;
+        }
+
+        .box-benefits div dt::before {
+          left: -55px;
+        }
+
+        .swal2-html-container {
+          margin: 10px !important;
+        }
+
+        .swal2-title {
+          padding: 10px 0 !important;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .box-pricing-divider > span {
+          font-size: 45px;
+          top: 50%;
+        }
+      }
+
+      .box-pricing-black .box-pricing-list > li.active2 {
+        color: #5d6264 !important;
+      }
+
+      .box-pricing-black .box-pricing-list > li.active2::before {
+        color: #5d6264;
+        color: #b66969;
+        content: "\f00d";
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active::before {
+        content: none;
+        text-align: left;
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active {
+        text-indent: 0;
+        padding-left: 0;
+      }
+
+      .box-pricing-black .box-pricing-orc > li.active:first-child {
+        color: #acacac;
+      }
+
+      #termos-e-uso {
+        width: 900px;
+        margin: auto;
+        padding: 60px 20px;
+        counter-reset: h2;
+      }
+
+      @media screen and (max-width: 1000px) {
+        #termos-e-uso {
+          width: 80%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        #termos-e-uso {
+          width: 100%;
+        }
+      }
+
+      .box-counter {
+        counter-reset: h3;
+      }
+
+      #termos-e-uso p, .ul-content {
+        text-align: left;
+      }
+
+      .ul-content {
+        margin-left: 35px;
+      }
+
+      .ul-content li {
+        margin-top: 10px !important;
+        position: relative;
+      }
+
+      .ul-content li::before {
+        content: "●";
+        position: absolute;
+        top: -1px;
+        left: -15px;
+      }
+
+      .h2-counter, .h3-counter {
+        text-align: left;
+        margin-top: 50px !important;
+      }
+
+      .h3-counter {
+        text-align: left;
+        margin-top: 20px !important;
+      }
+
+      .h2-counter::before {
+        counter-increment: h2;
+        content: counter(h2) " - ";
+        padding-right: 10px;  
+      }
+
+      .h3-counter::before {
+        counter-increment: h3;
+        content: counter(h2) "." counter(h3) " - ";
+        padding-right: 10px;  
+      }
+
+      .wrapper-table-maintenance {
+        height: 400px;
+        overflow: auto;
+        margin: 30px 0;
+        border: 1px solid #dee2e6;
+      }
+
+      .table-maintenance {
+        width: 100%;
+      }
+
+      .table-maintenance th, .table-maintenance td {
+        border: 1px solid #dee2e6;
+      }
+
+      .table-maintenance th {
+        background: #f3f4f5;
+        height: 40px;
+        border-top: none;
+        border-left: none;
+      }
+
+      .table-maintenance td {
+        text-align: left;
+        border-left: none;
+      }
+
+      .table-maintenance tr:last-child td {
+        border-bottom: none;
+      }
+
+      .table-maintenance th, .table-maintenance td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/">
+        <img src="img/ie8/warning_bar_0000_us.jpg" height="42" width="820" alt="Você está usando um navegador desatualizado. Para uma experiência de navegação mais rápida e segura, atualize o seu navegador.">
+      </a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div id="home">
+        <header class="section page-header">
+          <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+              <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                  <div class="rd-navbar-panel">
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                      <span></span>
+                    </button>
+                    <div class="rd-navbar-brand">
+                      <a class="brand" href="https://deskwebcode.com.br">
+                        <img src="img/logo/logo-deskwebcode.webp" alt="Logo DeskWebCode" width="223" height="50"/>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="rd-navbar-main-element">
+                    <div class="rd-navbar-nav-wrap">
+                      <div class="icon-social-networks">
+                        <ul class="list-inline list-inline-sm footer-social-list-2">
+                          <li>
+                            <a class="icon mdi material-icons-chat_bubble_outline" href="#"></a>
+                          </li>
+                          <li>
+                            <a class="icon mdi mdi-email-outline" href="mailto:deskwebcode.enterprise@gmail.com" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a class="icon fa fa-whatsapp" href="https://wa.me/5519999810179" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a class="icon fa fa-instagram" href="https://www.instagram.com/deskwebcode"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <ul class="rd-navbar-nav">
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br">Home</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#servicos">Serviços</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#como-funciona">Como funciona</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#planos">Planos</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#duvidas">Dúvidas</a>
+                        </li>
+                        <li class="rd-nav-item">
+                          <a class="rd-nav-link" href="https://deskwebcode.com.br/#contato">Contato</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <section id="termos-e-uso">
+          <h1>Termos e Uso</h1>
+          <span><strong>Última atualização:</strong> 26/11/2022 às 11:05</span>
+          <p>
+            A DeskWebCode desenvolve serviços de criação de sites para que as pessoas possam ter canais profissionais entre os seus clientes com o objetivo de
+            expandir os seus negócios no ambiente digital. Estes Termos regem o uso da nossa plataforma bem como os nossos produtos, recursos, serviços, tecnologias e software que
+            oferecemos (os Produtos nossos e terceiros), exceto quando declaramos expressamente que outros termos (e não estes) se aplicam.
+          </p>
+          <p>
+            Estes Termos e Uso se aplicam-se ao uso dos serviços oferecidos por DeskWebCode, denominado como "DeskWebCode" que usa do meio eletrônico para divulgar soluções digitais a negócios e
+            pessoas, sejam elas jurídicas ou não. Antes de utilizar quaisquer dos
+            serviços disponibilizados o usuário afirma ter lido, entendido e aceitado todas as condições estabelecidas nestes Termos e Uso da DeskWebCode.
+          </p>
+          <p>
+            Ao navegar pelo nosso site eletrônico ou contratar os nossos serviços prestados o contratante seja ele físico ou jurídico concorda previamente
+            nas disposições estabelecidas nesse documento que está regularizado todas as suas obrigações e direitos como consumidor dos nossos serviços, por
+            tanto, muito atenção ao ler cada uma das cláusulas contidas a seguir.
+          </p>
+          <h2 class="h2-counter">Sobre este termos e uso</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Aceitação dos termos e uso</h3>
+            <p>
+              Ao navegar e interagir pela plataforma DeskWebCode ou contratar os respectivos serviços o usuário/contratante seja ele físico ou jurídico concorda
+              previamente nas disposições estabelecidas neste documento que está regularizado os principais termos e condições sobre como usar o site e receber os
+              serviços disponíveis, sendo este obrigações e direitos como consumidor dos nossos serviços. Parte deste Termos e Uso está relacionado a <a href="politica-de-privacidade.html" class="link">Política de Privacidade</a>, no qual nossa
+              plataforma salienta em consultar mais detalhes.
+            </p>
+            <h3 class="h3-counter">Atualizações aos termos e uso</h3>
+            <p>
+              Se nós da DeskWebCode modificarmos qualquer preceito dos nossos Termos e Uso, publicaremos a nova atualização do documento no topo da página do nosso site (nessa mesma página), com a data e hora de revisão
+              atualizada. Podemos alterar este documento a qualquer momento que acharmos que seja necessário. Caso haja alteração significativa nos termos deste documento, possivelmente podemos
+              informá-lo por meio das informações de contato que tivermos em nosso banco de dados ou por meio de notificações em nosso site.
+            </p>
+            <p>
+              A utilização da nossa plataforma após as alterações específicas ou gerais que poderão vir a acontecer, significa que você aceitou os Termos e Uso revisados.
+              Caso, após a leitura da versão revisada, você não esteja de acordo com os termos, favor encerrar o seu acesso em nossa plataforma e caso tenha dados registrados
+              em nosso banco de dados solicite uma exclusão conforme descrito em <a href="politica-de-privacidade.html">Política de Privacidade</a> na seção <a href="politica-de-privacidade.html#exclusao-de-dados">Exclusão de dados</a>.
+            </p>
+            <h3 class="h3-counter">Quando e onde estes termos e uso se aplica</h3>
+            <p>
+              A partir do momento que o usuário/contratante acessar, navegar ou utilizar o site DeskWebCode para contratar os respectivos serviços disponibilizados para divulgação ou para
+              qualquer outro fim, o mesmo declara em aceitar as condições impostas na plataforma DeskWebCode, bem como não podendo usufruir ou estar sujeito a sanções caso viole.
+            </p>
+            <p>
+              Esses Termos e Uso também se aplicam em campanhas, anúncios, marketing, divulgações em plataformas de terceiros onde as URL dos links apontam para o nosso domínio/subdomínio
+              "www.deskwebcode.com.br" (deskwebcode.com.br), podendo estar limitado as Políticas de Privacidade e Termos e Uso das plataformas onde a vinculação foi situada.
+            </p>
+            <p>
+              Esses preceitos só se aplicam e são válidos apenas no território brasileiro, estando sujeito as restrições e obrigações impostas para os
+              serviços prestados pela DeskWebCode no Brasil. Nos demais países as regras da nossa plataforma não serão consideradas legítimas estando
+              dependente de situações mútuas ou negociações a parte, qualquer solicitação e contrato externo de nossos serviços serão entregues perante as leis do Brasil sendo de
+              responsabilidade do contratante se adequar (ou software) as leis do seu respectivo país.
+            </p>
+          </div>
+          <h2 class="h2-counter">Do objeto</h2>
+          <p>
+            Nossa plataforma DeskWebCode tem como finalidade diretamente na "prestação de serviços" e está relativamente relacionada na construção de softwares eletrônicos.
+            Todos os serviços estabelecidos na nossa plataforma possuem suas características que se diferem uns dos outros, no qual não poderá ser alterado
+            algum atributo do plano contratado no momento do processo da abertura até o desfecho do serviço prestado, exceto se não tiver sido iniciado o serviço,
+            assim o contratante poderá alterar migrando de plano estando sujeito à modificações no preço do serviço, dependendo das variações dos atributos designados.
+          </p>
+          <h2 class="h2-counter">Conteúdo</h2>
+          <p>
+            Nós da DeskWebCode não desenvolvemos sites que baseiam-se o seu conteúdo em determinadas situações que violam as leis do Brasil, comprometem os dados dos
+            usuários e compartilham algumas informações consideradas repulsivas pela nossa plataforma, isso se aplica nas seguintes ocasiões:
+          </p>
+          <p>
+            <em>
+              Download de arquivos piratas/autorais/restritos/pornagrafia/zoofilia e Conteúdos ou tutoriais (criar bombas, armas, munições, drogas, assassinato,
+              ocultar corpo, invasão, rituais, roubo, furto, narcótico e substância proibidas, máquinas sem segurança, medicamentos de uso restrito/proibido,
+              violência, discriminação, jogos de azar ou qualquer outro conteúdo relacionado e que possa compromenter a integridade pessoal, moral e física de algum
+              indivíduo físico/jurídico ou algum outro orgão pertinente.
+            </em>
+          </p>
+          <p>
+            Caso o seu site seja referente algum tipo de conteúdo citado ou você não esteja de acordo com esses preceitos a nossa plataforma infelizmente não vai
+            levar em consideração a sua solicitação para usufruir dos nossos serviços, porém podemos atender instâncias à outros tipos de conteúdos que não foram
+            indicados neste documento.
+          </p>
+          <h2 class="h2-counter">Serviços prestados</h2>
+          <p>
+            Todos os serviços expressados em nossa plataforma DeskWebCode relacionados ao desenvolvimento de sites eletrônicos são divididos em planos com determinadas funcionalidades
+            que são limitadas ao plano escolhido por parte do contratante. Os atributos constituídos em cada plano não poderão ser alterados ou migrados de um plano para outro
+            a menos que nossa plataforma revigore essa circunstância mediante a alterações futuras nos planos.
+          </p>
+          <p>
+            Caso, o contratante queira exigir recursos apresentados em planos distintos ao escolhido o mesmo deverá trocar de plano sendo necessário uma nova negociação/pagamento
+            para o novo plano que possui a funcionalidade desejada, o que pode alterar valores superiores ao do plano atual (exceto quando houver algum processo de campanha sendo anunciada).
+          </p>
+          <p>
+            Nossa plataforma também presta serviços de manutenções, apenas para sites que foram desenvolvidos por nós da DeskWebCode transferidos para os nossos clientes que usufruíram
+            dos nossos serviços, este deverá ser feito um orçamento para analisar as necessidades de atualização dos recursos/arquivos do site do contratante para resultar em um valor final
+            que pode variar de acordo com a quantidade, tipo, serviço, modificação, recriação, edição, tecnologia e etc.
+          </p>
+          <h2 class="h2-counter">Norma de contratação</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Compreensão</h3>
+            <p>
+              A nossa equipe da DeskWebCode precisa obrigatoriamente conhecer em detalhes cada particularidade que envolve o negócio do contratante
+              internamente, externamente, diretamente e indiretamente. Esse processo é fundamental para a construção final do site do contratante já que dessa maneira
+              a nossa plataforma poderá criar uma solução que conecta ainda mais o site e negócio, sendo preciso que o contratante fique ciente de todas as informações
+              que estão sendo transmitidas para a DeskWebCode (em casos específicos de indeferimento de informações a solicitação para usar os nossos serviços poderá ser anulada).
+            </p>
+            <h3 class="h3-counter">Coleta</h3>
+            <p>
+              A DeskWebCode coleta arquivos como imagens, ícones, vídeos, áudios, PDFs e todos os outros arquivos que constituem na mídia da internet, bem como os dados da pessoa/negócio como Nome, E-mail,
+              Telefone, Endereço, CPF/CNPJ e etc. Essa coleta é realizada de acordo com o consentimento do usuário e de nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>. A coleta é
+              fundamental para o desenvolvimento, registro e acesso de nossos serviços e de terceiros passados para o contratante no momento da entrega final do site, sendo que o mesmo deverá acontecer
+              somente quando for necessário e quando existir uma causa que justifique a coleta realizada por meio de formulários, colaborador, Cookies e entre outros.
+            </p>
+            <h3 class="h3-counter">Rascunho</h3>
+            <p>
+              Qualquer site desenvolvido pela nossa plataforma DeskWebCode é iniciado por meio de um rascunho (protótipo) que possui características semelhantes ao do site
+              final passado para o contratante no momento do término do desenvolvimento. Esse rascunho poderá ser alterado e revisado quantas vezes o contratante achar
+              que for necessário e sem quaisquer cobranças adicionais durante o ínicio e final da apresentação do rascunho.
+            </p>
+            <p>
+              O rascunho poderá ser solicitado sem limites nenhum pelo contratante, estando sujeito apenas a 1 solicitação a cada 3 dias (podendo conter de 1 a 10 rascunhos), após a apresentação dos
+              rascunhos apresentados pela DeskWebCode. Este tempo deve ser compensado pelo fato de termos que processar um novo ofício de desenvolvimento de novos rascunhos ao contratante.
+            </p>
+            <p>
+              Essa etapa é muito importante para que o contratante escolha os elementos fundamentais vinculados ao site final como layout, funcionalidades e atributos,
+              levando sempre em consideração que o protótipo espelhará o site final de acordo com as observações na subcláusula <a href="#desenvolvimento">Desenvolvimento</a> a seguir.
+            </p>
+            <h3 id="desenvolvimento" class="h3-counter">Desenvolvimento</h3>
+            <p>
+              Durante o desenvolvimento do site final do contratante realizado pela DeskWebCode o mesmo poderá solicitar modificações ao longo do processo relacionadas ao rascunho, essas modificações são limitadas do início
+              ao fim no desenvolvimento final que é o caso de alterar apenas elementos simples relacionados aos arquivos (imagens, vídeos, textos e etc) ou cores que foram apresentadas
+              no rascunho, caso seja solicitado em qualquer ocasião do desenvolvimento final alterações de layout, funcionalidades, atributos ou qualquer outro recurso não
+              mencionado anteriormente, a solicitação será negada (até aqui o contratante já aprovou o desenvolvimento final, por tanto, recursos já foram criados e adicionados ao site do mesmo, no qual
+              a sua isenção afetará serviços que a plataforma DeskWebCode só pode alterar antes de ter iniciado o desenvolvimento final do site).
+            </p>
+            <p>
+              Em casos, como alteração de domínio, a DeskWebCode não tem responsabilidade por arcar com um novo pagamento de registro de domínio (isso só é válido no momento de contratação dos planos onde
+              apresenta um único domínio gratuito por 1 ano), sendo de responsabilidade do contratante se responsabilizar pelo pagamento do seu novo ou atual domínio antes ou depois da entrega do seu respectivo site.
+            </p>
+            <h3 class="h3-counter">Manutenção</h3>
+            <p>
+              O serviço de manutenção da DeskWebCode pode ser solicitado apenas para sites que foram desenvolvidos pela plataforma DeskWebCode, sites criados por terceiros em outras plataformas não poderão usufruir
+              dos nossos serviços de manutenção. Ao ser solicitado uma manutenção para o respectivo site do contratante será realizado um orçamento especificando todos os recursos a serem atualizados
+              de acordo com a preferência do contratante, bem como os preços de cada recurso.
+            </p>
+            <h3 id="prazo-de-entrega" class="h3-counter">Prazo de Entrega</h3>
+            <p>
+              Todos os planos da DeskWebCode (Básico, Padrão, Ultimate, Premium, E-commerce e Empresarial) possuem um período estipulado para o desenvolvimento completo do site do contratante do começo até a entrega final. Para o plano
+              Básico são (em até 48 horas), Padrão (em até 48 horas), Ultimate (entre 1 a 2 semanas), Premium (entre 2 a 3 semanas), E-commerce (entre 3 a 4 semanas), Empresarial (a entrega é indeterminada baseada
+              nas necessidades do contratante) e levando em consideração que o prazo será contado a partir do momento em que o rascunho do site for aprovado pelo contratante e o site final for entregue ao contratante.
+            </p>
+            <p>
+              O prazo de entrega não pode se estender já que contamos o desenvolvimento final do site a partir do momento que tivermos todas as informações e arquivos do contratante para a construção do site e a entrega do mesmo.
+              O contratante pode levar mais tempo até ter o seu site, caso prolongue a negociação, envio de informações e qualquer oportuno para o início do desenvolvimento do site do mesmo.
+            </p>
+            <h3 class="h3-counter">Manual de Uso do Site</h3>
+            <p>
+              Todos os planos da DeskWebCode de desenvolvimento de site (Básico, Padrão, Ultimate, Premium, E-commerce e Empresarial) vem com um manual de uso que é justamente um documento em extensão <code>.html</code> que tem o
+              objetivo de guiar o contratante em fazer pequenas atualizações nas informações, textos, imagens e entre outros elementos em seu próprio site por um arquivo <code>edit.json</code> sem ter
+              a necessidade de contratar uma futura manutenção, seja ela regular ou não. Damos um prazo de entrega de até 3 dias para entregar o manual do site
+              do contratante (apenas nos planos Ultimate, Premium, E-commerce e Empresarial), após a entrega do site final.
+            </p>
+          </div>
+          <h2 class="h2-counter">Propriedade insertada</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Suporte</h3>
+            <p>
+              Todos os serviços de desenvolvimento ou manutenção de sites que nós da DeskWebCode prestamos em nossa plataforma possui suporte 24 horas por semana e 100% gratuito
+              para todos os visitantes ou clientes de nossa plataforma. Qualquer problema ou dúvida poderá ser resolvida solicitando o suporte por qualquer meio de contato ou clicando em
+              <a href="suporte.html" class="link">Suporte</a> e um de nossos integrantes de nossa equipe te atenderá o mais breve possível (em geral respondemos em menos de 5 minutos).
+            </p>
+            <h3 id="devolucao" class="h3-counter">Devolução</h3>
+            <p>
+              A partir do momento da entrega final de qualquer serviço da plataforma DeskWebCode para o contratante o mesmo poderá solicitar a devolução do valor total pago, dentro do prazo de 7 dias contados no
+              momento do recebimento do serviço, se esse for o seu caso, você pode entrar por qualquer meio de contato com a nossa equipe e iremos atender o seu pedido sem questionamentos e entregaremos o valor
+              total pago dentro das primeiras 48 horas.
+            </p>
+            <p>
+              Serviços terceirizados como o domínio registrado estará sob a posse do titular (CPF/CNPJ) proprietário do site e contratante dos serviços da DeskWebCode que será registrado no ato do desenvolvimento
+              final do site do mesmo, no qual não poderá ser removido após ser realizado o registro de domínio, onde ele permanecerá ativo até a sua data de expiração, ao concluir 1 ano será dado um período de espera
+              para a atual renovação e depois deletado para uma nova renovação, por conta, desse motivo não existirá reembolso de domínio e será descontado do valor total pago no momento da confirmação da solicitação
+              de devolução.
+            </p>
+            <p>
+              O site do contratante poderá ter softwares vinculados ao seu site de acordo com o seu consentimento e autorização no processo de desenvolvimento do site do mesmo, onde pode conter algum meio de assinatura
+              mensal, anual ou por utilização, esses softwares estarão sob limitação das políticas das plataformas e empresas terceirizadas podendo acarretar no retorno da solicitação de devolução.
+            </p>
+            <p>
+              Qualquer que seja as faturas geradas (tarifa sobre venda, taxa de transação, taxa de pagamento, taxa de parcelamento e etc), planos contratados e qualquer outro efeito originado a partir
+              da entrega final do site para o contratante, este será total responsabilidade do mesmo e não da DeskWebCode.
+            </p>
+            <h3 id="garantia" class="h3-counter">Garantia de 90 dias e 2 anos</h3>
+            <p>
+              Todos os serviços ofertados na plataforma DeskWebCode por lei obrigatoriamente asseguram o contratante de nossos serviços com a garantia de 90 dias (3 meses), contados no momento do recebimento do serviço, no qual essa garantia
+              cobre apenas defeitos, bugs e problemas de fábrica que possam ocorrer ao longo do uso do serviço de desenvolvimento ou manutenção do site. É importante deixar claro que essa garantia não cobre defeitos de manuseio, danos de terceiros e mau uso dos serviços prestados pela nossa plataforma.
+            </p>
+            <p>
+              A DeskWebCode acredita que os seus respectivos serviços entregam qualidade e satisfação para todos os clientes e por isso, para aumentar ainda mais a confiança em contratar os seus serviços é
+              estendido a garantia dos sites por até 2 anos. Caso, queira acionar a garantia do seu site dentro do período válido, você pode entrar por qualquer meio de contato com a nossa
+              equipe.
+            </p>
+          </div>
+          <h2 class="h2-counter">Uso de nossos serviços</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Declarações</h3>
+            <p>
+              Quando você usa os serviços da DeskWebCode, você declara estar ciente do processamento das informações, que todas as informações e todos os dados fornecidos por
+              você são verdadeiros e correspondem à realidade. Você declara e garante que tem pelo menos 18 anos de idade ou que está visitando e usando os nossos serviços
+              sob a supervisão, representação e assistência de um dos seus pais ou do seu responsável.
+            </p>
+            <p>  
+              Observados os Termos e Uso deste documento, pelo presente, a DeskWebCode concede a você uma licença revogável, intransferível e não exclusiva para acessar e
+              usar os serviços, exibindo-os no seu navegador de internet, para o nosso site, ou nos seus dispositivos móveis, apenas para fins de compra de itens digitais
+              vendidos pela DeskWebCode. A violação deste documento resultará na revogação imediata da licença concedida nesta subcláusula sem aviso prévio.
+            </p>
+            <h3 class="h3-counter">Limitações de uso</h3>
+            <p>
+              Exceto conforme permitido na subcláusula acima, você não poderá comprar ou fazer engenharia reversa dos serviços ou de parte deles, a menos que expressamente
+              permitido por escrito pela DeskWebCode. Você não poderá fazer nenhum uso comercial de nenhuma das informações fornecidas nos serviços ou fazer qualquer uso
+              dos serviços para o benefício de outro negócio, a menos que explicitamente permitido pela empresa com antecedência.
+            </p>
+            <p>  
+              A Empresa reserva-se o direito de recusar o serviço, encerrar contas e/ou cancelar pedidos a critério dela, inclusive, entre outros, se tivermos evidências de
+              que a conduta do cliente viola a lei aplicável ou é prejudicial aos nossos interesses.
+            </p>
+            <h3 class="h3-counter">Limitações de atividade</h3>
+            <ul class="ul-content">
+              <li>
+                Não usar os serviços para fins ilegais ou de forma que possa violar lei ou regulamento federal, estadual, local ou internacional aplicável.
+              </li>
+              <li>
+                Não adotar conduta que restrinja ou iniba o uso ou o aproveitamento dos serviços por qualquer pessoa, ou que, conforme determinado por nós, possa nos prejudicar ou prejudicar outras pessoas com o uso dos
+                serviços, ou nos expor ou expô-las a responsabilização.
+              </li>
+              <li>
+                Não usar os serviços de forma que possa desativar, sobrecarregar, danificar ou prejudicar o site ou os aplicativos, ou o uso dos serviços por qualquer outra parte.
+              </li>
+              <li>
+                Não usar robô, spider ou outro dispositivo, processo, software ou meio manual ou automatizado para indexar ou acessar o serviço para nenhuma finalidade.
+              </li>
+              <li>
+                Não remover, desativar, burlar ou modificar qualquer medida tecnológica que tivermos implantado para proteger o site e o aplicativo ou a propriedade intelectual associada.
+              </li>
+              <li>
+                Não tentar sondar, verificar ou testar a respectiva vulnerabilidade nem violar medidas de segurança ou autenticação.
+              </li>
+              <li>
+                Não usar proxy de IP ou outros métodos para disfarçar o local de sua residência, seja para burlar restrições geográficas sobre os serviços ou para qualquer outra finalidade.
+              </li>
+              <li>
+                Usar os serviços para distribuir conteúdo promocional ou comercial não solicitado ou solicitar outras pessoas para que usem os serviços para objetivos comerciais de forma que endosse o mesmo.
+              </li>
+              <li>
+                De outra forma, tentar interferir no funcionamento adequado do serviço.
+              </li>
+            </ul>
+          </div>
+          <h2 class="h2-counter">Obrigações e deveres</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Contratante</h3>
+            <ul class="ul-content">
+              <li>
+                O contratante deverá informar os dados de forma completa e correta no momento da contratação do serviço em nossa plataforma.
+              </li>
+              <li>
+                É responsabilidade do contratante qualquer erro na escrita ou na transmissão errônea dos dados.
+              </li>
+              <li>
+                Enviar dados sobre o negócio e entre outros que poderão estar sujeitos a solicitações de envio pela nossa equipe ao contratante para o desenvolvimento do site.
+              </li>
+              <li>
+                Ser maior de idade (18 anos) e ter capacidade plena para efetuar a contratação dos nossos serviços em nossa plataforma.
+              </li>
+              <li>
+                Se um menor de idade ou pessoa física sem capacidade plena vir a adquirir algum serviço ofertado em nossa plataforma, entenderemos que os responsáveis autorizaram, respondendo esses por toda e qualquer situação que advir, bem como pela contratação.
+              </li>
+              <li>
+                Não comentar ou enviar imagens que possam ir de encontro com a ética e o respeito, ou que tenha cunho difamatório, ofensivo, de ódio ou preconceituoso.
+              </li>
+              <li>
+                Não fornecer qualquer informação falsa, fraudulenta ou que não seja correspondente aos seus dados.
+              </li>
+              <li>
+                Estar ciente de todo o processo do desenvolvimento do site.
+              </li>
+              <li>
+                Fazer backups de segurança das versões que possam a vir.
+              </li>
+              <li>
+                Realizar renovações de domínio e se for o caso lidar com contratações e migrações de planos sobre Plugin/Apps incorporados no site.
+              </li>
+            </ul>
+            <h3 class="h3-counter">Plataforma</h3>
+            <ul class="ul-content">
+              <li>
+                Informar de forma ostensiva e verdadeira sobre as características e especificações dos serviços disponíveis para venda de forma clara e completa.
+              </li>
+              <li>
+                Cumprir com o que foi prometido em quaisquer publicações e campanhas que existem ou que venham a existir.
+              </li>
+              <li>
+                Entregar os serviços dentro do prazo estabelecido.
+              </li>
+              <li>
+                Disponibilizar uma plataforma segura para acesso.
+              </li>
+              <li>
+                Entregar materiais de apoio para funções básicas de edição do site no plano relacionado ao serviço prestado.
+              </li>
+              <li>
+                Oferecer total suporte e garantia após a realização e entrega do serviço.
+              </li>
+              <li>
+                Manter um Backup de segurança de todos os recursos do site do contratante por 2 anos (isso se aplica apenas na primeira versão desenvolvida que foi entregue pela
+                primeira vez em nossa plataforma).
+              </li>
+              <li>
+                Não vazar dados e informações dos contratantes/usuários em determinados casos. Leia mais em <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+              </li>
+            </ul>
+          </div>
+          <h2 class="h2-counter">Isenção de responsabilidade</h2>
+          <div class="box-counter">
+            <h3 class="h3-counter">Softwares de terceiros</h3>
+            <p>
+              A plataforma DeskWebCode não se responsabiliza por softwares de terceiros interligados aos sites desenvolvidos pela nossa plataforma já que isso são ferramentas adicionais
+              embutidas para darem funcionalidades a mais aos sites, qualquer inconveniência entre a ferramenta e o site deverá existir o contato direto/indireto do contratante com a
+              ferramenta da empresa terceirizada, sendo apenas de responsabilidade da DeskWebCode guiar o contratante.
+            </p>
+            <h3 class="h3-counter">Código fonte</h3>
+            <p>
+              A plataforma DeskWebCode não se responsabiliza por mau uso ou manuseio errado do site, bem como de qualquer dano que possa ocorrer por parte do contratante no código fonte do site adquirido em nossa plataforma.
+            </p>
+            <h3 class="h3-counter">Fatores de interferência</h3>
+            <p>
+              Em casos de perda de sinal de internet, alterações de DNS e expiração do domínio não é responsabilidade da plataforma DeskWebCode e sim, do contratante ou da empresa terceirizada.
+            </p>
+            <h3 class="h3-counter">E-mail e senha</h3>
+            <p>
+              Caso venha a esquecer o e-mail ou senha, isso fica encargo do contratante que deverá passar pelo processo de alteração com as plataformas terceirizadas.
+            </p>
+            <h3 class="h3-counter">Conteúdo ilimitado</h3>
+            <p>
+              Não é de responsabilidade da DeskWebCode a criação de conteúdos individuais para páginas com conteúdos possivelmente ilimitados como imagens, vídeos, textos e áudios, isso se aplica em cadastramentos de produtos
+              ou lojas online que requerem conteúdos pessoais por parte do proprietário do site/loja e não de um conteúdo representativo que engloba todo o conteúdo em geral de todas as páginas.
+            </p>
+            <h3 class="h3-counter">Backups contínuos</h3>
+            <p>
+              Não é de responsabilidade da DeskWebCode manter constantemente backups de segurança de todas as versões do site do contratante (isso se aplica após a primeira versão).
+            </p>
+            <h2 class="h2-counter">Propriedade intelectual</h2>
+            <ul class="ul-content">
+              <li>
+                Todo o design e recursos são de propriedade da plataforma DeskWebCode e de terceiros que disponibilizam de forma pública e gratuita.
+              </li>
+              <li>
+                A logo, marca, texto e layout são de nossa propriedade.
+              </li>
+              <li>
+                É vedada a cópia sem autorização de qualquer imagem, vídeo, design, áudio, aparência ou descrições de serviços existentes em nossa página eletrônica, sob pena de responder por sanções quem afrontar.
+              </li>
+              <li>
+                Há algumas áreas que poderão apresentar propagandas ou divulgação de links externos, mas não temos qualquer tipo de relação, por isso muito cuidado ao navegar por essas páginas externas e ao fornecer os seus dados,
+                pois navegar por essas páginas é responsabilidade do usuário/contratante.
+              </li>
+              <li>
+                Nada contido em nossa plataforma garante o direito a concessão de licença ou direito de uso sem o consentimento expresso do proprietário da plataforma ou de terceiros.
+              </li>
+              <li>
+                Determinados softwares e recursos vinculados aos sites desenvolvidos pela plataforma DeskWebCode não são relativamente de uso exclusivo, isso se limitada aos preceitos impostos pela empresa terceirizada.
+              </li>
+            </ul>
+            <h2 class="h2-counter">Permissões de uso</h2>
+            <ul class="ul-content">
+              <li>
+                Compartilhamento da nossa URL para fins de divulgações.
+              </li>
+              <li>
+                Citações apontando para a nossa URL.
+              </li>
+              <li>
+                Uso da nossa logo para representações de algum determinado contexto frequente.
+              </li>
+              <li>
+                Usar os sistemas próprios da nossa plataforma integrados aos sites desenvolvidos, após ter efetuado a contratação de nossos serviços e a entrega do mesmo, sem ter que precisar de autorização para qualquer propósito (visando
+                a seguir os preceitos do seu país e se for o caso os preceitos da empresa terceirizada).
+              </li>
+            </ul>
+          </div>
+        </section>
+        <footer class="section section-fluid footer-minimal context-dark">
+            <div class="bg-gray-15">
+            <div class="container-fluid">
+                <div class="footer-minimal-inset oh">
+                <ul class="footer-list-category-2">
+                    <li>Website</li>
+                    <li>Hotsite</li>
+                    <li>Landing page</li>
+                    <li>One page</li>
+                    <li>E-commerce</li>
+                </ul>
+                </div>
+                <div class="footer-minimal-bottom-panel text-sm-left">
+                <div class="row row-10 align-items-md-center">
+                    <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                    <div>
+                        <ul class="list-inline list-inline-sm footer-social-list-2">
+                        <li>
+                            <i class="icon mdi mdi-icons-chat_bubble_outline material-icons-chat_bubble_outline"></i>
+                        </li>
+                        <li>
+                            <a class="icon mdi mdi-email-outline" href="mailto:deskwebcode.enterprise@gmail.com?subject=Entrar em Contato" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="icon fa fa-whatsapp" href="https://wa.me/5519999810179" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a class="icon fa fa-instagram" href="https://www.instagram.com/deskwebcode" target="_blank"></a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 order-sm-first">
+                    <!-- Rights-->
+                    <p class="rights"><span>&copy;&nbsp;</span>2018 - <span class="copyright-year"></span> <span>DeskWebCode</span>
+                    </p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-md-right" style="font-size: 12px;">
+                    <a href="termos-e-uso.html">Termos e uso</a> |
+                    <a href="politica-de-privacidade.html">Política de Privacidade</a> |
+                    <a href="suporte.html">Suporte</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      let formLarge = document.querySelector("#form-large");
+      let formInputTextLarge = document.querySelectorAll(".form-input-text-large");
+      let formInputEmailLarge = document.querySelectorAll(".form-input-email-large");
+      let formInputNumberLarge = document.querySelectorAll(".form-input-number-large");
+      let formInputMensageLarge = document.querySelectorAll(".form-input-mensage-large");
+      let btnFormLarge = document.querySelectorAll(".btn-form-large");
+      let materialIconsChat_bubble_outline = document.querySelectorAll(".material-icons-chat_bubble_outline");
+
+      materialIconsChat_bubble_outline[0].onclick = () => {
+        Swal.fire({
+          title: 'Chat Online',
+          text: 'Clique no botão abaixo da tela do lado direito para entrar em contato ao vivo pelo nosso site e um de nossos profissionais da nossa equipe responderá em menos de 5 minutos.',
+          footer: '<a id="outras-formas" href="#outros-contatos" onclick="disableSwal2backdropShow()">Outras formas de contato</a>',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+      };
+
+      materialIconsChat_bubble_outline[1].onclick = () => {
+        Swal.fire({
+          title: 'Chat Online',
+          text: 'Clique no botão abaixo da tela do lado direito para entrar em contato ao vivo pelo nosso site e um de nossos profissionais da nossa equipe responderá em menos de 5 minutos.',
+          footer: '<a id="outras-formas" href="#outros-contatos" onclick="disableSwal2backdropShow()">Outras formas de contato</a>',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        })
+      };
+
+      function boxMessageKnowMore() {
+        Swal.fire({
+          title: 'Design Do Seu Site',
+          text: 'Vamos apresentar a você Designs de sites de acordo com as informações enviadas sobre o seu negócio, assim você poderá escolher o melhor Design que gostar ou solicitar modificações. E o melhor de tudo é que não existe custo nenhum envolvido adicionalmente, por tanto, fique tranquilo(a) em pedir quantos Designs ou alterações achar que for necessário já que o seu site só vai ao ar quando você estiver satisfeito(a).',
+          imageUrl: 'img/content/website-lanchonete-e-delivery.webp',
+          imageWidth: 860,
+          width: 600,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageBenefits() {
+        Swal.fire({
+          title: 'Por Que Ter Um Site?',
+          html: '<dl class="box-benefits"><div class="box-benefits-left"><dt>Mercado Em Alta</dt><dd>A grande parte dos consumidores que compravam em locais físicos, estão se acostumando cada vez mais a comprar e buscar informações sobre os negócios no ambiente digital e para isso é necessário ter um site voltado inteiramente para o seu negócio.</dd></div><div class="box-benefits-left"><dt>Informações Na Mão</dt><dd>Com um site você pode mostrar o que o cliente procura como, por exemplo, todos os detalhes sobre o seu negócio, serviços/produtos, preços, promoções, formas de pagamento, contato, endereço e muito mais.</dd></div><div class="box-benefits-left"><dt>Independente</dt><dd>Os usuários e clientes que acessarem o seu site não serão incomodados ou interrompidos com conteúdos das redes sociais ou de outras plataformas e sim, apenas pelo seu conteúdo que está dentro do seu próprio site.</dd></div><div class="box-benefits-left"><dt>Facilidade Na Busca</dt><dd>As pessoas fazem bilhões de buscas diariamente no Google e entre outros mecanismos de buscas a procura de informações ou compras e em uma dessas elas podem se esbarrar com o seu site e se interessar pelos seus serviços ou produtos.</dd></div><div class="box-benefits-left"><dt>Presença 24h</dt><dd>Em uma loja física você tem horário para fechar já em um site não. O que significa que os seus clientes poderão contratar os seus serviços ou comprar os seus produtos a qualquer hora.</dd></div><div class="box-benefits-left"><dt>Nível mundial</dt><dd>Qualquer pessoa do mundo poderá acessar o seu site e isso abre novos mercado para você.</dd></div><div class="box-benefits-left"><dt>Custo benefício</dt><dd>Ter um site para o seu negócio na internet custa muito menos do que um negócio físico.</dd></div><div class="box-benefits-left"><dt>Estratégias de marketing</dt><dd>O seu site terá técnicas de conversões usadas em cada seção do seu site para aumentar as chances dos seus clientes contratarem ou comprarem os seus serviços/produtos.</dd></div><div class="box-benefits-left"><dt>Análise De Dados</dt><dd>Você consegue monitorar todos os dados, processos e interações dos usuários com o seu site para desenvolver melhores estratégias certeiras de marketing para o seu negócio.</dd></div><div class="box-benefits-left"><dt>Ferramentas</dt><dd>O seu site poderá ter diversas ferramentas para vendas e atendimento ao cliente como, por exemplo, ferramentas WhatsApp (para agendamento, orçamento e pedido), compras ou contratações por meio de links de pagamentos, chat ao vivo para responder os seus clientes direto do seu site ou aplicativo, ligação por clique e diversas outras ferramentas de e-commerce (carrinho, favoritos, frete, gateway de pagamento e muito mais).</dd></div></dl>',
+          imageUrl: 'img/content/website-artistico-e-produtos.webp',
+          imageWidth: 860,
+          width: 800,
+          padding: 30,
+          footer: 'Para saber detalhes de quais recursos e ferramentas virão no seu site, confira nossos planos (Básico, Padrão, Ultimate, Premium, E-commerce e Empresarial).',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageWpp() {
+        Swal.fire({
+          title: 'Ferramentas WhatsApp',
+          html: '<dl class="box-wpp"><dd class="box-wpp-intro">Evite ficar fazendo as mesmas perguntas aos clientes (Qual é o endereço para entrega? Qual a forma de pagamento? Qual tamanho deseja? E etc), economize tempo em conversas no WhatsApp com campos pré-configurados em seu site para serem preenchidos pelos clientes, seja para agendar um horário, realizar um orçamento ou enviar um pedido diretamente para o seu WhatsApp.</dd><div class="box-wpp box-wpp-left"><dt>Agendamento no WhatsApp</dt><dd>Se você presta serviços ficou mais fácil o cliente escolher o melhor horário e data para usufruir de seus serviços. O cliente simplesmente acessa o seu site e vai até a seção de agendamento e digita as informações como, por exemplo, data, hora, nome, etc e envia direto no seu WhatsApp para a sua confirmação do horário e data disponíveis na sua agenda.</dd></div><div class="box-wpp box-wpp-left"><dt>Orçamento no WhatsApp</dt><dd>Permita que os seus clientes possam realizar orçamentos de seus serviços preenchendo as informações no seu site e enviando direto no seu WhatsApp para você determinar o valor do serviço a ser prestado.</dd></div><div class="box-wpp box-wpp-left"><dt>Pedido no WhatsApp</dt><dd>Um ótimo recurso usado por vários negócios que trabalham com Delivery. Você pode vender os produtos que está no seu site, dando a possibilidade dos seus clientes usarem um Checkout adaptado para colher informações do cliente, produto, entrega e enviar direto no seu WhatsApp de forma estruturada para que você possa apenas processar o pedido.</dd></div></dl>',
+          imageUrl: 'img/content/ferramentas-whatsapp.webp',
+          imageWidth: 960,
+          width: 800,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function boxMessageStep() {
+        Swal.fire({
+          title: 'Processo De Criação Do Seu Site',
+          html: '<dl class="box-benefits"><div class="box-benefits-left"><dt>Compreensão Do Que Deseja</dt><dd>Para desenvolvermos o seu site é importante entendermos qual é a sua real necessidade para planejarmos e estruturarmos o seu site de acordo com o que deseja. Nessa primeira etapa conversaremos um pouco mais a respeito do seu site e esclareceremos todas as suas dúvidas.</dd></div><div class="box-benefits-left"><dt>Coleta De Informações</dt><dd>Para criarmos o rascunho inicial (Design do seu site) iremos colher informações suas e de se negócio por meio de Briefings. As informações que precisamos para desenvolver o seu site são as mesmas que você demonstra para os seus clientes como, por exemplo, endereço, telefone, e-mail, redes sociais, tipos de serviços/produtos, preços, características, imagens e qualquer outro material relevante para o desenvolvimento do seu site.</dd></div><div class="box-benefits-left"><dt>Rascunho Inicial</dt><dd>Vamos apresentar a você rascunhos iniciais (Designs de sites) de acordo com as informações enviadas sobre o seu negócio nos Briefings, assim você poderá escolher o melhor Design que gostar ou solicitar modificações. E o melhor de tudo é que não existe custo nenhum envolvido adicionalmente, por tanto, fique tranquilo(a) em pedir quantos Designs ou alterações achar que for necessário já que o seu site só vai ao ar quanto você estiver satisfeito(a).</dd></div><div class="box-benefits-left"><dt>Desenvolvimento Final</dt><dd>Após, todas as etapas acima, você poderá contratar um de nossos planos (Básico, Padrão, Ultimate, Premium, E-commerce e Empresarial) para iniciarmos o desenvolvimento final do seu site, onde começaremos a tornar o seu site funcional para uso. Quando terminarmos, enviaremos um link para você ter acesso total ao seu site 100% online e logo em seguida um segundo link para que você possa baixar todos os arquivos e código fonte que compõe o seu site para mantê-lo guardado offline como backup. Também enviaremos todos os links e acessos dos provedores de hospedagem, domínio, sistemas vinculados e manual de uso para que você possa fazer futuras personalizações, renovações de domínio e configurações/consultas nos sistemas integrados.</dd></div></dl>',
+          imageUrl: 'img/content/temas-de-site-para-desenvolvimento.webp',
+          imageWidth: 860,
+          width: 800,
+          padding: 30,
+          footer: 'Ao navegar em nosso site, você concorda com nossos <a href="https://deskwebcode.com.br/termos-e-uso.html">Termos e Uso</a> e <a href="https://deskwebcode.com.br/politica-de-privacidade.html">Política de Privacidade</a>.',
+          imageAlt: 'Custom image',
+          confirmButtonText: 'Fechar',
+          showCloseButton: true
+        })
+      }
+
+      function disableSwal2backdropShow() {
+        let swal2backdropShow = document.querySelectorAll(".swal2-backdrop-show");
+
+        swal2backdropShow[0].style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      btnFormLarge[0].onclick = () => {
+        if (formInputTextLarge[0].value != "" && formInputEmailLarge[0].value != "" && formInputNumberLarge[0].value != "" && formInputMensageLarge[0].value != "") {
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace("(", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace(")", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace(" ", "");
+          formInputNumberLarge[0].value = formInputNumberLarge[0].value.replace("-", "");
+
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Mensagem enviada!',
+            text: 'Aguarde, em alguns minutos um profissional da nossa equipe entrará em contato pelo seu e-mail/telefone.',
+            showConfirmButton: true
+          })
+        }
+      }
+    </script>
+    <script>
+      window.onload = () => {
+        const $input = document.querySelector('[data-js="input"]')
+      $input.addEventListener('input', handleInput, false)
+
+      function handleInput (e) {
+        e.target.value = phoneMask(e.target.value)
+      }
+
+      function phoneMask (phone) {
+        return phone.replace(/\D/g, '')
+          .replace(/^(\d)/, '($1')
+          .replace(/^(\(\d{2})(\d)/, '$1) $2')
+          .replace(/(\d{5})(\d{1,5})/, '$1-$2')
+          .replace(/(-\d{4})\d+?$/, '$1');
+        }
+      }
+  </script>
+  </body>
+</html>
